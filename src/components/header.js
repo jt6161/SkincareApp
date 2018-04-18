@@ -9,7 +9,7 @@ const Header = (props) => {
 
   return (
     <View style={viewStyle}>
-      <Image source={pic} style={{ width: 220, height: 96 }} />
+      <Image source={pic} style={{ width: 200, height: 76 }} />
       <Text style={textStyle}>{props.headerText}</Text>
     </View>
   );
@@ -21,7 +21,7 @@ const styles = {
     justifyContent: 'center',
     alignItems: 'center',
     height: 110,
-    paddingTop: 15,
+    paddingTop: 20,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
