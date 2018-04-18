@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View, Image } from 'react-native';
+import { StyleSheet, View, Image, Text } from 'react-native';
 
 export default class Home extends React.Component {
   render() {
@@ -9,7 +9,7 @@ export default class Home extends React.Component {
     return (
       <View style={styles.container}>
         <Image source={pic} style={{ width: 220, height: 96 }} />
-        {/* <Text style={styles.goldenrod}>Cannabis Infused Luxury Skincare</Text> */}
+        <Text style={styles.goldenrod}>Cannabis Infused Luxury Skincare</Text>
       </View>);
   }
 }
