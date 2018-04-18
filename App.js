@@ -8,7 +8,7 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
-        <Header headerText={'Cannabis Infused Luxury Skincare'} />
+        <Header />
         <Home />
         {/* <AlbumList /> */}
       </View>
