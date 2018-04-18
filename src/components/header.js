@@ -9,7 +9,7 @@ const Header = (props) => {
 
   return (
     <View style={viewStyle}>
-      <Image source={pic} style={{ width: 200, height: 76 }} />
+      <Image source={pic} style={{ width: 190, height: 65 }} />
       <Text style={textStyle}>{props.headerText}</Text>
     </View>
   );
@@ -29,7 +29,7 @@ const styles = {
     position: 'relative'
   },
   textStyle: {
-    fontSize: 15,
+    fontSize: 12,
     fontWeight: 'bold'
   }
 };
