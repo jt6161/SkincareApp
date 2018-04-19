@@ -6,7 +6,6 @@ class ProductList extends Component {
 componentDidMount() {
   console.log('componentDidMount in ProductList');
 }
-
   render() {
   return (
     <View>
