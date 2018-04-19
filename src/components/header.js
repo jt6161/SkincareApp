@@ -1,8 +1,8 @@
 import React from 'react';
-import { Text, View, Image } from 'react-native';
+import { View, Image } from 'react-native';
 
 const Header = (props) => {
-  const { textStyle, viewStyle } = styles;
+  const { viewStyle } = styles;
   const pic = {
     uri: 'https://static.wixstatic.com/media/dbda37_b4905467220149a392ae67875a217abf~mv2.png/v1/fill/w_381,h_132,al_c,usm_0.66_1.00_0.01/dbda37_b4905467220149a392ae67875a217abf~mv2.png'
   };
@@ -10,7 +10,6 @@ const Header = (props) => {
   return (
     <View style={viewStyle}>
       <Image source={pic} style={{ width: 190, height: 65 }} />
-      <Text style={textStyle}>{props.headerText}</Text>
     </View>
   );
 };
@@ -20,7 +19,7 @@ const styles = {
     backgroundColor: '#f8f8f8',
     justifyContent: 'center',
     alignItems: 'center',
-    height: 110,
+    height: 100,
     paddingTop: 20,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },

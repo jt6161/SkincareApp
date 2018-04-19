@@ -1,14 +1,14 @@
 import React from 'react';
 import { Text, View, ScrollView } from 'react-native';
-import ProductList from './ProductList';
+// import ProductList from './ProductList';
 
 export default class Home extends React.Component {
   render() {
     return (
       <ScrollView>
         <View style={styles.viewStyle}>
-        <Text style={styles.textStyle}>Home</Text>
-        <ProductList />
+        <Text style={styles.textStyle}>Cannabis Infused Luxury Skincare</Text>
+        {/* <ProductList /> */}
         </View>
       </ScrollView>
     );
@@ -17,7 +17,7 @@ export default class Home extends React.Component {
 
 const styles = {
   viewStyle: {
-    backgroundColor: 'white',
+    backgroundColor: 'black',
     justifyContent: 'center',
     alignItems: 'center',
     height: 600,
@@ -29,8 +29,8 @@ const styles = {
     position: 'relative'
   },
   textStyle: {
-    fontSize: 50,
+    fontSize: 20,
     fontWeight: 'bold',
-    color: 'black'
+    color: '#ab8321'
   }
 };
