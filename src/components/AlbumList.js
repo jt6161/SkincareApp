@@ -7,7 +7,7 @@ class AlbumList extends Component {
   state = { albums: [] };
 
   componentDidMount() {
-    axios.get('https://www.420-skincare.com/_functions/get_myfunc')
+    axios.get('https://www.420-skincare.com/_functions/myfunction')
       .then(response => this.setState({ product: response.data }));
   }
 
