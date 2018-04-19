@@ -1,8 +1,9 @@
 import React from 'react';
 import { Text, View, ScrollView } from 'react-native';
-import AlbumList from './AlbumList';
+import ProductList from './ProductList';
 
 export default class Home extends React.Component {
+
   render() {
     return (<ScrollView>
       <View style={styles.viewStyle}>
@@ -13,7 +14,7 @@ export default class Home extends React.Component {
           50% of our proceeds go directly back into
           Start Living Recovery Home.</Text>
       </View>
-      <AlbumList />
+      <ProductList />
     </ScrollView>);
   }
 }
