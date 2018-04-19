@@ -7,13 +7,13 @@ class AlbumList extends Component {
   state = { albums: [] };
 
   componentDidMount() {
-    axios.get('https://www.420-skincare.com/_functions/myfunction')
-      .then(response => this.setState({ product: response.data }));
+    axios.get('https://rallycoding.herokuapp.com/api/music_albums')
+      .then(response => this.setState({ albums: response.data }));
   }
 
-  renderProducts() {
-    return this.state.products.map(product =>
-      <AlbumDetail key={product.title} product={product} />
+  renderAlbums() {
+    return this.state.albums.map(album =>
+      <AlbumDetail key={album.title} album={album} />
     );
   }
 
@@ -22,7 +22,7 @@ class AlbumList extends Component {
 
     return (
       <ScrollView>
-        {this.renderProducts()}
+        {this.renderAlbums()}
       </ScrollView>
     );
   }

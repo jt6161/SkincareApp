@@ -5,8 +5,11 @@ export default class Home extends React.Component {
   render() {
     return (
       <ScrollView>
-        <View style={styles.viewStyle}>
-        <Text style={styles.textStyle}>Products Sweet Home</Text>
+        <View style={{ flex: 1, flexDirection: 'row' }}>
+          <View style={{ width: 100, height: 50, backgroundColor: 'powderblue' }} />
+          <View style={{ width: 50, height: 50, backgroundColor: 'skyblue' }} />
+        <View style={{ width: 50, height: 50, backgroundColor: 'steelblue' }} />
+        <Text style={styles.textStyle}>Home</Text>
         </View>
       </ScrollView>
     );
@@ -18,7 +21,7 @@ const styles = {
     backgroundColor: 'black',
     justifyContent: 'center',
     alignItems: 'center',
-    height: 1000,
+    height: 100,
     paddingTop: 5,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
@@ -27,8 +30,8 @@ const styles = {
     position: 'relative'
   },
   textStyle: {
-    fontSize: 80,
+    fontSize: 50,
     fontWeight: 'bold',
-    color: 'white'
+    color: 'black'
   }
 };
