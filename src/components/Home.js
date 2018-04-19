@@ -1,12 +1,14 @@
 import React from 'react';
-import { Text, View } from 'react-native';
+import { Text, View, ScrollView } from 'react-native';
 
 export default class Home extends React.Component {
   render() {
     return (
-      <View style={styles.viewStyle}>
-        <Text style={styles.textStyle}>Home sweet home</Text>
-      </View>
+      <ScrollView>
+        <View style={styles.viewStyle}>
+        <Text style={styles.textStyle}>Products Sweet Home</Text>
+        </View>
+      </ScrollView>
     );
   }
 }
@@ -16,7 +18,7 @@ const styles = {
     backgroundColor: 'black',
     justifyContent: 'center',
     alignItems: 'center',
-    height: 600,
+    height: 1000,
     paddingTop: 5,
     shadowColor: '#000',
     shadowOffset: { width: 0, height: 2 },
@@ -25,7 +27,7 @@ const styles = {
     position: 'relative'
   },
   textStyle: {
-    fontSize: 12,
+    fontSize: 80,
     fontWeight: 'bold',
     color: 'white'
   }
