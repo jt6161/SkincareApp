@@ -21,17 +21,11 @@ export default class Home extends React.Component {
 
 const styles = {
   viewStyle: {
-    backgroundColor: 'black',
+    backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
     height: 100,
     paddingTop: 5,
-    shadowColor: '#000',
-    shadowOffset: {
-      width: 0,
-      height: 2
-    },
-    shadowOpacity: 0.2,
     elevation: 2,
     position: 'relative'
   },

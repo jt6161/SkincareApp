@@ -2,7 +2,7 @@ import React from 'react';
 import { Text, View, Image } from 'react-native';
 import Card from './Card';
 import CardSection from './CardSection';
-// import Button from './Button';
+import Button from './Button';
 
 const ProductDetail = ({ product }) => {
   const { name, img_url, description } = product;
@@ -34,9 +34,9 @@ const ProductDetail = ({ product }) => {
       </CardSection>
 
       <CardSection>
-        {/* <Button onPress={() => Linking.openURL(url)}>
+        <Button>
           Buy Now
-        </Button> */}
+        </Button>
       </CardSection>
 
     </Card>
@@ -49,7 +49,7 @@ const styles = {
     justifyContent: 'space-around'
   },
   headerTextStyle: {
-    fontSize: 18
+    fontSize: 15
   },
   thumbnailStyle: {
     height: 50,
@@ -62,7 +62,7 @@ const styles = {
     marginRight: 10
   },
   imageStyle: {
-    height: 300,
+    height: 400,
     flex: 1,
     width: null
   }
