@@ -13,7 +13,7 @@ const styles = {
     borderRadius: 2,
     borderColor: '#ddd',
     borderBottomWidth: 0,
-    shadowColor: '#000',
+    shadowColor: '#ab8321',
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 2,

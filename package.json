@@ -30,7 +30,9 @@
     "expo": "^26.0.0",
     "native-base": "^2.4.2",
     "npm": "^5.8.0",
+    "prop-types": "^15.6.1",
     "react": "^16.3.2",
-    "react-native": "0.54.0"
+    "react-native": "0.54.0",
+    "react-native-navigation": "^1.1.446"
   }
 }

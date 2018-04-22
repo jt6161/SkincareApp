@@ -56,21 +56,11 @@ const styles = {
     justifyContent: 'space-around'
   },
   headerTextStyle: {
-    fontSize: 15
-  },
-  mainTextStyle: {
-    fontSize: 12,
+    fontSize: 16,
     fontWeight: 'bold'
   },
-  thumbnailStyle: {
-    height: 50,
-    width: 50
-  },
-  thumbnailContainerStyle: {
-    justifyContent: 'center',
-    alignItems: 'center',
-    marginLeft: 10,
-    marginRight: 10
+  mainTextStyle: {
+    fontSize: 14
   },
   imageStyle: {
     height: 400,
