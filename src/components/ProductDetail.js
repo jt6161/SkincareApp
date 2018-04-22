@@ -42,7 +42,7 @@ const ProductDetail = ({ product }) => {
 
       <CardSection>
         <Button>
-          Purchase Now
+          Purchase
         </Button>
       </CardSection>
 

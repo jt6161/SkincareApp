@@ -12,7 +12,7 @@
   "scripts": {
     "clean": "rm -rf node_modules",
     "reinstall": "npm run clean && npm install",
-    "rebuild": "npm run clean && npm install && npm run build", 
+    "rebuild": "npm run clean && npm install && npm run build",
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
@@ -23,10 +23,12 @@
     "preset": "jest-expo"
   },
   "dependencies": {
+    "@expo/vector-icons": "^6.3.1",
     "axios": "^0.18.0",
     "babel": "^6.23.0",
     "eslint-plugin-import": "^2.11.0",
     "expo": "^26.0.0",
+    "native-base": "^2.4.2",
     "npm": "^5.8.0",
     "react": "^16.3.2",
     "react-native": "0.54.0"
