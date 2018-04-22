@@ -9,7 +9,10 @@ export default class HeaderIcon extends Component {
       <Header>
           <Left>
             <Button transparent>
-              <Icon name='arrow-back' />
+              <Icon
+                name='arrow-back'
+                onPress={() => { Actions.pop(); }}
+              />
             </Button>
           </Left>
             <Body>
