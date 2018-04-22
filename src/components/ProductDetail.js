@@ -5,10 +5,11 @@ import CardSection from './CardSection';
 import Button from './Button';
 
 const ProductDetail = ({ product }) => {
-  const { name, img_url, description } = product;
+  const { name, img_url, description, price } = product;
   const {
     headerContentStyle,
     headerTextStyle,
+    mainTextStyle,
     imageStyle
   } = styles;
 
@@ -29,13 +30,19 @@ const ProductDetail = ({ product }) => {
 
       <CardSection>
         <View>
-          <Text style={headerTextStyle}>{description}</Text>
+          <Text style={mainTextStyle}>{description}</Text>
+        </View>
+      </CardSection>
+
+      <CardSection>
+        <View>
+          <Text style={headerTextStyle}>Price: ${price}</Text>
         </View>
       </CardSection>
 
       <CardSection>
         <Button>
-          Buy Now
+          Purchase Now
         </Button>
       </CardSection>
 
@@ -50,6 +57,10 @@ const styles = {
   },
   headerTextStyle: {
     fontSize: 15
+  },
+  mainTextStyle: {
+    fontSize: 12,
+    fontWeight: 'bold'
   },
   thumbnailStyle: {
     height: 50,
