@@ -13,7 +13,7 @@ export default class App extends React.Component {
           <Home />
             <Router hideNavBar="true">
               <Scene key="root">
-              <Scene key="About" component={About} initial="true" />
+              <Scene key="About" component={About} />
               </Scene>
             </Router>
       </View>
