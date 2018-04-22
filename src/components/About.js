@@ -11,7 +11,7 @@ export default class About extends React.Component {
     Our soothing all-natural ingredients can improve several
     skin conditions. 50 percent of our proceeds go directly back into
     Start Living Recovery Home.</Text>
- </View>
+</View>
 );
 }
 }

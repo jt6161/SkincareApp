@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 import { Header, Left, Body, Right, Button, Icon } from 'native-base';
 
 export default class HeaderIcon extends Component {
@@ -18,7 +19,10 @@ export default class HeaderIcon extends Component {
               />
             </Body>
           <Right>
-            <Button transparent>
+            <Button
+              transparent
+              onPress={() => { Actions.About(); }}
+            >
               <Icon name='menu' />
             </Button>
           </Right>
