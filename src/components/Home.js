@@ -12,7 +12,7 @@ export default class Home extends React.Component {
           <Text style={styles.textStyle2}>
             420 Skincare products will make you feel good inside & out!
             Our soothing all-natural ingredients can improve several
-            skin conditions. 50% of our proceeds go directly back into
+            skin conditions. 50 percent of our proceeds go directly back into
             Start Living Recovery Home.</Text>
         </View>
       <ProductList />

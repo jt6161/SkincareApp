@@ -1,11 +1,10 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
-import { Container, Header, Left, Body, Right, Button, Icon } from 'native-base';
+import { Header, Left, Body, Right, Button, Icon } from 'native-base';
 
-export default class Headerlg extends Component {
+export default class HeaderIcon extends Component {
   render() {
     return (
-      <Container>
         <Header>
           <Left>
             <Button transparent>
@@ -24,7 +23,6 @@ export default class Headerlg extends Component {
             </Button>
           </Right>
         </Header>
-      </Container>
     );
   }
 }
