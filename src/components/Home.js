@@ -26,7 +26,7 @@ const styles = {
     backgroundColor: 'white',
     justifyContent: 'center',
     alignItems: 'center',
-    height: 80,
+    height: 100,
     paddingTop: 5,
     elevation: 2,
     position: 'relative'

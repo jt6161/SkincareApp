@@ -6,7 +6,7 @@ import Home from './src/components/Home';
 export default class App extends React.Component {
   render() {
     return (
-      <View style={{ flex: 1}}>
+      <View style={{ flex: 1 }}>
         <HeaderIcon />
         <Home />
       </View>
