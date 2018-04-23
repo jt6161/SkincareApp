@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Image } from 'react-native';
-import { Text, Button, Row } from 'native-base';
+import { Text, Button, Row, Content } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
 export default class About extends React.Component {
@@ -17,36 +17,38 @@ export default class About extends React.Component {
             Our soothing all-natural ingredients can improve several
             skin conditions. 50 percent of our proceeds go directly back into
             Start Living Recovery Home.</Text>
+            <Content padding>
             <Row>
           <Button
             Button small rounded info
-            style={{ margin: 10 }}
+            style={{ margin: 5 }}
             onPress={() => { Actions.pageOne(); }}
           >
                <Text>Page 1</Text>
            </Button>
            <Button
              Button small rounded info
-             style={{ margin: 10 }}
+             style={{ margin: 5 }}
              onPress={() => { Actions.pageTwo(); }}
            >
                 <Text>Page 2</Text>
             </Button>
             <Button
               Button small rounded success
-              style={{ margin: 10 }}
-              onPress={() => { Actions.Home(); }}
+              style={{ margin: 5 }}
+              onPress={() => { Actions.Products(); }}
             >
-                 <Text>Home</Text>
+                 <Text>Products</Text>
              </Button>
              <Button
                Button small rounded warning
-               style={{ margin: 10 }}
+               style={{ margin: 5 }}
                onPress={() => { Actions.About(); }}
              >
                   <Text>About</Text>
               </Button>
               </Row>
+            </Content>
         </View>
 );
 }
@@ -56,7 +58,7 @@ export default class About extends React.Component {
      backgroundColor: 'black',
      // justifyContent: 'center',
      alignItems: 'center',
-     height: 800,
+     height: 900,
      padding: 10,
      elevation: 2,
      position: 'relative'

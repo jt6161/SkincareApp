@@ -1,6 +1,6 @@
 import React from 'react';
 import { ScrollView } from 'react-native';
-import { Content, Text, Button, Row } from 'native-base';
+import { Text, Button, Row } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import ProductList from './ProductList';
 
@@ -9,8 +9,7 @@ export default class Products extends React.Component {
     return (
       <ScrollView>
       <ProductList />
-      <Content >
-        <Row>
+      <Row>
          <Button
            Button small rounded info
            style={{ margin: 10 }}
@@ -32,8 +31,7 @@ export default class Products extends React.Component {
           >
                <Text>About</Text>
            </Button>
-           </Row>
-         </Content>
+         </Row>
        </ScrollView>
      );
   }

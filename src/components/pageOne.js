@@ -10,19 +10,19 @@ export default class pageOne extends Component {
                           dark bordered
                           onPress={() => { Actions.pageTwo(); }}
                         >
-                          <Text>Goto Page 2</Text>
+                          <Text>Page 2</Text>
                          </Button>
                          <Button
                            dark bordered
                            onPress={() => { Actions.About(); }}
                          >
-                           <Text>Goto About</Text>
+                           <Text>About</Text>
                           </Button>
                           <Button
                             dark bordered
-                            onPress={() => { Actions.Home(); }}
+                            onPress={() => { Actions.Products(); }}
                           >
-                            <Text>Goto Home</Text>
+                            <Text>Products</Text>
                            </Button>
                  </Content>
 

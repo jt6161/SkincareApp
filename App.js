@@ -10,11 +10,11 @@ import PageTwo from './src/components/pageTwo';
 export default class App extends React.Component {
   render() {
     return (
-      <View style={{ flex: 2 }}>
+      <View style={{ flex: 1 }}>
           <Router hideNavBar="true">
               <Scene key="root">
-                <Scene key="Home" component={Products} title="Products" />
-                <Scene key="About" component={About} title="Welcome" initial />
+                <Scene key="About" component={About} title="420 Skincare" initial />
+                <Scene key="Products" component={Products} title="Products" />
                 <Scene key="pageOne" component={PageOne} title="PageOne" />
                 <Scene key="pageTwo" component={PageTwo} title="PageTwo" />
               </Scene>
