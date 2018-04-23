@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Image } from 'react-native';
-import { Text, Button, Row, Content } from 'native-base';
+import { Text, Button, Row } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
 export default class About extends React.Component {
@@ -17,7 +17,16 @@ export default class About extends React.Component {
             Our soothing all-natural ingredients can improve several
             skin conditions. 50 percent of our proceeds go directly back into
             Start Living Recovery Home.</Text>
-            <Content>
+          <Text style={styles.textStyle2}>
+            420 Skincare products will make you feel good inside & out!
+            Our soothing all-natural ingredients can improve several
+            skin conditions. 50 percent of our proceeds go directly back into
+            Start Living Recovery Home.</Text>
+          <Text style={styles.textStyle2}>
+            420 Skincare products will make you feel good inside & out!
+            Our soothing all-natural ingredients can improve several
+            skin conditions. 50 percent of our proceeds go directly back into
+            Start Living Recovery Home.</Text>
             <Row>
           <Button
             Button small rounded info
@@ -48,7 +57,6 @@ export default class About extends React.Component {
                   <Text>About</Text>
               </Button>
               </Row>
-            </Content>
         </View>
 );
 }
@@ -58,19 +66,19 @@ export default class About extends React.Component {
      backgroundColor: 'black',
      // justifyContent: 'center',
      alignItems: 'center',
-     height: 900,
+     height: 700,
      padding: 10,
-     elevation: 2,
+     elevation: 1,
      position: 'relative'
    },
    textStyle: {
-     fontSize: 16,
+     fontSize: 17,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
    },
    textStyle2: {
-     fontSize: 14,
+     fontSize: 15,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'

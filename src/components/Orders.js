@@ -1,29 +1,15 @@
-import React, { Component } from 'react';
-import { ScrollView } from 'react-native';
-import axios from 'axios';
-import OrderDetail from './OrderDetail';
+import React from 'react';
+import { ScrollView, View } from 'react-native';
+import OrderList from './OrderList';
 
-class OrderList extends Component {
-  state = { orders: [] };
-
-  componentDidMount() {
-    axios.get('http://localhost:8000/orders')
-      .then(response => this.setState({ orders: response.data }));
-  }
-
-  renderOrders() {
-    return this.state.orders.map(order =>
-      <OrderDetail key={order.name} order={order} />
-    );
-  }
-
+export default class Orders extends React.Component {
   render() {
     return (
-      <ScrollView>
-        {this.renderOrders()}
-      </ScrollView>
-    );
+      <View>
+        <ScrollView>
+        <OrderList />
+        </ScrollView>
+      </View>
+     );
   }
 }
-
-export default OrderList;
