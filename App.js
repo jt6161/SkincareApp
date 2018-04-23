@@ -1,7 +1,7 @@
 import React from 'react';
 import { View } from 'react-native';
 import { Router, Scene } from 'react-native-router-flux';
-import HeaderIcon from './src/components/HeaderIcon';
+import FooterIcon from './src/components/FooterIcon';
 import Home from './src/components/Home';
 import About from './src/components/About';
 import PageOne from './src/components/pageOne';
@@ -11,15 +11,15 @@ export default class App extends React.Component {
   render() {
     return (
       <View style={{ flex: 2 }}>
-        <HeaderIcon />
           <Router hideNavBar="true">
                   <Scene key="root">
-                    <Scene key="Home" component={Home} />
-                    <Scene key="About" component={About} />
-                    <Scene key="pageOne" component={PageOne} initial />
-                    <Scene key="pageTwo" component={PageTwo} />
+                    <Scene key="Home" component={Home} title="Products" initial />
+                    <Scene key="About" component={About} title="About" />
+                    <Scene key="pageOne" title="PageOne" component={PageOne} />
+                    <Scene key="pageTwo" component={PageTwo} title="PageTwo" />
                   </Scene>
                 </Router>
+                <FooterIcon />
       </View>
     );
   }

@@ -22,7 +22,7 @@ export default class About extends React.Component {
      backgroundColor: 'white',
      justifyContent: 'center',
      alignItems: 'center',
-     height: 100,
+     height: 600,
      paddingTop: 5,
      elevation: 2,
      position: 'relative'

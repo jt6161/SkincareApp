@@ -17,6 +17,12 @@ export default class Home extends React.Component {
     >
          <Text>Goto Page 1</Text>
      </Button>
+     <Button
+       dark bordered style={{ alignSelf: 'center', margin: 30 }}
+       onPress={() => { Actions.pageTwo(); }}
+     >
+          <Text>Goto Page 2</Text>
+      </Button>
      </Content>
        </ScrollView>
     </View>
