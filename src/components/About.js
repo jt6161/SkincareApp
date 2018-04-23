@@ -14,20 +14,21 @@ export default class About extends React.Component {
         />
           <Text style={styles.textStyle}>Cannabis Infused Luxury Skincare</Text>
           <Text style={styles.textStyle2}>
+            From Cannabis Infused Body Butter to CBD Soaps,
+            we Specialize in Natural & Organic, Hand-Crafted
+            Skincare for all Skin Types.</Text>
+            <Text style={styles.textStyle2}>
             420 Skincare products will make you feel good inside & out!
             Our soothing all-natural ingredients can improve several
-            skin conditions. 50 percent of our proceeds go directly back into
-            Start Living Recovery Home.</Text>
-          <Text style={styles.textStyle2}>
-            420 Skincare products will make you feel good inside & out!
-            Our soothing all-natural ingredients can improve several
-            skin conditions. 50 percent of our proceeds go directly back into
-            Start Living Recovery Home.</Text>
-          <Text style={styles.textStyle2}>
-            420 Skincare products will make you feel good inside & out!
-            Our soothing all-natural ingredients can improve several
-            skin conditions. 50 percent of our proceeds go directly back into
-            Start Living Recovery Home.</Text>
+            skin conditions. 50 percent of our proceeds go directly
+            back into Start Living Recovery Home. For more information
+            please visit
+            https://www.420-skincare.com</Text>
+            <Image
+              source={{ uri: 'https://static.wixstatic.com/media/dbda37_b4905467220149a392ae67875a217abf~mv2.png/v1/fill/w_381,h_132,al_c,usm_0.66_1.00_0.01/dbda37_b4905467220149a392ae67875a217abf~mv2.png' }}
+              style={{ width: 160, height: 60, padding: 20 }}
+            />
+
             <Row>
           <Button
             Button small rounded info
