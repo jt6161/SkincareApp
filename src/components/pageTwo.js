@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import {
-  Content, Text, Button
-} from 'native-base';
+import { Content, Text, Button } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
 export default class pageTwo extends Component {
