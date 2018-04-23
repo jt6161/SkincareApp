@@ -1,15 +1,13 @@
 import React from 'react';
-import { ScrollView, View } from 'react-native';
+import { ScrollView } from 'react-native';
 import OrderList from './OrderList';
 
 export default class Orders extends React.Component {
   render() {
     return (
-      <View>
-        <ScrollView>
+      <ScrollView>
         <OrderList />
-        </ScrollView>
-      </View>
+      </ScrollView>
      );
   }
 }

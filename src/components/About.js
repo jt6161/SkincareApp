@@ -35,13 +35,6 @@ export default class About extends React.Component {
           >
                <Text>Orders</Text>
            </Button>
-           <Button
-             Button small rounded info
-             style={{ margin: 5 }}
-             onPress={() => { Actions.pageTwo(); }}
-           >
-                <Text>Page 2</Text>
-            </Button>
             <Button
               Button small rounded success
               style={{ margin: 5 }}
@@ -64,7 +57,6 @@ export default class About extends React.Component {
  const styles = {
    viewStyle: {
      backgroundColor: 'black',
-     // justifyContent: 'center',
      alignItems: 'center',
      height: 700,
      padding: 10,
