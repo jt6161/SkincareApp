@@ -1,8 +1,9 @@
 import React from 'react';
 import { Text, View, Image, Linking } from 'react-native';
+import { Button, Row } from 'native-base';
 import Card from './Card';
 import CardSection from './CardSection';
-import Button from './Button';
+
 
 const ProductDetail = ({ product }) => {
   const { name, img_url, description, price, url } = product;
@@ -41,11 +42,15 @@ const ProductDetail = ({ product }) => {
       </CardSection>
 
       <CardSection>
+          <Row>
         <Button
+          Button small rounded success
+          style={{ margin: 20, padding: 100 }}
           onPress={() => Linking.openURL(url)}
         >
-          Purchase
-        </Button>
+             <Text>Purchase Products</Text>
+         </Button>
+       </Row>
       </CardSection>
 
     </Card>
