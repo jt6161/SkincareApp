@@ -41,7 +41,7 @@ export default class Home extends React.Component {
               style={{ margin: 5 }}
               onPress={() => { Actions.Products(); }}
             >
-                 <Text>Browse Products</Text>
+                 <Text>420 Skincare Products</Text>
              </Button>
              </Row>
         </View>
