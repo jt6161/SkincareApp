@@ -25,9 +25,11 @@ export default class About extends React.Component {
             on 420 Skincare please visit our website.
             </Text>
             <Text
-              style={{ color: '#ab8321', fontSize: 16, fontWeight: 'bold' }}
+              style={{ color: '#ab8321', fontSize: 16, fontWeight: 'bold'
+             }}
               onPress={() => Linking.openURL('http://www.420-Skincare.com')}
-            >420-Skincare.com
+            >
+              420-Skincare.com
             </Text>
             <Image
               source={{ uri: 'https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/29793869_360376004459988_2236546031175073792_n.jpg?_nc_cat=0&oh=d5a6574c8dfce19fc0f3a6a90e49412f&oe=5B68B10D' }}
@@ -38,9 +40,9 @@ export default class About extends React.Component {
           <Button
             Button small rounded info
             style={{ margin: 5 }}
-            onPress={() => { Actions.Orders(); }}
+            onPress={() => { Linking.openURL('https://www.420-skincare.com/cart'); }}
           >
-               <Text>Orders</Text>
+               <Text>Cart</Text>
            </Button>
             <Button
               Button small rounded success
