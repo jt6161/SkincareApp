@@ -17,7 +17,7 @@ const OrderDetail = ({ order }) => {
           <Text style={headerTextStyle}>{name}</Text>
         </View>
       </CardSection2>
-
+      
       <CardSection2>
         <View>
           <Text style={mainTextStyle}>{email}</Text>

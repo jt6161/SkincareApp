@@ -5,7 +5,7 @@ import FooterIcon from './src/components/FooterIcon';
 import Products from './src/components/Products';
 import Home from './src/components/Home';
 import Orders from './src/components/Orders';
-import PageOne from './src/components/pageTwo';
+import PageOne from './src/components/pageOne';
 
 export default class App extends React.Component {
   render() {
