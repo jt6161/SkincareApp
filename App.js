@@ -5,7 +5,7 @@ import FooterIcon from './src/components/FooterIcon';
 import Products from './src/components/Products';
 import Home from './src/components/Home';
 import Orders from './src/components/Orders';
-import PageOne from './src/components/pageOne';
+
 
 export default class App extends React.Component {
   render() {
@@ -16,7 +16,6 @@ export default class App extends React.Component {
               <Scene key="Home" component={Home} title="420 Skincare" initial />
               <Scene key="Products" component={Products} title="Products" />
               <Scene key="Orders" component={Orders} title="Orders" />
-              <Scene key="pageOne" component={PageOne} title="PageOne" />
               </Scene>
           </Router>
         <FooterIcon />

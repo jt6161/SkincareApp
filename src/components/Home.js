@@ -30,34 +30,20 @@ export default class Home extends React.Component {
             >
               420-Skincare.com
             </Text>
+
             <Image
               source={{ uri: 'https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/29793869_360376004459988_2236546031175073792_n.jpg?_nc_cat=0&oh=d5a6574c8dfce19fc0f3a6a90e49412f&oe=5B68B10D' }}
               style={{ width: 200, height: 130, margin: 15 }}
             />
-
             <Row>
-            <Button
-              Button small rounded info
-              style={{ margin: 5 }}
-              onPress={() => { Actions.Orders(); }}
-            >
-               <Text>Orders</Text>
-            </Button>
             <Button
               Button small rounded success
               style={{ margin: 5 }}
               onPress={() => { Actions.Products(); }}
             >
-                 <Text>Products</Text>
+                 <Text>Browse Products</Text>
              </Button>
-             <Button
-               Button small rounded warning
-               style={{ margin: 5 }}
-               onPress={() => { Actions.Home(); }}
-             >
-                  <Text>Home</Text>
-              </Button>
-              </Row>
+             </Row>
         </View>
       </ScrollView>
 );
