@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
-import Icon from 'react-native-vector-icons/FontAwesome';
 import {
   StyleSheet,
-  Text,
-  View,
   TextInput,
   ScrollView
 } from 'react-native';
@@ -15,12 +12,11 @@ export default class Login extends Component {
   render() {
     return (
         <ScrollView style={styles.scroll}>
-        ...
         <Container>
     <Button
         label="Forgot Login/Pass"
         styles={{ button: styles.alignRight, label: styles.label }}
-        onPress={this.press.bind(this)}
+        onPress={(this)}
     />
         </Container>
         <Container>
@@ -39,14 +35,8 @@ export default class Login extends Component {
 <Container>
     <Button
         styles={{ button: styles.transparentButton }}
-        onPress={this.press.bind(this)}
-    >
-        <View style={styles.inline}>
-            <Icon name="facebook-official" size={30} color="#3B5699" />
-            <Text style={[styles.buttonBlueText, styles.buttonBigText]}>  Connect </Text>
-            <Text style={styles.buttonBlueText}>with Facebook</Text>
-        </View>
-    </Button>
+        onPress={(this)}
+    />
 </Container>
         </ScrollView>
     );
@@ -61,13 +51,13 @@ const styles = StyleSheet.create({
   label: {
     color: '#0d8898',
     fontSize: 20
-},
-alignRight: {
+  },
+  alignRight: {
     alignSelf: 'flex-end'
-},
-textInput: {
-    height: 80,
+  },
+  textInput: {
+    height: 50,
     fontSize: 30,
     backgroundColor: '#FFF'
-},
+  }
 });
