@@ -12,7 +12,7 @@ export default class FooterIcon extends Component {
             <Text
               style={{ color: '#ab8321', fontSize: 14, fontWeight: 'bold', margin: 10
              }}
-              onPress={() => { Actions.Orders(); }}
+              onPress={() => { Actions.Login(); }}
             >
               Admin
             </Text>

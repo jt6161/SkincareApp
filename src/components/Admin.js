@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import Login from './Login';
 
-export default class ReactNativeCommonScreens extends Component {
+export default class Admin extends Component {
 
   render() {
     return (
