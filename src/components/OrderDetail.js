@@ -1,7 +1,7 @@
 import React from 'react';
 import { Text, View } from 'react-native';
-import Card2 from './Card2';
-import CardSection2 from './CardSection2';
+import Card from './Card';
+import CardSection2 from './CardSection';
 
 const OrderDetail = ({ order }) => {
   const { name, email } = order;
@@ -11,19 +11,19 @@ const OrderDetail = ({ order }) => {
   } = styles;
 
   return (
-    <Card2>
+    <Card>
       <CardSection2>
         <View>
           <Text style={headerTextStyle}>{name}</Text>
         </View>
       </CardSection2>
-      
+
       <CardSection2>
         <View>
           <Text style={mainTextStyle}>{email}</Text>
         </View>
       </CardSection2>
-    </Card2>
+    </Card>
   );
 };
 
