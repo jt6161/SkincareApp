@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, View, Image } from 'react-native';
+import { ScrollView, View, Image, Linking } from 'react-native';
 import { Text, Button, Row } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
@@ -22,8 +22,12 @@ export default class About extends React.Component {
             Our soothing all-natural ingredients can improve several
             skin conditions. 50 percent of our proceeds go directly
             back into Start Living Recovery Home. For more information
-            on 420 Skincare please visit
-            www.420-Skincare.com
+            on 420 Skincare please visit our website.
+            </Text>
+            <Text
+              style={{ color: '#ab8321', fontSize: 16, fontWeight: 'bold' }}
+              onPress={() => Linking.openURL('http://www.420-Skincare.com')}
+            >420-Skincare.com
             </Text>
             <Image
               source={{ uri: 'https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/29793869_360376004459988_2236546031175073792_n.jpg?_nc_cat=0&oh=d5a6574c8dfce19fc0f3a6a90e49412f&oe=5B68B10D' }}
