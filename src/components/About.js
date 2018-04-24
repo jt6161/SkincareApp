@@ -37,13 +37,13 @@ export default class About extends React.Component {
             />
 
             <Row>
-          <Button
-            Button small rounded info
-            style={{ margin: 5 }}
-            onPress={() => { Linking.openURL('https://www.420-skincare.com/cart'); }}
-          >
+            <Button
+              Button small rounded info
+              style={{ margin: 5 }}
+              onPress={() => { Linking.openURL('https://www.420-skincare.com/cart'); }}
+            >
                <Text>Cart</Text>
-           </Button>
+            </Button>
             <Button
               Button small rounded success
               style={{ margin: 5 }}
@@ -56,11 +56,11 @@ export default class About extends React.Component {
                style={{ margin: 5 }}
                onPress={() => { Actions.About(); }}
              >
-                  <Text>About</Text>
+                  <Text>Home</Text>
               </Button>
               </Row>
         </View>
-        </ScrollView>
+      </ScrollView>
 );
 }
 }
