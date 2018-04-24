@@ -3,7 +3,7 @@ import { ScrollView, View, Image, Linking } from 'react-native';
 import { Text, Button, Row } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
-export default class About extends React.Component {
+export default class Home extends React.Component {
   render() {
     return (
       <ScrollView>
@@ -16,8 +16,7 @@ export default class About extends React.Component {
           <Text style={styles.textStyle2}>
             From Cannabis Infused Body Butter to CBD Soaps,
             we Specialize in Natural & Organic, Hand-Crafted
-            Skincare for all Skin Types.</Text>
-            <Text style={styles.textStyle2}>
+            Skincare for all Skin Types.
             420 Skincare products will make you feel good inside & out!
             Our soothing all-natural ingredients can improve several
             skin conditions. 50 percent of our proceeds go directly
@@ -40,9 +39,9 @@ export default class About extends React.Component {
             <Button
               Button small rounded info
               style={{ margin: 5 }}
-              onPress={() => { Linking.openURL('https://www.420-skincare.com/cart'); }}
+              onPress={() => { Actions.Orders(); }}
             >
-               <Text>Cart</Text>
+               <Text>Orders</Text>
             </Button>
             <Button
               Button small rounded success
@@ -54,7 +53,7 @@ export default class About extends React.Component {
              <Button
                Button small rounded warning
                style={{ margin: 5 }}
-               onPress={() => { Actions.About(); }}
+               onPress={() => { Actions.Home(); }}
              >
                   <Text>Home</Text>
               </Button>

@@ -11,7 +11,7 @@ export default class FooterIcon extends Component {
             <Body>
               <Image
                 source={{ uri: 'https://static.wixstatic.com/media/dbda37_b4905467220149a392ae67875a217abf~mv2.png/v1/fill/w_381,h_132,al_c,usm_0.66_1.00_0.01/dbda37_b4905467220149a392ae67875a217abf~mv2.png' }}
-                style={{ width: 115, height: 45 }}
+                style={{ width: 115, height: 45, alignItems: 'center' }}
               />
             </Body>
           <Right />
