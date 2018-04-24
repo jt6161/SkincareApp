@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, View, Image } from 'react-native';
+import { ScrollView, View, Image, Link } from 'react-native';
 import { Text, Button, Row } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
@@ -22,11 +22,12 @@ export default class About extends React.Component {
             Our soothing all-natural ingredients can improve several
             skin conditions. 50 percent of our proceeds go directly
             back into Start Living Recovery Home. For more information
-            please visit
-            https://www.420-skincare.com</Text>
+            on 420 Skincare and Start Living Recovery Home please visit
+            www.420-Skincare.com
+            </Text>
             <Image
-              source={{ uri: 'https://static.wixstatic.com/media/dbda37_b4905467220149a392ae67875a217abf~mv2.png/v1/fill/w_381,h_132,al_c,usm_0.66_1.00_0.01/dbda37_b4905467220149a392ae67875a217abf~mv2.png' }}
-              style={{ width: 160, height: 60, padding: 20 }}
+              source={{ uri: 'https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/29793869_360376004459988_2236546031175073792_n.jpg?_nc_cat=0&oh=d5a6574c8dfce19fc0f3a6a90e49412f&oe=5B68B10D' }}
+              style={{ width: 200, height: 130, margin: 10 }}
             />
 
             <Row>
