@@ -10,7 +10,7 @@ export default class Addproduct extends Component {
     price: '',
     url: ''
   }
-  
+
   render() {
     return (
       <Container>
@@ -59,7 +59,9 @@ export default class Addproduct extends Component {
             </Item>
             <Button
               Button block success
-              // onPress={}
+              // onPress={axios.post('http://localhost:8000/products', this.state).then((res) => {
+            // })
+            // }
             >
             <Text>Submit New Product</Text>
           </Button>
