@@ -3,15 +3,10 @@ import { Button, Container, Content, Form, Item, Input, Label, Text } from 'nati
 import { Actions } from 'react-native-router-flux';
 import axios from 'axios';
 
-export default class Login extends Component {
+class Login extends Component {
   state = {
     username: '',
     password: ''
-  }
-
-  componentDidMount() {
-    axios.get('http://localhost:8000/admin')
-      .then(response => this.setState({ username: response.data, password: response.data }));
   }
 
   render() {
@@ -37,7 +32,7 @@ export default class Login extends Component {
             </Item>
             <Button
               Button block success
-              onPress={() => { Actions.Addproduct(this.state); }}
+              onPress={() => { this.login(); }}
             >
             <Text>Sign In</Text>
           </Button>
@@ -48,6 +43,15 @@ export default class Login extends Component {
   }
 
   login() {
-
+    axios.post('http://localhost:8000/admin/login', this.state).then((res) => {
+      console.log(res);
+      if (res.data.success === true) {
+         Actions.Addproduct(this.state);
+      } else {
+      console.log('Login error');
+      }
+    });
   }
 }
+
+export default Login;
