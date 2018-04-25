@@ -13,7 +13,7 @@ export default class Addproduct extends Component {
               <Input />
             </Item>
             <Item stackedLabel>
-              <Label>Url of Product Image</Label>
+              <Label>Product Image Url</Label>
               <Input />
             </Item>
             <Item stackedLabel>
@@ -25,14 +25,14 @@ export default class Addproduct extends Component {
               <Input />
             </Item>
             <Item stackedLabel last>
-              <Label>Product Page Url</Label>
+              <Label>Product Page Url (Optional)</Label>
               <Input />
             </Item>
             <Button
               Button block success
               onPress={() => { Actions.Addproduct(); }}
             >
-            <Text>Submit Product</Text>
+            <Text>Submit New Product</Text>
           </Button>
           </Form>
         </Content>
