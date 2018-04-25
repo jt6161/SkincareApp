@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Button, Container, Content, Form, Item, Input, Label, Text } from 'native-base';
-import { Actions } from 'react-native-router-flux';
+import { Container, Content, Form, Item, Input, Label } from 'native-base';
 
-export default class Login extends Component {
+export default class Addproduct extends Component {
   render() {
     return (
       <Container>
@@ -16,12 +15,6 @@ export default class Login extends Component {
               <Label>Password</Label>
               <Input />
             </Item>
-            <Button
-              Button block success
-              onPress={() => { Actions.Addproduct(); }}
-            >
-            <Text>Sign In</Text>
-          </Button>
           </Form>
         </Content>
       </Container>
