@@ -30,7 +30,7 @@ export default class Addproduct extends Component {
             </Item>
             <Button
               Button block success
-              onPress={() => { Actions.Addproduct(); }}
+              onPress={ }
             >
             <Text>Submit New Product</Text>
           </Button>
