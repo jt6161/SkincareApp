@@ -6,7 +6,7 @@ export default class Login extends Component {
   render() {
     return (
       <Container>
-        <Content>
+        <Content padding>
           <Form>
             <Item stackedLabel>
               <Label>Username</Label>
