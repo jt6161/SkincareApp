@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Container, Content, Form, Item, Input, Label, Button, Text } from 'native-base';
-import { Actions } from 'react-native-router-flux';
+// import { Actions } from 'react-native-router-flux';
 
 export default class Addproduct extends Component {
   state = {
@@ -14,7 +14,7 @@ export default class Addproduct extends Component {
   render() {
     return (
       <Container>
-        <Content padding>
+        <Content>
           <Form>
             <Item stackedLabel>
               <Label>Name of Product</Label>
