@@ -32,7 +32,7 @@ export default class Home extends React.Component {
             </Text>
 
             <Image
-              source={{ uri: 'https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/29793869_360376004459988_2236546031175073792_n.jpg?_nc_cat=0&oh=d5a6574c8dfce19fc0f3a6a90e49412f&oe=5B68B10D' }}
+              source={{ uri: 'https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/31225138_10156315166967236_1786995132902408192_n.jpg?_nc_cat=0&oh=2adf63a7482c0614dc4a84993d2f03eb&oe=5B50D150' }}
               style={{ width: 200, height: 130, margin: 15 }}
             />
             <Row>
