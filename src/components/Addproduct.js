@@ -1,22 +1,26 @@
 import React, { Component } from 'react';
-import { Container, Content, Form, Item, Input, Label, Button, Text } from 'native-base';
-// import { Actions } from 'react-native-router-flux';
+import { Button, Container, Content, Form, Item, Input, Label, Text } from 'native-base';
+import { Actions } from 'react-native-router-flux';
+import axios from 'axios';
 
-export default class Addproduct extends Component {
-  state = {
-    name: '',
-    img_url: '',
-    description: '',
-    price: '',
-    url: ''
+class Addproduct extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: '',
+      img_url: '',
+      description: '',
+      price: '',
+      url: ''
+    };
   }
 
   render() {
     return (
       <Container>
-        <Content>
+        <Content padding>
           <Form>
-            <Item stackedLabel>
+            <Item stackedLabel >
               <Label>Name of Product</Label>
               <Input
               onChangeText={(data) => {
@@ -43,7 +47,6 @@ export default class Addproduct extends Component {
             <Item stackedLabel>
               <Label>Price of Product</Label>
               <Input
-                keyboardType='numeric'
                 onChangeText={(data) => {
                   this.setState({ price: data });
                 }}
@@ -55,13 +58,17 @@ export default class Addproduct extends Component {
                 onChangeText={(data) => {
                   this.setState({ url: data });
                 }}
-              />/>
+              />
             </Item>
             <Button
               Button block success
-              // onPress={axios.post('http://localhost:8000/products', this.state).then((res) => {
-            // })
-            // }
+              onPress={axios.post('http://localhost:8000/products', this.state).then((res) => {
+                console.log(res);
+                if (res.data.success === true) {
+                  Actions.Products(this.state);
+                }
+            })
+            }
             >
             <Text>Submit New Product</Text>
           </Button>
@@ -71,3 +78,5 @@ export default class Addproduct extends Component {
     );
   }
 }
+
+export default Addproduct;
