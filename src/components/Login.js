@@ -45,12 +45,14 @@ class Login extends Component {
     axios.post('http://localhost:8000/admin/login', this.state).then((res) => {
       console.log(res);
       if (res.data.success === true) {
+        console.log('success');
          Actions.Addproduct(this.state);
       } else {
       console.log('Login error');
       }
     });
   }
+
 }
 
 export default Login;

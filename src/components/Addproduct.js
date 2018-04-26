@@ -4,23 +4,19 @@ import { Actions } from 'react-native-router-flux';
 import axios from 'axios';
 
 class Addproduct extends Component {
-  constructor(props) {
-    super(props);
-    this.state = {
-      name: '',
-      img_url: '',
-      description: '',
-      price: '',
-      url: ''
-    };
+  state = {
+    name: '',
+    img_url: '',
+    description: '',
+    price: '',
+    url: ''
   }
-
   render() {
     return (
       <Container>
         <Content padding>
           <Form>
-            <Item stackedLabel >
+            <Item stackedLabel>
               <Label>Name of Product</Label>
               <Input
               onChangeText={(data) => {
@@ -62,13 +58,7 @@ class Addproduct extends Component {
             </Item>
             <Button
               Button block success
-              onPress={axios.post('http://localhost:8000/products', this.state).then((res) => {
-                console.log(res);
-                if (res.data.success === true) {
-                  Actions.Products(this.state);
-                }
-            })
-            }
+              onPress={() => { this.addproduct(); }}
             >
             <Text>Submit New Product</Text>
           </Button>
@@ -77,6 +67,17 @@ class Addproduct extends Component {
       </Container>
     );
   }
+
+  addproduct() {
+    axios.post('http://localhost:8000/products', this.state).then((res) => {
+      console.log(res);
+      if (res.data.success === true) {
+          Actions.Products(this.state);
+      } else {
+      console.log('Add product error');
+      }
+  });
 }
 
+}
 export default Addproduct;
