@@ -24,6 +24,7 @@ class Login extends Component {
             <Item stackedLabel last>
               <Label>Password</Label>
               <Input
+                secureTextEntry
                 onChangeText={(data) => {
                 this.setState({ password: data });
               }}

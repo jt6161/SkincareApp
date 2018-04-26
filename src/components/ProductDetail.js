@@ -14,6 +14,19 @@ const ProductDetail = ({ product }) => {
     imageStyle
   } = styles;
 
+  const btn = (url ? (<Button
+    Button small rounded success
+    style={{ margin: 20, padding: 100 }}
+    onPress={() => Linking.openURL(url)}
+  >
+       <Text>Purchase Products</Text>
+   </Button>) : (<Button
+     Button small rounded disabled
+     style={{ margin: 20, padding: 100 }}
+   >
+        <Text>Coming Soon</Text>
+    </Button>));
+
   return (
     <Card>
       <CardSection>
@@ -43,14 +56,8 @@ const ProductDetail = ({ product }) => {
 
       <CardSection>
           <Row>
-        <Button
-          Button small rounded success
-          style={{ margin: 20, padding: 100 }}
-          onPress={() => Linking.openURL(url)}
-        >
-             <Text>Purchase Products</Text>
-         </Button>
-       </Row>
+            {btn}
+          </Row>
       </CardSection>
 
     </Card>

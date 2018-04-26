@@ -8,8 +8,7 @@ class Addproduct extends Component {
     name: '',
     img_url: '',
     description: '',
-    price: '',
-    url: ''
+    price: ''
   }
   render() {
     return (
@@ -48,14 +47,7 @@ class Addproduct extends Component {
                 }}
               />
             </Item>
-            <Item stackedLabel last>
-              <Label>Product Page Url (Optional)</Label>
-              <Input
-                onChangeText={(data) => {
-                  this.setState({ url: data });
-                }}
-              />
-            </Item>
+          
             <Button
               Button block success
               onPress={() => { this.addproduct(); }}
