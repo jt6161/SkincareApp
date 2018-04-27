@@ -4,7 +4,6 @@ import { Button, Row } from 'native-base';
 import Card from './Card';
 import CardSection from './CardSection';
 
-
 const ProductDetail = ({ product }) => {
   const { name, img_url, description, price, url } = product;
   const {
@@ -14,17 +13,19 @@ const ProductDetail = ({ product }) => {
     imageStyle
   } = styles;
 
-  const btn = (url ? (<Button
+  const btn = (url ? (
+    <Button
     Button small rounded success
     style={{ margin: 20, padding: 100 }}
     onPress={() => Linking.openURL(url)}
-  >
-       <Text>Purchase Products</Text>
-   </Button>) : (<Button
+    >
+      <Text>Purchase Products</Text>
+    </Button>) : (
+    <Button
      Button small rounded disabled
      style={{ margin: 20, padding: 100 }}
-   >
-        <Text>Coming Soon</Text>
+    >
+      <Text>Coming Soon</Text>
     </Button>));
 
   return (
@@ -55,11 +56,10 @@ const ProductDetail = ({ product }) => {
       </CardSection>
 
       <CardSection>
-          <Row>
-            {btn}
-          </Row>
+        <Row>
+          {btn}
+        </Row>
       </CardSection>
-
     </Card>
   );
 };
@@ -82,5 +82,4 @@ const styles = {
     width: null
   }
 };
-
 export default ProductDetail;

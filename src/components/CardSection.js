@@ -6,7 +6,6 @@ const CardSection = (props) => (
       {props.children}
     </View>
   );
-
 const styles = {
   containerStyle: {
     borderBottomWidth: 1,
@@ -18,5 +17,4 @@ const styles = {
     position: 'relative'
   }
 };
-
 export default CardSection;

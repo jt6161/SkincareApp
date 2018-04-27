@@ -47,29 +47,25 @@ class Addproduct extends Component {
                 }}
               />
             </Item>
-          
             <Button
               Button block success
               onPress={() => { this.addproduct(); }}
             >
             <Text>Submit New Product</Text>
-          </Button>
+            </Button>
           </Form>
         </Content>
       </Container>
     );
   }
-
   addproduct() {
     axios.post('http://localhost:8000/products', this.state).then((res) => {
-      console.log(res);
       if (res.data.success === true) {
           Actions.Products(this.state);
       } else {
       console.log('Add product error');
       }
-  });
-}
-
+    });
+  }
 }
 export default Addproduct;

@@ -4,7 +4,9 @@ import axios from 'axios';
 import ProductDetail from './ProductDetail';
 
 class ProductList extends Component {
-  state = { products: [] };
+  state = {
+    products: []
+  }
 
   componentDidMount() {
     axios.get('http://localhost:8000/products')
@@ -16,7 +18,7 @@ class ProductList extends Component {
       <ProductDetail key={product.name} product={product} />
     );
   }
-
+  
   render() {
     return (
       <ScrollView>
@@ -25,5 +27,4 @@ class ProductList extends Component {
     );
   }
 }
-
 export default ProductList;

@@ -8,6 +8,7 @@ class Login extends Component {
     username: '',
     password: ''
   }
+
   render() {
     return (
       <Container>
@@ -41,19 +42,15 @@ class Login extends Component {
       </Container>
     );
   }
-
   login() {
     axios.post('http://localhost:8000/admin/login', this.state).then((res) => {
-      console.log(res);
       if (res.data.success === true) {
         console.log('success');
          Actions.Addproduct(this.state);
-      } else {
-      console.log('Login error');
-      }
+        } else {
+        console.log('Login error');
+        }
     });
   }
-
 }
-
 export default Login;

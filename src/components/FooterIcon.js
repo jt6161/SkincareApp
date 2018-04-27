@@ -6,8 +6,8 @@ import { Actions } from 'react-native-router-flux';
 export default class FooterIcon extends Component {
   render() {
     return (
-<View>
-  <Footer>
+      <View>
+        <Footer>
           <Left>
             <Text
               style={{ color: '#ab8321', fontSize: 14, fontWeight: 'bold', margin: 10
@@ -32,8 +32,8 @@ export default class FooterIcon extends Component {
               Home
             </Text>
           </Right>
-  </Footer>
-</View>
+        </Footer>
+      </View>
     );
   }
 }
