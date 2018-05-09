@@ -1,8 +1,8 @@
 import React from 'react';
 import { Text, View, Image, Linking } from 'react-native';
-import { Button, Row } from 'native-base';
-import Card from './Card';
-import CardSection from './CardSection';
+import { Button, Row, Card, CardItem } from 'native-base';
+// import Card from './Card';
+// import CardItem from './CardItem';
 
 const ProductDetail = ({ product }) => {
   const { name, img_url, description, price, url } = product;
@@ -16,10 +16,10 @@ const ProductDetail = ({ product }) => {
   const btn = (url ? (
     <Button
     Button small rounded success
-    style={{ margin: 20, padding: 100 }}
+    style={{ margin: 10, padding: 100 }}
     onPress={() => Linking.openURL(url)}
     >
-      <Text>Purchase Products</Text>
+      <Text>Purchase Product</Text>
     </Button>) : (
     <Button
      Button small rounded disabled
@@ -30,36 +30,36 @@ const ProductDetail = ({ product }) => {
 
   return (
     <Card>
-      <CardSection>
+      <CardItem bordered>
         <View style={headerContentStyle}>
           <Text style={headerTextStyle}>{name}</Text>
         </View>
-      </CardSection>
+      </CardItem>
 
-      <CardSection>
+      <CardItem>
         <Image
           style={imageStyle}
           source={{ uri: img_url }}
         />
-      </CardSection>
+      </CardItem>
 
-      <CardSection>
+      <CardItem bordered>
         <View>
           <Text style={mainTextStyle}>{description}</Text>
         </View>
-      </CardSection>
+      </CardItem>
 
-      <CardSection>
+      <CardItem>
         <View>
           <Text style={headerTextStyle}>Price: ${price}</Text>
         </View>
-      </CardSection>
+      </CardItem>
 
-      <CardSection>
+      <CardItem>
         <Row>
           {btn}
         </Row>
-      </CardSection>
+      </CardItem>
     </Card>
   );
 };
