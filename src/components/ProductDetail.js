@@ -1,8 +1,6 @@
 import React from 'react';
 import { Text, View, Image, Linking } from 'react-native';
 import { Button, Row, Card, CardItem } from 'native-base';
-// import Card from './Card';
-// import CardItem from './CardItem';
 
 const ProductDetail = ({ product }) => {
   const { name, img_url, description, price, url } = product;
@@ -23,7 +21,7 @@ const ProductDetail = ({ product }) => {
     </Button>) : (
     <Button
      Button small rounded disabled
-     style={{ margin: 20, padding: 100 }}
+     style={{ margin: 10, padding: 100 }}
     >
       <Text>Coming Soon</Text>
     </Button>));
@@ -36,7 +34,7 @@ const ProductDetail = ({ product }) => {
         </View>
       </CardItem>
 
-      <CardItem>
+      <CardItem bordered>
         <Image
           style={imageStyle}
           source={{ uri: img_url }}
@@ -46,11 +44,7 @@ const ProductDetail = ({ product }) => {
       <CardItem bordered>
         <View>
           <Text style={mainTextStyle}>{description}</Text>
-        </View>
-      </CardItem>
 
-      <CardItem>
-        <View>
           <Text style={headerTextStyle}>Price: ${price}</Text>
         </View>
       </CardItem>
@@ -70,11 +64,12 @@ const styles = {
     justifyContent: 'space-around'
   },
   headerTextStyle: {
-    fontSize: 16,
+    fontSize: 17,
     fontWeight: 'bold'
   },
   mainTextStyle: {
-    fontSize: 14
+    fontSize: 14,
+    fontWeight: 'bold'
   },
   imageStyle: {
     height: 400,
