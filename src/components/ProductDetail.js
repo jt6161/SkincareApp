@@ -27,7 +27,8 @@ const ProductDetail = ({ product }) => {
     </Button>));
 
   return (
-    <Card>
+
+     <Card>
       <CardItem bordered>
         <View style={headerContentStyle}>
           <Text style={headerTextStyle}>{name}</Text>
@@ -65,15 +66,18 @@ const styles = {
   },
   headerTextStyle: {
     fontSize: 17,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color: '#ab8321'
   },
   mainTextStyle: {
     fontSize: 14,
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    color: '#ab8321'
   },
   imageStyle: {
     height: 400,
     flex: 1,
+    backgroundColor: 'black',
     width: null
   }
 };
