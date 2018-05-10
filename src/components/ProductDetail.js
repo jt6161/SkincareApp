@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, View, Image, Linking } from 'react-native';
-import { Button, Row, Card, CardItem } from 'native-base';
+import { View, Image, Linking } from 'react-native';
+import { Text, Button, Row, Card, CardItem } from 'native-base';
 
 const ProductDetail = ({ product }) => {
   const { name, img_url, description, price, url } = product;
@@ -13,15 +13,15 @@ const ProductDetail = ({ product }) => {
 
   const btn = (url ? (
     <Button
-      Button small rounded success
-      style={{ margin: 20, padding: 120 }}
+      block success
+      style={{ margin: 5, padding: 100 }}
       onPress={() => Linking.openURL(url)}
     >
-      <Text>Purchase</Text>
+      <Text>Add To Cart</Text>
     </Button>) : (
     <Button
-      Button small rounded disabled
-      style={{ margin: 20, padding: 100 }}
+      block disabled
+      style={{ margin: 5, padding: 100 }}
     >
       <Text>Coming Soon</Text>
     </Button>));
