@@ -27,7 +27,6 @@ const ProductDetail = ({ product }) => {
     </Button>));
 
   return (
-
      <Card>
       <CardItem bordered>
         <View style={headerContentStyle}>
@@ -45,7 +44,6 @@ const ProductDetail = ({ product }) => {
       <CardItem bordered>
         <View>
           <Text style={mainTextStyle}>{description}</Text>
-
           <Text style={headerTextStyle}>Price: ${price}</Text>
         </View>
       </CardItem>
