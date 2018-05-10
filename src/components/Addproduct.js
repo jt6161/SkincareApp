@@ -3,7 +3,7 @@ import { Button, Container, Content, Form, Item, Input, Label, Text } from 'nati
 import { Actions } from 'react-native-router-flux';
 import axios from 'axios';
 
-class Addproduct extends Component {
+export default class Addproduct extends Component {
   state = {
     name: '',
     img_url: '',
@@ -68,4 +68,3 @@ class Addproduct extends Component {
     });
   }
 }
-export default Addproduct;

@@ -38,7 +38,7 @@ export default class Home extends Component {
 
           <Row>
           <Button
-            Button small rounded success
+            block small success
             style={{ margin: 10 }}
             onPress={() => { Actions.Products(); }}
           >

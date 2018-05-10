@@ -12,9 +12,9 @@ export default class FooterIcon extends Component {
             <Text
               style={{ color: '#ab8321', fontSize: 14, fontWeight: 'bold', margin: 10
              }}
-              onPress={() => { Actions.Login(); }}
+              onPress={() => { Actions.Menu(); }}
             >
-              Admin
+              Menu
             </Text>
           </Left>
             <Body>
@@ -27,9 +27,9 @@ export default class FooterIcon extends Component {
             <Text
               style={{ color: '#ab8321', fontSize: 14, fontWeight: 'bold', margin: 10
              }}
-              onPress={() => { Actions.Home(); }}
+              onPress={() => { Actions.Login(); }}
             >
-              Home
+              Admin
             </Text>
           </Right>
         </Footer>
