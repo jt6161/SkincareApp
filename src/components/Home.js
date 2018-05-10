@@ -1,9 +1,9 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { ScrollView, View, Image, Linking } from 'react-native';
 import { Text, Button, Row } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
-export default class Home extends React.Component {
+export default class Home extends Component {
   render() {
     return (
       <ScrollView>
