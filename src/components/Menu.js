@@ -15,31 +15,36 @@ class Menu extends Component {
 
         <Content padder style={{ backgroundColor: '#000', padding: 20 }}>
           <Button
-            block info style={styles.mb15}
+            block small info
+            style={styles.mb15}
             onPress={() => { Actions.Home(); }}
           >
             <Text>Home</Text>
           </Button>
           <Button
-            block success style={styles.mb15}
+            block small success
+            style={styles.mb15}
             onPress={() => { Actions.Products(); }}
           >
             <Text>Products</Text>
           </Button>
           <Button
-            block primary style={styles.mb15}
+            block small primary
+            style={styles.mb15}
             // onPress={() => { Actions.About(); }}
           >
             <Text>About</Text>
           </Button>
           <Button
-            block warning style={styles.mb15}
+            block small warning
+            style={styles.mb15}
             // onPress={() => { Actions.Contact(); }}
           >
             <Text>Contact</Text>
           </Button>
           <Button
-            block danger style={styles.mb15}
+            block small danger
+            style={styles.mb15}
             onPress={() => { Actions.Login(); }}
           >
             <Text>Admin</Text>
