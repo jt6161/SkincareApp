@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Image, Linking } from 'react-native';
-import { Text, Button, Row, Card, CardItem } from 'native-base';
+import { Text, Button, Card, CardItem } from 'native-base';
 
 const ProductDetail = ({ product }) => {
   const { name, img_url, description, price, url } = product;
