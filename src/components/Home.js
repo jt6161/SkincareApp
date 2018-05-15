@@ -27,13 +27,12 @@ export default class Home extends Component {
           </Text>
           <Text style={styles.textStyle2}>
             From Infused Body Butter to CBD Soaps,
-            we specialize in Natural and Organic, Hand-Crafted
-            Skincare for all Skin Types.
-            Our soothing all-natural ingredients can improve several
-            skin conditions. 50 percent of our proceeds go directly
-            back into Start Living Recovery Home. 420 Skincare products
-            will make you feel good inside and out! For more information
-            please visit our website.
+            we specialize in Natural, Organic, Hand-Crafted
+            Skincare for all Skin Types. Our soothing all natural
+            ingredients can improve several skin conditions. 50 percent of
+            our proceeds go directly to nonprofit Start Living Recovery Home.
+            420 Skincare products will make you feel good inside and out!
+            For more information please visit our website.
           </Text>
 
           <Row>
