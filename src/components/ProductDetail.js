@@ -14,10 +14,10 @@ const ProductDetail = ({ product }) => {
   const btn = (url ? (
     <Button
       block success
-      style={{ margin: 5, padding: 100 }}
+      style={{ margin: 15, padding: 100 }}
       onPress={() => Linking.openURL(url)}
     >
-      <Text>Add To Cart</Text>
+      <Text>Purchase</Text>
     </Button>) : (
     <Button
       block disabled
@@ -49,9 +49,9 @@ const ProductDetail = ({ product }) => {
       </CardItem>
 
       <CardItem>
-        <Row>
+        <View>
           {btn}
-        </Row>
+        </View>
       </CardItem>
     </Card>
   );
