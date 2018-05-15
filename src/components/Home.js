@@ -9,7 +9,7 @@ export default class Home extends Component {
       <ScrollView>
         <View style={styles.viewStyle}>
           <Image
-            source={{ uri: 'https://static.wixstatic.com/media/dbda37_b4905467220149a392ae67875a217abf~mv2.png/v1/fill/w_381,h_132,al_c,usm_0.66_1.00_0.01/dbda37_b4905467220149a392ae67875a217abf~mv2.png' }}
+            source={require('./420skincare_logo.png')}
             style={{ width: 160, height: 60, padding: 10 }}
           />
           <Text style={styles.textStyle}>Cannabis Infused Luxury Skincare
@@ -29,9 +29,10 @@ export default class Home extends Component {
             From Infused Body Butter to CBD Soaps,
             we specialize in Natural, Organic, Hand-Crafted
             Skincare for all Skin Types. Our soothing all natural
-            ingredients can improve several skin conditions. 50 percent of
-            our proceeds go directly to nonprofit Start Living Recovery Home.
-            420 Skincare products will make you feel good inside and out!
+            ingredients can improve several skin conditions. 50% of
+            our proceeds from this app go directly to the nonprofit
+            Start Living Recovery Home. 420 Skincare products will
+            make you feel good inside and out!
             For more information please visit our website.
           </Text>
 
