@@ -34,7 +34,7 @@ class Menu extends Component {
           <Button
             block small primary
             style={styles.mb15}
-            // onPress={() => { Actions.About(); }}
+            onPress={() => { Actions.About(); }}
           >
             <Text>About 420 Skincare</Text>
           </Button>
