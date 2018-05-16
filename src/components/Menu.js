@@ -12,11 +12,10 @@ class Menu extends Component {
   render() {
     return (
       <Container style={styles.container}>
-
         <Content padder style={{ backgroundColor: '#000', padding: 20 }}>
           <Image
             source={require('./420skincare_logo.png')}
-            style={{ width: 150, height: 60 }}
+            style={{ width: 150, height: 100, alignSelf: 'center' }}
           />
           <Button
             block small info
@@ -61,7 +60,7 @@ class Menu extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#FFF'
+    backgroundColor: '#000'
   },
   mb15: {
     marginBottom: 20

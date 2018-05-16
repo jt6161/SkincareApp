@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Button, Container, Content, Form, Item, Input, Label, Text } from 'native-base';
+import { Button, Container, Content, Form, Item, Input, Label, Text, Header } from 'native-base';
+import { Image } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import axios from 'axios';
 
@@ -11,6 +12,12 @@ export default class Login extends Component {
   render() {
     return (
       <Container>
+        <Header>
+          <Image
+            source={require('./420skincare_logo.png')}
+            style={{ width: 100, height: 100, alignSelf: 'center' }}
+          />
+        </Header>
         <Content padding>
           <Form>
             <Item stackedLabel>
