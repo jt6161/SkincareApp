@@ -1,6 +1,6 @@
 import React from 'react';
 import { View, Image, Linking } from 'react-native';
-import { Text, Button, Card, CardItem } from 'native-base';
+import { Text, Body, Button, Card, CardItem, Left, Thumbnail } from 'native-base';
 
 const ProductDetail = ({ product }) => {
   const { name, img_url, description, price, url } = product;
@@ -29,9 +29,14 @@ const ProductDetail = ({ product }) => {
   return (
      <Card>
       <CardItem bordered>
-        <View style={headerContentStyle}>
-          <Text style={headerTextStyle}>{name}</Text>
-        </View>
+        <Left>
+          <Thumbnail source={require('./420skincare_logo.png')} />
+          <Body>
+            <View style={headerContentStyle}>
+              <Text style={headerTextStyle}>{name}</Text>
+            </View>
+          </Body>
+        </Left>
       </CardItem>
 
       <CardItem>
