@@ -60,12 +60,14 @@ const ProductDetail = ({ product }) => {
 const styles = {
   headerContentStyle: {
     flexDirection: 'column',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   headerTextStyle: {
     fontSize: 17,
     fontWeight: 'bold',
-    color: '#ab8321'
+    color: '#ab8321',
+    alignItems: 'center'
   },
   mainTextStyle: {
     fontSize: 14,

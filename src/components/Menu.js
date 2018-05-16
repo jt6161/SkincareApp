@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { StyleSheet } from 'react-native';
+import { StyleSheet, Image } from 'react-native';
 import {
   Container,
   Content,
@@ -14,6 +14,10 @@ class Menu extends Component {
       <Container style={styles.container}>
 
         <Content padder style={{ backgroundColor: '#000', padding: 20 }}>
+          <Image
+            source={require('./420skincare_logo.png')}
+            style={{ width: 150, height: 60 }}
+          />
           <Button
             block small info
             style={styles.mb15}
@@ -26,28 +30,28 @@ class Menu extends Component {
             style={styles.mb15}
             onPress={() => { Actions.Products(); }}
           >
-            <Text>Products</Text>
+            <Text>CBD Products</Text>
           </Button>
           <Button
             block small primary
             style={styles.mb15}
             // onPress={() => { Actions.About(); }}
           >
-            <Text>About</Text>
+            <Text>About 420 Skincare</Text>
           </Button>
           <Button
             block small warning
             style={styles.mb15}
             // onPress={() => { Actions.Contact(); }}
           >
-            <Text>Contact</Text>
+            <Text>Contact Us</Text>
           </Button>
           <Button
             block small danger
             style={styles.mb15}
             onPress={() => { Actions.Login(); }}
           >
-            <Text>Admin</Text>
+            <Text>Admin Login</Text>
           </Button>
         </Content>
       </Container>
