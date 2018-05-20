@@ -1,23 +1,66 @@
 import React, { Component } from 'react';
-import { Container, Header, Left, Body, Title, Right, Content, Textarea, Form } from 'native-base';
+import { Image, StyleSheet } from 'react-native';
+import { Container, Header, Button, Text, Content, Textarea, Form } from 'native-base';
 
 export default class Testimonials extends Component {
   render() {
     return (
       <Container>
         <Header>
-          <Left />
-          <Body>
-            <Title>Customer Testimonials</Title>
-          </Body>
-          <Right />
+          <Image
+            source={require('./420skincare_logo.png')}
+            style={{ width: 100, height: 100, alignSelf: 'center' }}
+          />
         </Header>
         <Content padder>
+          <Text style={styles.textStyle}>
+            I use 420 Skincare lotion for my skin condition.
+            I don't like to use steroids on my skin and love your all
+            natural lotions and soaps. They make my skin feel so much better. </Text>
+            <Text style={styles.textStyle}>
+            - Jenn</Text>
           <Form>
-            <Textarea rowSpan={5} bordered placeholder="Textarea" />
+            <Textarea
+              rowSpan={5}
+              style={styles.textStyle2}
+              bordered placeholder="Tell us your 420 Skincare experience"
+            />
+            <Textarea
+              rowSpan={1}
+              style={styles.textStyle2}
+              bordered placeholder="First name"
+            />
           </Form>
+          <Button
+            block small primary
+            style={styles.mb15}
+            // onPress={() => { Actions.Home(); }}
+          >
+            <Text>Submit</Text>
+          </Button>
         </Content>
       </Container>
     );
   }
 }
+
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#000'
+  },
+  mb15: {
+    marginBottom: 20,
+    marginTop: 5
+  },
+  textStyle: {
+    fontSize: 16,
+    padding: 5,
+    fontWeight: 'bold',
+    color: '#ab8321'
+  },
+  textStyle2: {
+    fontSize: 14,
+    padding: 5,
+    fontWeight: 'bold'
+  }
+});
