@@ -69,7 +69,7 @@ const styles = {
     alignItems: 'center'
   },
   headerTextStyle: {
-    fontSize: 17,
+    fontSize: 20,
     fontWeight: 'bold',
     color: '#ab8321',
     alignItems: 'center'
