@@ -25,7 +25,6 @@ export default class About extends Component {
                   source={{ uri: 'https://static.wixstatic.com/media/7026a3_b4dd181ea98f4bfcb3bb4d0c4d857942~mv2.jpg' }}
                   style={{ height: 360, width: 340, flex: 1 }}
                 />
-
                 <Text style={styles.textStyle2}>
                   When Marvina Thomas started 420 Skincare she knew that she
                   wanted to build an operation that gave back
@@ -46,6 +45,7 @@ export default class About extends Component {
     );
   }
 }
+
 const styles = {
   textStyle: {
     fontSize: 15,

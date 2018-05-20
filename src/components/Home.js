@@ -33,7 +33,6 @@ export default class Home extends Component {
             our proceeds from this app go directly to the nonprofit
             Start Living Recovery Home. 420 Skincare products will
             make you feel good inside and out!
-            For more information please visit our website.
           </Text>
 
           <Row>

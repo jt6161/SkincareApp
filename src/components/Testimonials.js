@@ -18,17 +18,12 @@ export default class Testimonials extends Component {
             I don't like to use steroids on my skin and love your all
             natural lotions and soaps. They make my skin feel so much better. </Text>
             <Text style={styles.textStyle}>
-            - Jenn</Text>
-          <Form>
+            Jenn</Text>
+          <Form paddingTop={80}>
             <Textarea
-              rowSpan={5}
+              rowSpan={7}
               style={styles.textStyle2}
               bordered placeholder="Tell us your 420 Skincare experience"
-            />
-            <Textarea
-              rowSpan={1}
-              style={styles.textStyle2}
-              bordered placeholder="First name"
             />
           </Form>
           <Button
@@ -60,7 +55,6 @@ const styles = StyleSheet.create({
   },
   textStyle2: {
     fontSize: 14,
-    padding: 5,
-    fontWeight: 'bold'
+    padding: 5
   }
 });
