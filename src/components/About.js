@@ -13,9 +13,9 @@ export default class About extends Component {
               <Left>
                 <Thumbnail source={require('./420skincare_logo.png')} />
                 <Body>
-                  <Text style={styles.textStyle}>Marvina Thomas
+                  <Text style={styles.textStyle}>Marvina Thomas,
                   CEO and founder of 420 Skincare,
-                  leader of Women Grow Phoenix.</Text>
+                  Leader of Women Grow - Phoenix Chapter</Text>
                 </Body>
               </Left>
             </CardItem>

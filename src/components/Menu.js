@@ -38,13 +38,15 @@ class Menu extends Component {
           >
             <Text>About 420 Skincare</Text>
           </Button>
+
           <Button
             block small warning
             style={styles.mb15}
-            // onPress={() => { Actions.Contact(); }}
+            onPress={() => { Actions.Testimonials(); }}
           >
-            <Text>Contact Us</Text>
+            <Text>Customer Testimonials</Text>
           </Button>
+
           <Button
             block small danger
             style={styles.mb15}
