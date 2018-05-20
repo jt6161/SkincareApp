@@ -1,6 +1,14 @@
 import React, { Component } from 'react';
 import { Image, StyleSheet } from 'react-native';
-import { Container, Header, Button, Text, Content, Textarea, Form } from 'native-base';
+import {
+  Container,
+  Header,
+  Button,
+  Text,
+  Content,
+  Textarea,
+  Form
+} from 'native-base';
 
 export default class Testimonials extends Component {
   render() {

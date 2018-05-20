@@ -10,17 +10,17 @@ export default class Home extends Component {
         <View style={styles.viewStyle}>
           <Image
             source={require('./420skincare_logo.png')}
-            style={{ width: 160, height: 60, padding: 10 }}
+            style={{ width: 200, height: 80, alignSelf: 'center' }}
           />
           <Text style={styles.textStyle}>Cannabis Infused Luxury Skincare
           </Text>
 
           <Image
             source={{ uri: 'https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/31225138_10156315166967236_1786995132902408192_n.jpg?_nc_cat=0&oh=2adf63a7482c0614dc4a84993d2f03eb&oe=5B50D150' }}
-            style={{ width: 315, height: 180, margin: 5 }}
+            style={{ width: 315, height: 180, alignSelf: 'center' }}
           />
           <Text
-              style={{ color: '#ab8321', fontSize: 12, fontWeight: 'bold' }}
+              style={{ color: '#ab8321', fontSize: 13, padding: 3, fontWeight: 'bold' }}
               onPress={() => Linking.openURL('http://www.420-Skincare.com')}
           >
             420-Skincare.com
@@ -36,13 +36,13 @@ export default class Home extends Component {
           </Text>
 
           <Row>
-          <Button
-            block small success
-            style={{ margin: 10 }}
-            onPress={() => { Actions.Products(); }}
-          >
-          <Text>420 Skincare Products</Text>
-          </Button>
+            <Button
+              block small success
+              style={styles.mb15}
+              onPress={() => { Actions.Products(); }}
+            >
+              <Text>420 Skincare Products</Text>
+            </Button>
           </Row>
         </View>
       </ScrollView>
@@ -65,9 +65,12 @@ export default class Home extends Component {
      color: '#ab8321'
    },
    textStyle2: {
-     fontSize: 14,
+     fontSize: 15,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
+   },
+   mb15: {
+     marginBottom: 20
    }
  };

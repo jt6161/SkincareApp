@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { Image } from 'react-native';
 import { Container, Content, Card, CardItem, Thumbnail, Text, Left, Body } from 'native-base';
-// import { Actions } from 'react-native-router-flux';
 
 export default class About extends Component {
   render() {
@@ -15,16 +14,20 @@ export default class About extends Component {
                 <Body>
                   <Text style={styles.textStyle}>Marvina Thomas,
                   CEO and founder of 420 Skincare,
-                  Leader of Women Grow - Phoenix Chapter</Text>
+                  Leader of Women Grow Phoenix Chapter</Text>
                 </Body>
               </Left>
             </CardItem>
-            <CardItem>
+            <CardItem bordered>
               <Body>
                 <Image
                   source={{ uri: 'https://static.wixstatic.com/media/7026a3_b4dd181ea98f4bfcb3bb4d0c4d857942~mv2.jpg' }}
-                  style={{ height: 360, width: 340, flex: 1 }}
+                  style={{ height: 490, width: 350, flex: 1, alignSelf: 'center' }}
                 />
+              </Body>
+            </CardItem>
+            <CardItem bordered>
+              <Body>
                 <Text style={styles.textStyle2}>
                   When Marvina Thomas started 420 Skincare she knew that she
                   wanted to build an operation that gave back
@@ -37,6 +40,10 @@ export default class About extends Component {
                   The program will allow 420 Skincare to help purchase MMJ cards
                   to assist many more men and women to get healthier.
                 </Text>
+                <Image
+                  source={require('./420skincare_logo.png')}
+                  style={{ width: 300, height: 200, alignSelf: 'center' }}
+                />
               </Body>
             </CardItem>
           </Card>
@@ -48,7 +55,7 @@ export default class About extends Component {
 
 const styles = {
   textStyle: {
-    fontSize: 15,
+    fontSize: 17,
     padding: 5,
     fontWeight: 'bold',
     color: '#ab8321'

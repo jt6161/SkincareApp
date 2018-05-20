@@ -8,14 +8,14 @@ import {
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
-class Menu extends Component {
+export default class Menu extends Component {
   render() {
     return (
       <Container style={styles.container}>
         <Content padder style={{ backgroundColor: '#000', padding: 20 }}>
           <Image
             source={require('./420skincare_logo.png')}
-            style={{ width: 150, height: 100, alignSelf: 'center' }}
+            style={{ width: 300, height: 200, alignSelf: 'center' }}
           />
           <Button
             block small info
@@ -68,5 +68,3 @@ const styles = StyleSheet.create({
     marginBottom: 20
   },
 });
-
-export default Menu;
