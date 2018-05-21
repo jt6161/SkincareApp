@@ -42,7 +42,7 @@ export default class About extends Component {
                 </Text>
                 <Image
                   source={require('./420skincare_logo.png')}
-                  style={{ width: 300, height: 200, alignSelf: 'center' }}
+                  style={{ width: 200, height: 150, alignSelf: 'center' }}
                 />
               </Body>
             </CardItem>

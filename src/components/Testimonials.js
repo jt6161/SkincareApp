@@ -22,7 +22,7 @@ export default class Testimonials extends Component {
             style={{ width: 100, height: 100, alignSelf: 'center' }}
           />
         </Header>
-        <Card style={{ flex: 1 }}>
+        <Card style={{ flex: 0 }}>
           <CardItem bordered>
             <Content padder>
               <Text style={styles.textStyle}>
