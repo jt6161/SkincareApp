@@ -6,6 +6,8 @@ import {
   Button,
   Text,
   Content,
+  Card,
+  CardItem,
   Textarea,
   Form
 } from 'native-base';
@@ -20,43 +22,46 @@ export default class Testimonials extends Component {
             style={{ width: 100, height: 100, alignSelf: 'center' }}
           />
         </Header>
-        <Content padder>
-          <Text style={styles.textStyle}>
-            I use 420 Skincare lotion for my skin condition.
-            I don't like to use steroids on my skin and love your all
-            natural lotions and soaps. They make my skin feel so much better. </Text>
-            <Text style={styles.textStyle}>
-            Jenn</Text>
-          <Form paddingTop={80}>
-            <Textarea
-              rowSpan={7}
-              style={styles.textStyle2}
-              bordered placeholder="Tell us your 420 Skincare experience"
-            />
-          </Form>
-          <Button
-            block small primary
-            style={styles.mb15}
-            // onPress={() => { Actions.Home(); }}
-          >
-            <Text>Submit</Text>
-          </Button>
-        </Content>
+        <Card style={{ flex: 1 }}>
+          <CardItem bordered>
+            <Content padder>
+              <Text style={styles.textStyle}>
+                I love using 420 Skincare lotion for my skin condition.
+                I don't like to use steroids on my skin and love your all
+                natural lotions and soaps. The cbd lotion makes my skin feel so much better. Jenn
+              </Text>
+            </Content>
+          </CardItem>
+          <CardItem>
+            <Content padder style={{ backgroundColor: '#FFF', padding: 5 }}>
+            <Form>
+              <Textarea
+                rowSpan={8}
+                style={styles.textStyle2}
+                bordered placeholder="Share your 420 Skincare experience"
+              />
+            </Form>
+              <Button
+                block small primary
+                style={styles.mb15}
+                // onPress={() => { Actions.Home(); }}
+              >
+                <Text>Submit</Text>
+              </Button>
+            </Content>
+          </CardItem>
+        </Card>
       </Container>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    backgroundColor: '#000'
-  },
   mb15: {
-    marginBottom: 20,
-    marginTop: 5
+    marginBottom: 5
   },
   textStyle: {
-    fontSize: 16,
+    fontSize: 17,
     padding: 5,
     fontWeight: 'bold',
     color: '#ab8321'
