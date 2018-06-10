@@ -64,7 +64,7 @@ export default class Testimonials extends Component {
   addtestimonial() {
     axios.post('http://localhost:8000/testimonials', this.state).then((res) => {
       if (res.data.success === true) {
-          Actions.Testimonials(this.state);
+        Actions.Testimonials(this.state);
       } else {
       console.log('Add testimonial error');
       }
