@@ -9,7 +9,6 @@ import {
   Card,
   CardItem,
   Textarea,
-  Input,
   Form
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
