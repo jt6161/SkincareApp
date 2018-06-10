@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import axios from 'axios';
-// import TestimonialDetail from './TestimonialDetail';
 
 class TestimonialList extends Component {
   state = {
@@ -23,6 +22,5 @@ class TestimonialList extends Component {
       </View>
     );
   }
-
 }
 export default TestimonialList;

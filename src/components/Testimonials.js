@@ -11,7 +11,7 @@ import {
   Textarea,
   Form
 } from 'native-base';
-import TestimonialList from './TestimonialList';
+// import TestimonialList from './TestimonialList';
 
 export default class Testimonials extends Component {
   render() {
@@ -27,7 +27,7 @@ export default class Testimonials extends Component {
           <CardItem bordered>
             <Content padder>
               <Text style={styles.textStyle}>
-                <TestimonialList />
+                This is a customer testimonial.
               </Text>
             </Content>
           </CardItem>
