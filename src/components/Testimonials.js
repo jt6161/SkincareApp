@@ -26,7 +26,7 @@ export default class Testimonials extends Component {
         <Card style={{ flex: 0.5 }}>
           <CardItem bordered>
             <Content padder>
-          <TestimonialScroll />
+            <TestimonialScroll />
             </Content>
           </CardItem>
 
