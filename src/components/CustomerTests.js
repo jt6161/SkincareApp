@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { Image, StyleSheet } from 'react-native';
+import TestimonialList from './TestimonialList';
 import {
   Container,
   Header,
@@ -11,7 +12,6 @@ import {
   Textarea,
   Form
 } from 'native-base';
-import TestimonialList from './TestimonialList';
 
 export default class Testimonials extends Component {
   render() {
