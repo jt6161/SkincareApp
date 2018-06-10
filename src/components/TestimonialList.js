@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import axios from 'axios';
+import TestimonialDetail from './TestimonialDetail';
 
 class TestimonialList extends Component {
   state = {
@@ -13,7 +14,9 @@ class TestimonialList extends Component {
   }
 
   renderTestimonials() {
-    return this.state.testimonials;
+    return this.state.testimonials.map(testimonial =>
+<TestimonialDetail key={testimonial.review} testimonial={testimonial} />
+    );
   }
   render() {
     return (
