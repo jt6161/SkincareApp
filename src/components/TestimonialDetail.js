@@ -22,7 +22,8 @@ const styles = {
     fontSize: 15,
     fontWeight: 'bold',
     color: '#ab8321',
-    alignItems: 'center'
+    alignItems: 'center',
+    padding: 5
   }
 };
 export default TestimonialDetail;

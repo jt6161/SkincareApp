@@ -9,11 +9,17 @@ import {
   Card,
   CardItem,
   Textarea,
+  Input,
   Form
 } from 'native-base';
+import { Actions } from 'react-native-router-flux';
+import axios from 'axios';
 import TestimonialScroll from './TestimonialScroll';
 
 export default class Testimonials extends Component {
+  state = {
+    review: ''
+  }
   render() {
     return (
       <Container>
@@ -25,24 +31,26 @@ export default class Testimonials extends Component {
         </Header>
         <Card style={{ flex: 0.5 }}>
           <CardItem bordered>
-            <Content padder>
+            <Content padding>
             <TestimonialScroll />
             </Content>
           </CardItem>
-
           <CardItem>
             <Content padder style={{ backgroundColor: '#FFF', padding: 5 }}>
             <Form>
               <Textarea
-                rowSpan={6}
+                rowSpan={5}
                 style={styles.textStyle2}
                 bordered placeholder="Share your 420 Skincare experience."
+                onChangeText={(data) => {
+                  this.setState({ review: data });
+                }}
               />
             </Form>
               <Button
                 block small primary
                 style={styles.mb15}
-                // onPress={() => { Actions.Home(); }}
+                onPress={() => { this.addtestimonial(); }}
               >
                 <Text>Submit</Text>
               </Button>
@@ -52,6 +60,18 @@ export default class Testimonials extends Component {
       </Container>
     );
   }
+
+  addtestimonial() {
+    axios.post('http://localhost:8000/testimonials', this.state).then((res) => {
+      if (res.data.success === true) {
+          Actions.Testimonials(this.state);
+      } else {
+      console.log('Add testimonial error');
+      }
+    }
+  );
+  }
+
 }
 
 const styles = StyleSheet.create({
