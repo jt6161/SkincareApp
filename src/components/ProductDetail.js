@@ -1,8 +1,6 @@
 import React from 'react';
-import { Text, View, Image, Linking } from 'react-native';
-import { Button, Row } from 'native-base';
-import Card from './Card';
-import CardSection from './CardSection';
+import { View, Image, Linking } from 'react-native';
+import { Text, Body, Button, Card, CardItem, Left, Thumbnail } from 'native-base';
 
 const ProductDetail = ({ product }) => {
   const { name, img_url, description, price, url } = product;
@@ -15,51 +13,51 @@ const ProductDetail = ({ product }) => {
 
   const btn = (url ? (
     <Button
-    Button small rounded success
-    style={{ margin: 20, padding: 100 }}
-    onPress={() => Linking.openURL(url)}
+      block success
+      style={{ margin: 15, padding: 100 }}
+      onPress={() => Linking.openURL(url)}
     >
-      <Text>Purchase Products</Text>
+      <Text>Purchase</Text>
     </Button>) : (
     <Button
-     Button small rounded disabled
-     style={{ margin: 20, padding: 100 }}
+      block disabled
+      style={{ margin: 5, padding: 100 }}
     >
       <Text>Coming Soon</Text>
     </Button>));
 
   return (
-    <Card>
-      <CardSection>
-        <View style={headerContentStyle}>
-          <Text style={headerTextStyle}>{name}</Text>
-        </View>
-      </CardSection>
+     <Card>
+      <CardItem bordered>
+        <Left>
+          <Thumbnail source={require('./420skincare_logo.png')} />
+          <Body>
+            <View style={headerContentStyle}>
+              <Text style={headerTextStyle}>{name}</Text>
+            </View>
+          </Body>
+        </Left>
+      </CardItem>
 
-      <CardSection>
+      <CardItem>
         <Image
           style={imageStyle}
           source={{ uri: img_url }}
         />
-      </CardSection>
+      </CardItem>
 
-      <CardSection>
+      <CardItem bordered>
         <View>
           <Text style={mainTextStyle}>{description}</Text>
-        </View>
-      </CardSection>
-
-      <CardSection>
-        <View>
           <Text style={headerTextStyle}>Price: ${price}</Text>
         </View>
-      </CardSection>
+      </CardItem>
 
-      <CardSection>
-        <Row>
+      <CardItem>
+        <View>
           {btn}
-        </Row>
-      </CardSection>
+        </View>
+      </CardItem>
     </Card>
   );
 };
@@ -67,18 +65,24 @@ const ProductDetail = ({ product }) => {
 const styles = {
   headerContentStyle: {
     flexDirection: 'column',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    alignItems: 'center'
   },
   headerTextStyle: {
-    fontSize: 16,
-    fontWeight: 'bold'
+    fontSize: 20,
+    fontWeight: 'bold',
+    color: '#ab8321',
+    alignItems: 'center'
   },
   mainTextStyle: {
-    fontSize: 14
+    fontSize: 14,
+    fontWeight: 'bold',
+    color: '#ab8321'
   },
   imageStyle: {
     height: 400,
     flex: 1,
+    backgroundColor: 'black',
     width: null
   }
 };
