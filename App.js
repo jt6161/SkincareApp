@@ -9,6 +9,7 @@ import Testimonials from './src/components/Testimonials';
 import About from './src/components/About';
 import Login from './src/components/Login';
 import Addproduct from './src/components/Addproduct';
+import AddTestimonial from './src/components/AddTestimonial';
 
 export default class App extends Component {
   render() {
@@ -23,7 +24,8 @@ export default class App extends Component {
               <Scene key="Testimonials" component={Testimonials} title="Testimonials" />
               <Scene key="Login" component={Login} title="Admin Login" />
               <Scene key="Addproduct" component={Addproduct} title="Add New Product" />
-              </Scene>
+              <Scene key="AddTestimonial" component={AddTestimonial} title="Add New Testimonial" />
+            </Scene>
           </Router>
         <FooterIcon />
       </View>

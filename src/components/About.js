@@ -55,7 +55,7 @@ export default class About extends Component {
 
 const styles = {
   textStyle: {
-    fontSize: 17,
+    fontSize: 16,
     padding: 5,
     fontWeight: 'bold',
     color: '#ab8321'
