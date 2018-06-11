@@ -32,7 +32,7 @@ export default class Addtestimonial extends Component {
         <Content padding>
           <Form>
             <Textarea
-              rowSpan={5}
+              rowSpan={7}
               style={styles.textStyle2}
               bordered placeholder="Share your 420 Skincare experience."
               onChangeText={(data) => {
@@ -40,8 +40,7 @@ export default class Addtestimonial extends Component {
               }}
             />
           </Form>
-          </Content>
-        </CardItem>
+
             <Button
               block small success
               style={styles.mb15}
@@ -49,6 +48,8 @@ export default class Addtestimonial extends Component {
             >
               <Text>Submit</Text>
             </Button>
+          </Content>
+        </CardItem>
           </Card>
       </Container>
     );
@@ -65,7 +66,7 @@ export default class Addtestimonial extends Component {
 }
 const styles = StyleSheet.create({
   mb15: {
-    marginBottom: 5
+    marginBottom: 3
   },
   textStyle: {
     fontSize: 17,
