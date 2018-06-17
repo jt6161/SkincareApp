@@ -21,10 +21,10 @@ export default class App extends Component {
               <Scene key="Products" component={Products} title="Products" />
               <Scene key="About" component={About} title="About" />
               <Scene key="Menu" component={Menu} title="Menu" />
-              <Scene key="Testimonials" component={Testimonials} title="Testimonials" />
+              <Scene key="Testimonials" component={Testimonials} title="Customer Testimonials" />
               <Scene key="Login" component={Login} title="Admin Login" />
               <Scene key="Addproduct" component={Addproduct} title="Add New Product" />
-              <Scene key="AddTestimonial" component={AddTestimonial} title="Add New Testimonial" />
+              <Scene key="AddTestimonial" component={AddTestimonial} title="Add Your Testimonial" />
             </Scene>
           </Router>
         <FooterIcon />

@@ -24,6 +24,7 @@ export default class Menu extends Component {
           >
             <Text>Home</Text>
           </Button>
+
           <Button
             block small success
             style={styles.mb15}
@@ -31,12 +32,20 @@ export default class Menu extends Component {
           >
             <Text>CBD Products</Text>
           </Button>
+
           <Button
             block small primary
             style={styles.mb15}
             onPress={() => { Actions.About(); }}
           >
             <Text>About 420 Skincare</Text>
+          </Button>
+          <Button
+            block small info
+            style={styles.mb15}
+            // onPress={() => { Actions.THCProducts(); }}
+          >
+            <Text>THC Products</Text>
           </Button>
 
           <Button
