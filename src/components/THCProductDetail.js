@@ -11,7 +11,6 @@ const THCProductDetail = ({ thcproduct }) => {
     imageStyle
   } = styles;
 
-
   return (
      <Card>
       <CardItem bordered>

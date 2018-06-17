@@ -22,7 +22,7 @@ class THCProductList extends Component {
   render() {
     return (
       <View>
-        {this.renderthcProducts()}
+        {this.renderTHCProducts()}
       </View>
     );
   }

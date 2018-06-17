@@ -43,7 +43,7 @@ export default class Menu extends Component {
           <Button
             block small info
             style={styles.mb15}
-            // onPress={() => { Actions.THCProducts(); }}
+            onPress={() => { Actions.THCProducts(); }}
           >
             <Text>THC Products</Text>
           </Button>
