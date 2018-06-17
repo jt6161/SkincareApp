@@ -12,6 +12,7 @@ const THCProductDetail = ({ thcproduct }) => {
   } = styles;
 
   return (
+
      <Card>
       <CardItem bordered>
         <Left>
@@ -23,21 +24,19 @@ const THCProductDetail = ({ thcproduct }) => {
           </Body>
         </Left>
       </CardItem>
-
       <CardItem>
         <Image
           style={imageStyle}
           source={{ uri: img_url }}
         />
       </CardItem>
-
       <CardItem bordered>
         <View>
           <Text style={mainTextStyle}>{description}</Text>
         </View>
       </CardItem>
-
     </Card>
+
   );
 };
 
@@ -56,12 +55,11 @@ const styles = {
   mainTextStyle: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#ab8321'
+    color: '#ab8321',
   },
   imageStyle: {
     height: 400,
     flex: 1,
-    backgroundColor: 'black',
     width: null
   }
 };
