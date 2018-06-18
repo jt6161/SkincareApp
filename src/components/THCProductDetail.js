@@ -6,8 +6,10 @@ import {
   Card,
   CardItem,
   Left,
-  Thumbnail
+  Thumbnail,
+  Button
 } from 'native-base';
+import { Actions } from 'react-native-router-flux';
 
 const THCProductDetail = ({ thcproduct }) => {
   const { name, img_url, description } = thcproduct;
@@ -42,6 +44,15 @@ const THCProductDetail = ({ thcproduct }) => {
           <Text style={mainTextStyle}>{description}</Text>
         </View>
       </CardItem>
+      <CardItem>
+        <Button
+          block warning
+          style={{ margin: 15, padding: 100 }}
+          onPress={() => { Actions.Dispensary(); }}
+        >
+          <Text>Dispensary</Text>
+        </Button>
+      </CardItem>
     </Card>
 
   );
@@ -56,13 +67,13 @@ const styles = {
   headerTextStyle: {
     fontSize: 20,
     fontWeight: 'bold',
-    color: '#ab8321',
+    // color: '#ab8321',
     alignItems: 'center'
   },
   mainTextStyle: {
     fontSize: 14,
     fontWeight: 'bold',
-    color: '#ab8321',
+    // color: '#ab8321'
   },
   imageStyle: {
     height: 400,

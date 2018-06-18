@@ -12,7 +12,7 @@ export default class Menu extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Content padder style={{ backgroundColor: '#000', padding: 20 }}>
+        <Content padder style={{ backgroundColor: '#000', padding: 10 }}>
           <Image
             source={require('./420skincare_logo.png')}
             style={{ width: 300, height: 200, alignSelf: 'center' }}
@@ -40,13 +40,6 @@ export default class Menu extends Component {
           >
             <Text>About 420 Skincare</Text>
           </Button>
-          <Button
-            block small info
-            style={styles.mb15}
-            onPress={() => { Actions.THCProducts(); }}
-          >
-            <Text>THC Products</Text>
-          </Button>
 
           <Button
             block small warning
@@ -57,12 +50,21 @@ export default class Menu extends Component {
           </Button>
 
           <Button
+            block small info
+            style={styles.mb15}
+            onPress={() => { Actions.THCProducts(); }}
+          >
+            <Text>THC Products</Text>
+          </Button>
+
+          <Button
             block small danger
             style={styles.mb15}
-            onPress={() => { Actions.Login(); }}
+            onPress={() => { Actions.Dispensary(); }}
           >
-            <Text>Admin Login</Text>
+            <Text>Dispensary List</Text>
           </Button>
+          
         </Content>
       </Container>
     );
