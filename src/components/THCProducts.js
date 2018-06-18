@@ -1,5 +1,5 @@
 import React from 'react';
-import { ScrollView, View, DeckSwiper } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import THCProductList from './THCProductList';
 
 export default class THCProducts extends React.Component {
@@ -8,7 +8,7 @@ export default class THCProducts extends React.Component {
       <View>
           <ScrollView>
           <THCProductList />
-         </ScrollView>      
+         </ScrollView>
       </View>
      );
   }

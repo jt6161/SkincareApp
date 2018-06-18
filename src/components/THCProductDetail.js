@@ -1,6 +1,13 @@
 import React from 'react';
 import { View, Image } from 'react-native';
-import { Text, Body, Card, CardItem, Left, Thumbnail } from 'native-base';
+import {
+  Text,
+  Body,
+  Card,
+  CardItem,
+  Left,
+  Thumbnail
+} from 'native-base';
 
 const THCProductDetail = ({ thcproduct }) => {
   const { name, img_url, description } = thcproduct;
