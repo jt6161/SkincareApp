@@ -22,7 +22,7 @@ export default class Dispensary extends Component {
           <Text
             style={styles.textStyle}
           >
-              Phoenix Dispensares
+            Phoenix Dispensares
           </Text>
 
           <Text
