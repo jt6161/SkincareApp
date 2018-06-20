@@ -7,7 +7,11 @@ import {
   Text,
   Content,
   Card,
-  CardItem
+  CardItem,
+  List,
+  ListItem,
+  Body,
+  Thumbnail
 } from 'native-base';
 // import { Actions } from 'react-native-router-flux';
 
@@ -24,7 +28,41 @@ export default class Cart extends Component {
         <Card style={{ flex: 1 }}>
           <CardItem bordered>
             <Content padding>
-              <Text>This is my Shopping cardItem</Text>
+              <List>
+                <ListItem>
+                  <Thumbnail
+                    square size={80}
+                    source={require('./420skincare_logo.png')}
+                  />
+                  <Body>
+                  />
+                  <Text>This is my Shopping Cart product</Text>
+                  <Text note>These is the details</Text>
+                  </Body>
+              </ListItem>
+              <ListItem>
+                <Thumbnail
+                  square size={80}
+                  source={require('./420skincare_logo.png')}
+                />
+                <Body>
+                />
+                <Text>This is my Shopping Cart product</Text>
+                <Text note>These is the details</Text>
+                </Body>
+            </ListItem>
+            <ListItem>
+              <Thumbnail
+                square size={80}
+                source={require('./420skincare_logo.png')}
+              />
+              <Body>
+              />
+              <Text>This is my Shopping Cart product</Text>
+              <Text note>These is the details</Text>
+              </Body>
+          </ListItem>
+              </List>
             </Content>
           </CardItem>
 
