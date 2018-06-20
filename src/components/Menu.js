@@ -20,9 +20,9 @@ export default class Menu extends Component {
           <Button
             block small info
             style={styles.mb15}
-            onPress={() => { Actions.Home(); }}
+            onPress={() => { Actions.Cart(); }}
           >
-            <Text>Home</Text>
+            <Text>Cart</Text>
           </Button>
 
           <Button
@@ -64,7 +64,7 @@ export default class Menu extends Component {
           >
             <Text>Dispensary List</Text>
           </Button>
-          
+
         </Content>
       </Container>
     );
