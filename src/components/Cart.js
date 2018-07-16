@@ -13,7 +13,7 @@ import {
   Body,
   Thumbnail
 } from 'native-base';
-// import { Actions } from 'react-native-router-flux';
+import { Actions } from 'react-native-router-flux';
 
 export default class Cart extends Component {
   render() {
@@ -36,8 +36,8 @@ export default class Cart extends Component {
                   />
                   <Body>
                   />
-                  <Text>This is my Shopping Cart product</Text>
-                  <Text note>These is the details</Text>
+                  <Text>This is my product</Text>
+                  <Text note>These are the details</Text>
                   </Body>
               </ListItem>
               <ListItem>
@@ -47,8 +47,8 @@ export default class Cart extends Component {
                 />
                 <Body>
                 />
-                <Text>This is my Shopping Cart product</Text>
-                <Text note>These is the details</Text>
+                <Text>This is my product</Text>
+                <Text note>These are the details</Text>
                 </Body>
             </ListItem>
             <ListItem>
@@ -58,24 +58,29 @@ export default class Cart extends Component {
               />
               <Body>
               />
-              <Text>This is my Shopping Cart product</Text>
-              <Text note>These is the details</Text>
+              <Text>This is my product</Text>
+              <Text note>These are the details</Text>
               </Body>
           </ListItem>
               </List>
             </Content>
           </CardItem>
+          <Button
+            block small info
+            onPress={() => { Actions.Products(); }}
+          >
+              <Text>Continue Shopping</Text>
+          </Button>
 
           <Button
             block small success
             // onPress={() => { Actions.Products(); }}
           >
-              <Text>Checkout</Text>
+            <Text>Checkout</Text>
           </Button>
 
         </Card>
       </Container>
     );
   }
-
 }

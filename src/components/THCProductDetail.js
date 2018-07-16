@@ -46,7 +46,7 @@ const THCProductDetail = ({ thcproduct }) => {
       </CardItem>
       <CardItem>
         <Button
-          block warning
+          block danger
           style={{ margin: 15, padding: 100 }}
           onPress={() => { Actions.Dispensary(); }}
         >
