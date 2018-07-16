@@ -20,12 +20,6 @@ export default class Dispensary extends Component {
           </Text>
 
           <Text
-            style={styles.textStyle}
-          >
-            Phoenix Dispensares
-          </Text>
-
-          <Text
             style={styles.textStyle2}
             onPress={() => Linking.openURL('https://naturesmedicines.com/')}
           >
@@ -71,7 +65,7 @@ export default class Dispensary extends Component {
             style={styles.textStyle2}
             onPress={() => Linking.openURL('https://www.harvestofaz.com/')}
           >
-            HARVEST OF ARIONA
+            HARVEST OF ARIZONA
           </Text>
 
           <Text
@@ -98,7 +92,7 @@ export default class Dispensary extends Component {
           <Text
             style={styles.textStyle}
           >
-              Tucson Dispensares
+            Tucson Dispensares
           </Text>
 
           <Text

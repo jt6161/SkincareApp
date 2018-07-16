@@ -41,7 +41,7 @@ export default class Home extends Component {
               style={styles.mb15}
               onPress={() => { Actions.Products(); }}
             >
-              <Text>Browse 420 Skincare Products</Text>
+              <Text>420 Skincare Products</Text>
             </Button>
           </Row>
         </View>
