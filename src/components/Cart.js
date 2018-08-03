@@ -10,8 +10,7 @@ import {
   CardItem,
   List,
   ListItem,
-  Body,
-  Thumbnail
+  Body
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
@@ -30,10 +29,6 @@ export default class Cart extends Component {
             <Content padding>
               <List>
                 <ListItem>
-                  <Thumbnail
-                    square size={80}
-                    source={require('./420skincare_logo.png')}
-                  />
                   <Body>
                   />
                   <Text>This is my product</Text>
@@ -41,10 +36,6 @@ export default class Cart extends Component {
                   </Body>
               </ListItem>
               <ListItem>
-                <Thumbnail
-                  square size={80}
-                  source={require('./420skincare_logo.png')}
-                />
                 <Body>
                 />
                 <Text>This is my product</Text>
@@ -52,10 +43,6 @@ export default class Cart extends Component {
                 </Body>
             </ListItem>
             <ListItem>
-              <Thumbnail
-                square size={80}
-                source={require('./420skincare_logo.png')}
-              />
               <Body>
               />
               <Text>This is my product</Text>
@@ -65,12 +52,23 @@ export default class Cart extends Component {
               </List>
             </Content>
           </CardItem>
-          <Button
+          <Text
+              style={{
+              color: '#ab8321',
+              fontSize: 13,
+              padding: 20,
+              fontWeight: 'bold',
+              alignSelf: 'center' }}
+              onPress={() => { Actions.Products(); }}
+          >
+            Continue Shopping
+          </Text>
+          {/* <Button
             block small info
             onPress={() => { Actions.Products(); }}
           >
               <Text>Continue Shopping</Text>
-          </Button>
+          </Button> */}
 
           <Button
             block small success
