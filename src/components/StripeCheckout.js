@@ -6,11 +6,11 @@ stripe.init({
 });
 
 const theme = {
-  primaryBackgroundColor: <hex_color>
-  secondaryBackgroundColor: <hex_color>
-  primaryForegroundColor: <hex_color>
-  secondaryForegroundColor: <hex_color>
-  accentColor: <hex_color>
+  primaryBackgroundColor: <hex_color>,
+  secondaryBackgroundColor: <hex_color>,
+  primaryForegroundColor: <hex_color>,
+  secondaryForegroundColor: <hex_color>,
+  accentColor: <hex_color>,
   errorColor: <hex_color>
 };
 
