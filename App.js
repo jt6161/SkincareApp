@@ -13,6 +13,7 @@ import Addproduct from './src/components/Addproduct';
 import AddTestimonial from './src/components/AddTestimonial';
 import Dispensary from './src/components/Dispensary';
 import Cart from './src/components/Cart';
+// import StripeCheckout from './src/components/StripeCheckout';
 
 export default class App extends Component {
   render() {
@@ -31,6 +32,7 @@ export default class App extends Component {
               <Scene key="AddTestimonial" component={AddTestimonial} title="Add Your Testimonial" />
               <Scene key="Dispensary" component={Dispensary} title="Dispensary List" />
               <Scene key="Cart" component={Cart} title="Cart" />
+              {/* <Scene key="StripeCheckout" component={StripeCheckout} title="Checkout" /> */}
             </Scene>
           </Router>
         <FooterIcon />
