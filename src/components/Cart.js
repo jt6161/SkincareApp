@@ -15,17 +15,15 @@ import {
 import { Actions } from 'react-native-router-flux';
 
 export default class Cart extends Component {
-  renderProducts(){
-    return this.props.fetchCart().map(item=>{
-      return (
+  renderProducts() {
+    return this.props.fetchCart().map(item => (
         <ListItem>
           <Body>
             <Text>{item.name}</Text>
             <Text note>${item.price}</Text>
           </Body>
       </ListItem>
-      )
-    })
+      ));
   }
   render() {
     return (
@@ -40,7 +38,6 @@ export default class Cart extends Component {
           <CardItem bordered>
             <Content padding>
               <List>
-
                 {this.renderProducts()}
               </List>
             </Content>
@@ -56,12 +53,6 @@ export default class Cart extends Component {
           >
             Continue Shopping
           </Text>
-          {/* <Button
-            block small info
-            onPress={() => { Actions.Products(); }}
-          >
-              <Text>Continue Shopping</Text>
-          </Button> */}
 
           <Button
             block small success
