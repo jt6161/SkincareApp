@@ -22,9 +22,9 @@ export default class FooterIcon extends Component {
             <Text
               style={{ color: '#ab8321', fontSize: 14, fontWeight: 'bold', margin: 10
              }}
-              onPress={() => { Actions.Login(); }}
+              onPress={() => { Actions.Cart(); }}
             >
-              Admin
+              Cart
             </Text>
           </Right>
         </Footer>

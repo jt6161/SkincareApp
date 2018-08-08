@@ -16,13 +16,12 @@ import { Actions } from 'react-native-router-flux';
 
 export default class Cart extends Component {
   renderProducts(){
-    console.log('IN CART');
     return this.props.fetchCart().map(item=>{
       return (
         <ListItem>
           <Body>
             <Text>{item.name}</Text>
-            <Text note>{item.price}</Text>
+            <Text note>${item.price}</Text>
           </Body>
       </ListItem>
       )

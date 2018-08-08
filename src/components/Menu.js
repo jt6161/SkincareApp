@@ -12,11 +12,18 @@ export default class Menu extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Content padder style={{ backgroundColor: '#000', padding: 10 }}>
+        <Content padder style={{ backgroundColor: '#000', padding: 5 }}>
           <Image
             source={require('./420skincare_logo.png')}
             style={{ width: 300, height: 200, alignSelf: 'center' }}
           />
+          <Button
+            block small danger
+            style={styles.mb15}
+            onPress={() => { Actions.Login(); }}
+          >
+            <Text>Admin</Text>
+          </Button>
           <Button
             block small info
             style={styles.mb15}
