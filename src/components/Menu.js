@@ -15,7 +15,7 @@ export default class Menu extends Component {
         <Content padder style={{ backgroundColor: '#000', padding: 5 }}>
           <Image
             source={require('./420skincare_logo.png')}
-            style={{ width: 300, height: 200, alignSelf: 'center' }}
+            style={{ width: 250, height: 150, alignSelf: 'center' }}
           />
           <Button
             block small danger
