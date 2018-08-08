@@ -16,7 +16,7 @@ import { Actions } from 'react-native-router-flux';
 
 export default class Cart extends Component {
   renderProducts(){
-    console.log("IN CART");
+    console.log('IN CART');
     return this.props.fetchCart().map(item=>{
       return (
         <ListItem>

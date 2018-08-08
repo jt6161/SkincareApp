@@ -20,15 +20,15 @@ export default class App extends Component {
     cart: []
   }
 
-  addToCart(item){
-    this.setState({ cart: [...this.state.cart, item] })
-    setTimeout(()=>{
+  addToCart(item) {
+    this.setState({ cart: [...this.state.cart, item] });
+    setTimeout(() => {
       console.log(this.state);
-    }, 1000)
+    }, 1000);
   }
 
 
-  fetchCart(){
+  fetchCart() {
     return this.state.cart;
   }
   render() {
@@ -37,7 +37,10 @@ export default class App extends Component {
           <Router hideNavBar="true">
               <Scene key="root">
               <Scene key="Home" component={Home} title="420 Skincare" initial />
-              <Scene key="Products" component={Products} title="CBD Products" addToCart={this.addToCart.bind(this)}/>
+              <Scene
+                key="Products" component={Products} title="CBD Products"
+                addToCart={this.addToCart.bind(this)}
+              />
               <Scene key="About" component={About} title="About" />
               <Scene key="Menu" component={Menu} title="Menu" />
               <Scene key="THCProducts" component={THCProducts} title="THC Products" />
@@ -46,7 +49,10 @@ export default class App extends Component {
               <Scene key="Addproduct" component={Addproduct} title="Add New Product" />
               <Scene key="AddTestimonial" component={AddTestimonial} title="Add Your Testimonial" />
               <Scene key="Dispensary" component={Dispensary} title="Dispensary List" />
-              <Scene key="Cart" component={Cart} title="Cart" fetchCart={this.fetchCart.bind(this)} />
+              <Scene
+                key="Cart" component={Cart} title="Cart"
+                fetchCart={this.fetchCart.bind(this)}
+              />
               {/* <Scene key="StripeCheckout" component={StripeCheckout} title="Checkout" /> */}
             </Scene>
           </Router>

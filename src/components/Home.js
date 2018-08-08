@@ -16,7 +16,7 @@ export default class Home extends Component {
           </Text>
 
           <Image
-            source={{ uri: 'https://scontent.fphx1-1.fna.fbcdn.net/v/t1.0-9/31225138_10156315166967236_1786995132902408192_n.jpg?_nc_cat=0&oh=2adf63a7482c0614dc4a84993d2f03eb&oe=5B50D150' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_0d13522b5a0b42559d6d183bc8b44eb3~mv2.jpg' }}
             style={{ width: 315, height: 180, alignSelf: 'center' }}
           />
           <Text
