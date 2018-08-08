@@ -15,6 +15,19 @@ import {
 import { Actions } from 'react-native-router-flux';
 
 export default class Cart extends Component {
+  renderProducts(){
+    console.log("IN CART");
+    return this.props.fetchCart().map(item=>{
+      return (
+        <ListItem>
+          <Body>
+            <Text>{item.name}</Text>
+            <Text note>{item.price}</Text>
+          </Body>
+      </ListItem>
+      )
+    })
+  }
   render() {
     return (
       <Container>
@@ -28,27 +41,8 @@ export default class Cart extends Component {
           <CardItem bordered>
             <Content padding>
               <List>
-                <ListItem>
-                  <Body>
-                  />
-                  <Text>This is my product</Text>
-                  <Text note>These are the details</Text>
-                  </Body>
-              </ListItem>
-              <ListItem>
-                <Body>
-                />
-                <Text>This is my product</Text>
-                <Text note>These are the details</Text>
-                </Body>
-            </ListItem>
-            <ListItem>
-              <Body>
-              />
-              <Text>This is my product</Text>
-              <Text note>These are the details</Text>
-              </Body>
-          </ListItem>
+
+                {this.renderProducts()}
               </List>
             </Content>
           </CardItem>

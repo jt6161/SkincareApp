@@ -15,7 +15,7 @@ class ProductList extends Component {
 
   renderProducts() {
     return this.state.products.map(product =>
-      <ProductDetail key={product.name} product={product} />
+      <ProductDetail key={product.name} product={product} addToCart={this.props.addToCart} />
     );
   }
 

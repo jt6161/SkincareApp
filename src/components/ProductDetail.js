@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Image, Linking } from 'react-native';
 import { Text, Body, Button, Card, CardItem, Left, Thumbnail } from 'native-base';
 
-const ProductDetail = ({ product }) => {
+const ProductDetail = ({ product, addToCart }) => {
   const { name, img_url, description, price, url } = product;
   const {
     headerContentStyle,
@@ -15,7 +15,7 @@ const ProductDetail = ({ product }) => {
     <Button
       block success
       style={{ margin: 15, padding: 100 }}
-      onPress={() => Linking.openURL(url)}
+      onPress={() => addToCart(product)}
     >
       <Text>Purchase</Text>
     </Button>) : (
