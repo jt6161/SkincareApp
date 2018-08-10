@@ -10,7 +10,6 @@ import {
   CardItem,
   Left,
   List,
-  ListItem,
   Body,
   Thumbnail,
   Right
@@ -20,25 +19,16 @@ import { Actions } from 'react-native-router-flux';
 export default class Cart extends Component {
   renderProducts() {
     return this.props.fetchCart().map(item => (
-      <Content padding>
-          <List>
-            <ListItem thumbnail>
-              <Left>
-                <Thumbnail
-                small square
-                source={{ uri: item.img_url }}
-                />
-              </Left>
-            <Body>
-            <Text>{item.name}</Text>
-            </Body>
-            <Right>
-              <Text>${item.price}</Text>
-            </Right>
-            </ListItem>
-          </List>
-      </Content>
-    ));
+          <View>
+            <ScrollView>
+            <Thumbnail
+            source={{ uri: item.img_url }}
+            />
+            <Text> {item.name}</Text>
+            <Text>  ${item.price}</Text>
+            </ScrollView>
+          </View>
+      ));
   }
   render() {
     return (
@@ -49,12 +39,12 @@ export default class Cart extends Component {
             style={{ width: 100, height: 100, alignSelf: 'center' }}
           />
         </Header>
-
-          <View style={{ flex: 0.90 }}>
-            <ScrollView>
+        <Card style={{ flex: 0.80 }}>
+          <CardItem bordered>
+            <Content padding>
                 {this.renderProducts()}
-            </ScrollView>
-            </View>
+            </Content>
+            </CardItem>
 
               <Text
                   style={{
@@ -74,6 +64,7 @@ export default class Cart extends Component {
               >
               <Text>Checkout</Text>
               </Button>
+        </Card>
       </Container>
     );
   }
