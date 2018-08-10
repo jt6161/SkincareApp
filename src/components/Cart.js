@@ -8,20 +8,28 @@ import {
   Content,
   Card,
   CardItem,
+  Left,
   List,
   ListItem,
-  Body
+  Body,
+  Thumbnail,
+  Right
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
 export default class Cart extends Component {
   renderProducts() {
     return this.props.fetchCart().map(item => (
-        <ListItem>
+        <ListItem bordered>
+
           <Body>
+            <Thumbnail
+            source={{ uri: item.img_url }}
+            />
             <Text>{item.name}</Text>
-            <Text note>${item.price}</Text>
+            <Text>${item.price}</Text>
           </Body>
+
       </ListItem>
       ));
   }
@@ -34,33 +42,33 @@ export default class Cart extends Component {
             style={{ width: 100, height: 100, alignSelf: 'center' }}
           />
         </Header>
-        <Card style={{ flex: 1 }}>
-          <CardItem bordered>
+        <Card style={{ flex: 0.80 }}>
+          <CardItem>
             <Content padding>
               <List>
                 {this.renderProducts()}
               </List>
             </Content>
-          </CardItem>
-          <Text
-              style={{
-              color: '#ab8321',
-              fontSize: 13,
-              padding: 20,
-              fontWeight: 'bold',
-              alignSelf: 'center' }}
-              onPress={() => { Actions.Products(); }}
-          >
-            Continue Shopping
-          </Text>
+            </CardItem>
 
-          <Button
-            block small success
-            // onPress={() => { Actions.Products(); }}
-          >
-            <Text>Checkout</Text>
-          </Button>
-
+              <Text
+                  style={{
+                  color: '#ab8321',
+                  fontSize: 14,
+                  padding: 10,
+                  fontWeight: 'bold',
+                  alignSelf: 'center' }}
+                  onPress={() => { Actions.Products(); }}
+              >
+                Continue Shopping
+              </Text>
+              <Button
+                block small success
+                style={{ margin: 10, padding: 10 }}
+                // onPress={() => { Actions.Products(); }}
+              >
+                <Text>Checkout</Text>
+              </Button>
         </Card>
       </Container>
     );

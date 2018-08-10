@@ -14,7 +14,7 @@ export default class FooterIcon extends Component {
              }}
               onPress={() => { Actions.Menu(); }}
             >
-              Menu
+              MENU
             </Text>
           </Left>
             <Body />
@@ -24,7 +24,7 @@ export default class FooterIcon extends Component {
              }}
               onPress={() => { Actions.Cart(); }}
             >
-              Cart
+              CART
             </Text>
           </Right>
         </Footer>

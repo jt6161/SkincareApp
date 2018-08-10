@@ -31,6 +31,7 @@ export default class Testimonials extends Component {
 
           <Button
             block small success
+            style={{ margin: 10, padding: 10 }}
             onPress={() => { Actions.AddTestimonial(); }}
           >
             <Text>Share Your Experience</Text>
