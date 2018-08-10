@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, Linking } from 'react-native';
+import { View, Image } from 'react-native';
 import { Text, Body, Button, Card, CardItem, Left, Thumbnail } from 'native-base';
 
 const ProductDetail = ({ product, addToCart }) => {
