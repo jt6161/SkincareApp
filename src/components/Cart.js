@@ -50,30 +50,33 @@ export default class Cart extends Component {
           />
         </Header>
 
-          <View style={{ flex: 0.90 }}>
-            <ScrollView>
+        <Card style={{ flex: 0.70 }}>
+          <CardItem bordered>
+            <Content>
                 {this.renderProducts()}
-            </ScrollView>
-            </View>
+            </Content>
 
-              <Text
-                  style={{
-                  color: '#ab8321',
-                  fontSize: 14,
-                  padding: 10,
-                  fontWeight: 'bold',
-                  alignSelf: 'center' }}
-                  onPress={() => { Actions.Products(); }}
-              >
-                Continue Shopping
-              </Text>
+            </CardItem>
+            <Text
+                style={{
+                color: '#ab8321',
+                fontSize: 14,
+                padding: 10,
+                fontWeight: 'bold',
+                alignSelf: 'center' }}
+                onPress={() => { Actions.Products(); }}
+            >
+              Continue Shopping
+            </Text>
+
               <Button
                 block small success
-                style={{ margin: 10, padding: 10 }}
+                style={{ padding: 10 }}
                 // onPress={() => { Actions.StripeCheckout(); }}
               >
               <Text>Checkout</Text>
               </Button>
+        </Card>
       </Container>
     );
   }
