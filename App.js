@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
+import { View, Alert } from 'react-native';
 import { Router, Scene } from 'react-native-router-flux';
 import FooterIcon from './src/components/FooterIcon';
 import Products from './src/components/Products';
@@ -13,6 +13,7 @@ import Addproduct from './src/components/Addproduct';
 import AddTestimonial from './src/components/AddTestimonial';
 import Dispensary from './src/components/Dispensary';
 import Cart from './src/components/Cart';
+
 // import StripeCheckout from './src/components/StripeCheckout';
 
 export default class App extends Component {
@@ -23,14 +24,14 @@ export default class App extends Component {
   addToCart(item) {
     this.setState({ cart: [...this.state.cart, item] });
     setTimeout(() => {
-      console.log(this.state);
-    }, 1000);
+      Alert.alert('Added to Cart');
+    }, 100);
   }
-
 
   fetchCart() {
     return this.state.cart;
   }
+
   render() {
     return (
       <View style={{ flex: 1 }}>

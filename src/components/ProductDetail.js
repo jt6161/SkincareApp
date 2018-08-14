@@ -12,13 +12,15 @@ const ProductDetail = ({ product, addToCart }) => {
   } = styles;
 
   const btn = (url ? (
+
     <Button
       block success
       style={{ margin: 15, padding: 100 }}
       onPress={() => addToCart(product)}
     >
       <Text>Purchase</Text>
-    </Button>) : (
+    </Button>
+  ) : (
     <Button
       block disabled
       style={{ margin: 5, padding: 100 }}
