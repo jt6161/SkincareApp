@@ -17,19 +17,29 @@ export default class Menu extends Component {
             source={require('./420skincare_logo.png')}
             style={{ width: 250, height: 150, alignSelf: 'center' }}
           />
+
+          <Button
+            block small success
+            style={styles.mb15}
+            onPress={() => { Actions.Home(); }}
+          >
+            <Text>Home</Text>
+          </Button>
+
+          <Button
+            block small primary
+            style={styles.mb15}
+            onPress={() => { Actions.About(); }}
+          >
+            <Text>About 420 Skincare</Text>
+          </Button>
+
           <Button
             block small danger
             style={styles.mb15}
             onPress={() => { Actions.Login(); }}
           >
-            <Text>Admin</Text>
-          </Button>
-          <Button
-            block small info
-            style={styles.mb15}
-            onPress={() => { Actions.Cart(); }}
-          >
-            <Text>Cart</Text>
+            <Text>Admin Login</Text>
           </Button>
 
           <Button
@@ -40,13 +50,6 @@ export default class Menu extends Component {
             <Text>CBD Products</Text>
           </Button>
 
-          <Button
-            block small primary
-            style={styles.mb15}
-            onPress={() => { Actions.About(); }}
-          >
-            <Text>About 420 Skincare</Text>
-          </Button>
 
           <Button
             block small warning

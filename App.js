@@ -25,7 +25,7 @@ export default class App extends Component {
     this.setState({ cart: [...this.state.cart, item] });
     setTimeout(() => {
       Alert.alert('Added to Cart');
-    }, 100);
+    }, 250);
   }
 
   fetchCart() {
