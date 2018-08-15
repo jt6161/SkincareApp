@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, View, ScrollView } from 'react-native';
+import { Image } from 'react-native';
 import {
   Container,
   Header,
@@ -17,7 +17,7 @@ import { Actions } from 'react-native-router-flux';
 export default class Cart extends Component {
   renderProducts() {
     return this.props.fetchCart().map(item => (
-      <List padding>
+      <List>
             <ListItem>
               <Thumbnail
               small
@@ -38,8 +38,8 @@ export default class Cart extends Component {
             style={{ width: 100, height: 100, alignSelf: 'center' }}
           />
         </Header>
-        <Card style={{ flex: 0.80 }}>
-          <CardItem bordered>
+        <Card style={{ flexGrow: 0.80 }}>
+          <CardItem>
             <Content>
                 {this.renderProducts()}
             </Content>
@@ -49,7 +49,7 @@ export default class Cart extends Component {
                   style={{
                   color: '#ab8321',
                   fontSize: 14,
-                  padding: 10,
+                  padding: 5,
                   fontWeight: 'bold',
                   alignSelf: 'center' }}
                   onPress={() => { Actions.Products(); }}
