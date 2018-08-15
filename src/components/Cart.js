@@ -18,7 +18,7 @@ export default class Cart extends Component {
   renderProducts() {
     return this.props.fetchCart().map(item => (
       <List padding>
-            <ListItem thumbnail>
+            <ListItem>
               <Thumbnail
               small
               source={{ uri: item.img_url }}
