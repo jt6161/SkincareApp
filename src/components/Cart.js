@@ -20,7 +20,7 @@ import { Actions } from 'react-native-router-flux';
 export default class Cart extends Component {
   renderProducts() {
     return this.props.fetchCart().map(item => (
-        <Content padding>
+      <List padding>
             <ListItem thumbnail>
               <Thumbnail
               small
@@ -29,7 +29,7 @@ export default class Cart extends Component {
               <Text> {item.name} </Text>
               <Text> ${item.price}</Text>
             </ListItem>
-        </Content>
+      </List>
     ));
   }
   render() {

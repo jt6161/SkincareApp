@@ -60,7 +60,7 @@ export default class Cart extends Component {
               <Button
                 block small success
                 style={{ margin: 10, padding: 10 }}
-                // onPress={() => { Actions.StripeCheckout(); }}
+              
               >
               <Text>Checkout</Text>
               </Button>

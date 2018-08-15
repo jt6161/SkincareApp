@@ -14,7 +14,6 @@ import AddTestimonial from './src/components/AddTestimonial';
 import Dispensary from './src/components/Dispensary';
 import Cart from './src/components/Cart';
 
-// import StripeCheckout from './src/components/StripeCheckout';
 
 export default class App extends Component {
   state = {
@@ -54,7 +53,6 @@ export default class App extends Component {
                 key="Cart" component={Cart} title="Cart"
                 fetchCart={this.fetchCart.bind(this)}
               />
-              {/* <Scene key="StripeCheckout" component={StripeCheckout} title="Checkout" /> */}
             </Scene>
           </Router>
         <FooterIcon />
