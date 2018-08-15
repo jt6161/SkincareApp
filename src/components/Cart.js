@@ -13,10 +13,7 @@ import {
   ListItem,
   Body,
   Thumbnail,
-  Right,
-  SwipeRow,
-  Icon,
-  View
+  Right
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
