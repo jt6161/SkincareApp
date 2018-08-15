@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image } from 'react-native';
+import { Image, View, ScrollView } from 'react-native';
 import {
   Container,
   Header,
@@ -8,12 +8,9 @@ import {
   Content,
   Card,
   CardItem,
-  Left,
   List,
   ListItem,
-  Body,
-  Thumbnail,
-  Right
+  Thumbnail
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
@@ -30,7 +27,7 @@ export default class Cart extends Component {
               <Text> ${item.price}</Text>
             </ListItem>
       </List>
-    ));
+      ));
   }
   render() {
     return (
@@ -41,30 +38,28 @@ export default class Cart extends Component {
             style={{ width: 100, height: 100, alignSelf: 'center' }}
           />
         </Header>
-
-        <Card style={{ flex: 0.70 }}>
+        <Card style={{ flex: 0.80 }}>
           <CardItem bordered>
-            <Content padding>
+            <Content>
                 {this.renderProducts()}
             </Content>
-          </CardItem>
+            </CardItem>
 
-            <Text
-                style={{
-                color: '#ab8321',
-                fontSize: 14,
-                padding: 10,
-                fontWeight: 'bold',
-                alignSelf: 'center' }}
-                onPress={() => { Actions.Products(); }}
-            >
-              Continue Shopping
-            </Text>
-
+              <Text
+                  style={{
+                  color: '#ab8321',
+                  fontSize: 14,
+                  padding: 10,
+                  fontWeight: 'bold',
+                  alignSelf: 'center' }}
+                  onPress={() => { Actions.Products(); }}
+              >
+                Continue Shopping
+              </Text>
               <Button
                 block small success
-                style={{ padding: 10 }}
-                // onPress={() => { Actions.StripeCheckout(); }}
+                style={{ margin: 10, padding: 10 }}
+
               >
               <Text>Checkout</Text>
               </Button>
