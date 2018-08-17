@@ -3,32 +3,36 @@ import { Image } from 'react-native';
 import {
   Container,
   Header,
+  Body,
   Button,
   Text,
   Content,
   Card,
   CardItem,
-  List,
   ListItem,
-  Thumbnail
+  List,
+  Right
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
 export default class Cart extends Component {
   renderProducts() {
+    console.log('IN CART');
     return this.props.fetchCart().map(item => (
-      <List>
-            <ListItem>
-              <Thumbnail
-              small
-              source={{ uri: item.img_url }}
-              />
-              <Text> {item.name} </Text>
-              <Text> ${item.price}</Text>
-            </ListItem>
-      </List>
+        <ListItem>
+          <Body>
+            <Text>{item.name}</Text>
+            <Text>${item.price}</Text>
+          </Body>
+          <Right>
+            <Button transparent>
+              <Text>+ or -</Text>
+            </Button>
+          </Right>
+      </ListItem>
       ));
   }
+
   render() {
     return (
       <Container>
@@ -38,11 +42,13 @@ export default class Cart extends Component {
             style={{ width: 100, height: 100, alignSelf: 'center' }}
           />
         </Header>
-        <Card style={{ flexGrow: 0.80 }}>
+        <Card style={{ flexGrow: 0.70 }}>
           <CardItem>
-            <Content>
+
+              <Content>
                 {this.renderProducts()}
-            </Content>
+              </Content>
+
             </CardItem>
 
               <Text

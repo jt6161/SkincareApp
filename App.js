@@ -14,7 +14,6 @@ import AddTestimonial from './src/components/AddTestimonial';
 import Dispensary from './src/components/Dispensary';
 import Cart from './src/components/Cart';
 
-
 export default class App extends Component {
   state = {
     cart: []
@@ -24,7 +23,7 @@ export default class App extends Component {
     this.setState({ cart: [...this.state.cart, item] });
     setTimeout(() => {
       Alert.alert('Added to Cart');
-    }, 250);
+    }, 100);
   }
 
   fetchCart() {
@@ -38,7 +37,9 @@ export default class App extends Component {
               <Scene key="root">
               <Scene key="Home" component={Home} title="420 Skincare" initial />
               <Scene
-                key="Products" component={Products} title="CBD Products"
+                key="Products"
+                component={Products}
+                title="CBD Products"
                 addToCart={this.addToCart.bind(this)}
               />
               <Scene key="About" component={About} title="About" />
@@ -50,7 +51,9 @@ export default class App extends Component {
               <Scene key="AddTestimonial" component={AddTestimonial} title="Add Your Testimonial" />
               <Scene key="Dispensary" component={Dispensary} title="Dispensary List" />
               <Scene
-                key="Cart" component={Cart} title="Cart"
+                key="Cart"
+                component={Cart}
+                title="Cart"
                 fetchCart={this.fetchCart.bind(this)}
               />
             </Scene>
