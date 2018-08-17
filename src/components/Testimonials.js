@@ -16,7 +16,7 @@ export default class Testimonials extends Component {
   render() {
     return (
       <Container>
-        <Header>
+        <Header transparent>
           <Image
             source={require('./420skincare_logo.png')}
             style={{ width: 100, height: 100, alignSelf: 'center' }}
