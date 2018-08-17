@@ -9,7 +9,7 @@ class ProductList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8000/products')
+    axios.get('https://server420skincare.herokuapp.com/products')
       .then(response => this.setState({ products: response.data }));
   }
 

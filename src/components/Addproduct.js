@@ -66,7 +66,7 @@ export default class Addproduct extends Component {
     );
   }
   addproduct() {
-    axios.post('http://localhost:8000/products', this.state).then((res) => {
+    axios.post('https://server420skincare.herokuapp.com/products', this.state).then((res) => {
       if (res.data.success === true) {
           Actions.Products(this.state);
       } else {

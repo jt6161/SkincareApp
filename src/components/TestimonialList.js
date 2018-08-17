@@ -9,7 +9,7 @@ class TestimonialList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8000/testimonials')
+    axios.get('https://server420skincare.herokuapp.com/testimonials')
       .then(response => this.setState({ testimonials: response.data }));
   }
 

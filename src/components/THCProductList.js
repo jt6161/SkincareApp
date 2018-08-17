@@ -9,7 +9,7 @@ class THCProductList extends Component {
   }
 
   componentDidMount() {
-    axios.get('http://localhost:8000/thcproducts')
+    axios.get('https://server420skincare.herokuapp.com/thcproducts')
       .then(response => this.setState({ thcproducts: response.data }));
   }
 

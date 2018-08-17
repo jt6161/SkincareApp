@@ -55,7 +55,7 @@ export default class Addtestimonial extends Component {
     );
   }
   addtestimonial() {
-    axios.post('http://localhost:8000/testimonials', this.state).then((res) => {
+    axios.post('https://server420skincare.herokuapp.com/testimonials', this.state).then((res) => {
       if (res.data.success === true) {
           Actions.Testimonials(this.state);
       } else {
