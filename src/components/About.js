@@ -19,7 +19,9 @@ export default class About extends Component {
           <Card style={{ flex: 0 }}>
             <CardItem bordered>
               <Left>
-                <Thumbnail source={require('./420skincare_logo.png')} />
+                <Thumbnail
+                  source={require('./420skincare_logo.png')}
+                />
                 <Body>
                   <Text style={styles.textStyle}>Marvina Thomas,
                   CEO and founder of 420 Skincare,

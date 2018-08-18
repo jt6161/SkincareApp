@@ -8,6 +8,7 @@ export default class Home extends Component {
     return (
       <ScrollView>
         <View style={styles.viewStyle}>
+
           <Image
             source={require('./420skincare_logo.png')}
             style={{ width: 200, height: 80, alignSelf: 'center' }}
