@@ -10,8 +10,9 @@ import {
   Card,
   CardItem,
   ListItem,
-  List,
-  Right
+  Right,
+  Left,
+  Thumbnail
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
@@ -19,14 +20,20 @@ export default class Cart extends Component {
   renderProducts() {
     console.log('IN CART');
     return this.props.fetchCart().map(item => (
-        <ListItem>
+        <ListItem thumbnail>
+          <Left>
+            <Thumbnail
+              // small
+              square
+              source={{ uri: item.img_url }}
+            />
+          </Left>
           <Body>
-            <Text>{item.name}</Text>
-            <Text>${item.price}</Text>
+            <Text>{item.name} - ${item.price}</Text>
           </Body>
           <Right>
             <Button transparent>
-              <Text>+ or -</Text>
+              <Text>Delete</Text>
             </Button>
           </Right>
       </ListItem>
