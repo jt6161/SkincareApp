@@ -33,7 +33,7 @@ export default class Cart extends Component {
           </Body>
           <Right>
             <Button transparent>
-              <Text>Delete</Text>
+              <Text>Remove</Text>
             </Button>
           </Right>
       </ListItem>
