@@ -1,8 +1,7 @@
 import React, { Component } from 'react';
-import { Image } from 'react-native';
+// import { Image } from 'react-native';
 import {
   Container,
-  Header,
   Button,
   Text,
   Content,
@@ -11,17 +10,13 @@ import {
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import TestimonialScroll from './TestimonialScroll';
+import Header from './Header';
 
 export default class Testimonials extends Component {
   render() {
     return (
       <Container>
-        <Header transparent>
-          <Image
-            source={require('./420skincare_logo.png')}
-            style={{ width: 100, height: 100, alignSelf: 'center' }}
-          />
-        </Header>
+      <Header />
         <Card style={{ flex: 0.90 }}>
           <CardItem bordered>
             <Content padding>
