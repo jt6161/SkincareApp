@@ -12,6 +12,7 @@ import {
   ListItem,
   Right,
   Left,
+  List,
   Thumbnail
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
@@ -29,7 +30,8 @@ export default class Cart extends Component {
             />
           </Left>
           <Body>
-            <Text>{item.name} - ${item.price}</Text>
+            <Text note numberOfLines={1}>{item.name}</Text>
+            <Text>${item.price}</Text>
           </Body>
           <Right>
             <Button transparent>
@@ -49,26 +51,24 @@ export default class Cart extends Component {
             style={{ width: 100, height: 100, alignSelf: 'center' }}
           />
         </Header>
-        <Card style={{ flexGrow: 0.70 }}>
-          <CardItem>
 
               <Content>
+                <List>
                 {this.renderProducts()}
+                </List>
               </Content>
 
-            </CardItem>
-
-              <Text
-                  style={{
-                  color: '#ab8321',
-                  fontSize: 14,
-                  padding: 5,
-                  fontWeight: 'bold',
-                  alignSelf: 'center' }}
-                  onPress={() => { Actions.Products(); }}
-              >
-                Continue Shopping
-              </Text>
+                <Text
+                    style={{
+                    color: '#ab8321',
+                    fontSize: 14,
+                    padding: 5,
+                    fontWeight: 'bold',
+                    alignSelf: 'center' }}
+                    onPress={() => { Actions.Products(); }}
+                >
+                  Continue Shopping
+                </Text>
               <Button
                 block small success
                 style={{ margin: 10, padding: 10 }}
@@ -76,7 +76,6 @@ export default class Cart extends Component {
               >
               <Text>Checkout</Text>
               </Button>
-        </Card>
       </Container>
     );
   }
