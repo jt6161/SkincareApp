@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
-import { View } from 'react-native';
-import { Image } from 'native-base';
+import { Image, View } from 'react-native';
+import { Header } from 'native-base';
 
-export default class Header extends Component {
+export default class HeaderIcon extends Component {
   render() {
     return (
     <View>
-      <Header transparent="transparent">
+      <Header transparent>
         <Image
             source={require('./420skincare_logo.png')}
             style={{

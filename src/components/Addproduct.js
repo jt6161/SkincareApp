@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Button, Container, Content, Form, Item, Input, Label, Text, Header } from 'native-base';
-import { Image } from 'react-native';
+import { Button, Container, Content, Form, Item, Input, Label, Text } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import axios from 'axios';
+import HeaderIcon from './HeaderIcon';
 
 export default class Addproduct extends Component {
   state = {
@@ -14,12 +14,7 @@ export default class Addproduct extends Component {
   render() {
     return (
       <Container>
-        <Header transparent>
-          <Image
-            source={require('./420skincare_logo.png')}
-            style={{ width: 100, height: 100, alignSelf: 'center' }}
-          />
-        </Header>
+        <HeaderIcon />
         <Content padding>
           <Form>
             <Item stackedLabel>

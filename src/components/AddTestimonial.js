@@ -7,12 +7,12 @@ import {
   CardItem,
   Form,
   Text,
-  Header,
   Textarea
 } from 'native-base';
-import { Image, StyleSheet } from 'react-native';
+import { StyleSheet } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import axios from 'axios';
+import HeaderIcon from './HeaderIcon';
 
 export default class Addtestimonial extends Component {
   state = {
@@ -21,12 +21,7 @@ export default class Addtestimonial extends Component {
   render() {
     return (
       <Container>
-        <Header transparent>
-          <Image
-            source={require('./420skincare_logo.png')}
-            style={{ width: 100, height: 100, alignSelf: 'center' }}
-          />
-        </Header>
+        <HeaderIcon />
         <Card>
         <CardItem>
         <Content padding>

@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Image } from 'react-native';
 import {
   Container,
   Button,
@@ -10,13 +9,13 @@ import {
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import TestimonialScroll from './TestimonialScroll';
-import Header from './Header';
+import HeaderIcon from './HeaderIcon';
 
 export default class Testimonials extends Component {
   render() {
     return (
       <Container>
-      <Header />
+      <HeaderIcon />
         <Card style={{ flex: 0.90 }}>
           <CardItem bordered>
             <Content padding>
