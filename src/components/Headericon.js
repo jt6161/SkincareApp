@@ -10,8 +10,8 @@ export default class HeaderIcon extends Component {
         <Image
             source={require('./420skincare_logo.png')}
             style={{
-            width: 100,
             height: 100,
+            width: 100,
             alignSelf: 'center'
           }}
         />

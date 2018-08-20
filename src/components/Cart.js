@@ -1,14 +1,10 @@
 import React, { Component } from 'react';
-import { Image } from 'react-native';
 import {
   Container,
-  Header,
   Body,
   Button,
   Text,
   Content,
-  Card,
-  CardItem,
   ListItem,
   Right,
   Left,
@@ -16,6 +12,7 @@ import {
   Thumbnail
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
+import HeaderIcon from './HeaderIcon';
 
 export default class Cart extends Component {
   renderProducts() {
@@ -45,13 +42,7 @@ export default class Cart extends Component {
   render() {
     return (
       <Container>
-        <Header transparent>
-          <Image
-            source={require('./420skincare_logo.png')}
-            style={{ width: 100, height: 100, alignSelf: 'center' }}
-          />
-        </Header>
-
+        <HeaderIcon />
               <Content>
                 <List>
                 {this.renderProducts()}
@@ -62,7 +53,7 @@ export default class Cart extends Component {
                     style={{
                     color: '#ab8321',
                     fontSize: 14,
-                    padding: 5,
+                    padding: 10,
                     fontWeight: 'bold',
                     alignSelf: 'center' }}
                     onPress={() => { Actions.Products(); }}
