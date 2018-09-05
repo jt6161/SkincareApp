@@ -7,7 +7,8 @@ import {
   CardItem,
   Left,
   Thumbnail,
-  Button
+  Button,
+  Container
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
@@ -48,9 +49,9 @@ const THCProductDetail = ({ thcproduct }) => {
       </CardItem>
       <CardItem>
         <Button
-          block danger
+          block small danger
           onPress={() => { Actions.Dispensary(); }}
-          // style={}
+          style={{ margin: 5, padding: 100 }}
         >
           <Text>Dispensary List</Text>
         </Button>

@@ -11,8 +11,9 @@ const ProductDetail = ({ product, addToCart }) => {
     imageStyle
   } = styles;
 
-  const btn = (url ? (
+const fourtwentylogo = require('./420skincare_logo.png');
 
+  const btn = (url ? (
     <Button
       block success
       style={{ margin: 15, padding: 100 }}
@@ -32,7 +33,7 @@ const ProductDetail = ({ product, addToCart }) => {
      <Card>
       <CardItem bordered>
         <Left>
-          <Thumbnail source={require('./420skincare_logo.png')} />
+          <Thumbnail source={fourtwentylogo} />
           <Body>
             <View style={headerContentStyle}>
               <Text style={headerTextStyle}>{name}</Text>
