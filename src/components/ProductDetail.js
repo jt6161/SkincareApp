@@ -2,6 +2,8 @@ import React from 'react';
 import { View, Image } from 'react-native';
 import { Text, Body, Button, Card, CardItem, Left, Thumbnail } from 'native-base';
 
+const fourtwentylogo = require('./420skincare_logo.png');
+
 const ProductDetail = ({ product, addToCart }) => {
   const { name, img_url, description, price, url } = product;
   const {
@@ -11,11 +13,9 @@ const ProductDetail = ({ product, addToCart }) => {
     imageStyle
   } = styles;
 
-const fourtwentylogo = require('./420skincare_logo.png');
-
   const btn = (url ? (
     <Button
-      block success
+      block small success
       style={{ margin: 15, padding: 100 }}
       onPress={() => addToCart(product)}
     >

@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { ScrollView, View, Image, Linking } from 'react-native';
 import { Text } from 'native-base';
 
+const fourtwentylogo = require('./420skincare_logo.png');
 
 export default class Dispensary extends Component {
   render() {
@@ -9,7 +10,7 @@ export default class Dispensary extends Component {
       <ScrollView>
         <View style={styles.viewStyle}>
           <Image
-            source={require('./420skincare_logo.png')}
+            source={fourtwentylogo}
             style={{ width: 200, height: 80, alignSelf: 'center' }}
           />
           <Text style={styles.textStyle}>To purchase
@@ -116,7 +117,7 @@ export default class Dispensary extends Component {
 }
  const styles = {
    viewStyle: {
-     backgroundColor: 'black',
+     backgroundColor: 'white',
      alignItems: 'center',
      height: 800,
      padding: 10,
