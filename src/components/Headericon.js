@@ -8,7 +8,7 @@ export default class HeaderIcon extends Component {
   render() {
     return (
     <View>
-      <Header transparent>
+      <Header>
         <Image
             source={logoimage}
             style={{
