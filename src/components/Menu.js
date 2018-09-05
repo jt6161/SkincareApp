@@ -8,13 +8,15 @@ import {
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
+const fourtwentylogo = require('./420skincare_logo.png');
+
 export default class Menu extends Component {
   render() {
     return (
       <Container style={styles.container}>
         <Content padder style={{ backgroundColor: '#000', padding: 5 }}>
           <Image
-            source={require('./420skincare_logo.png')}
+            source={fourtwentylogo} 
             style={{ width: 250, height: 150, alignSelf: 'center' }}
           />
 

@@ -11,6 +11,8 @@ import {
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
+const fourtwentylogo = require('./420skincare_logo.png');
+
 const THCProductDetail = ({ thcproduct }) => {
   const { name, img_url, description } = thcproduct;
   const {
@@ -25,7 +27,7 @@ const THCProductDetail = ({ thcproduct }) => {
      <Card>
       <CardItem bordered>
         <Left>
-          <Thumbnail source={require('./420skincare_logo.png')} />
+          <Thumbnail source={fourtwentylogo} />
           <Body>
             <View style={headerContentStyle}>
               <Text style={headerTextStyle}>{name}</Text>
@@ -47,10 +49,10 @@ const THCProductDetail = ({ thcproduct }) => {
       <CardItem>
         <Button
           block danger
-          style={{ margin: 15, padding: 100 }}
           onPress={() => { Actions.Dispensary(); }}
+          // style={}
         >
-          <Text>Dispensary</Text>
+          <Text>Dispensary List</Text>
         </Button>
       </CardItem>
     </Card>
