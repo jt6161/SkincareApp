@@ -3,6 +3,8 @@ import { ScrollView, View, Image, Linking } from 'react-native';
 import { Text, Button, Row } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
+const fourtwentylogo = require('./420skincare_logo.png');
+
 export default class Home extends Component {
   render() {
     return (
@@ -10,7 +12,7 @@ export default class Home extends Component {
         <View style={styles.viewStyle}>
 
           <Image
-            source={require('./420skincare_logo.png')}
+            source={fourtwentylogo}
             style={{ width: 200, height: 80, alignSelf: 'center' }}
           />
           <Text style={styles.textStyle}>Cannabis Infused Luxury Skincare

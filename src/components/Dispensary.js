@@ -11,7 +11,7 @@ export default class Dispensary extends Component {
         <Content>
           <List>
             <ListItem>
-              <Text style={styles.textStyle}>To purchase
+              <Text style={styles.textStyle2}>To purchase
                 420 Skincare products that are infused with
                 THC please visit these state licensed dispensaries.
                 You must have an AZ MMJ card to purchase from a dispensary.
@@ -157,13 +157,13 @@ export default class Dispensary extends Component {
      position: 'relative'
    },
    textStyle: {
-     fontSize: 16,
+     fontSize: 15,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
    },
    textStyle2: {
-     fontSize: 18,
+     fontSize: 16,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
