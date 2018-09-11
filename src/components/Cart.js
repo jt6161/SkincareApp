@@ -21,7 +21,7 @@ export default class Cart extends Component {
         <ListItem thumbnail>
           <Left>
             <Thumbnail
-              // small
+              small
               square
               source={{ uri: item.img_url }}
             />

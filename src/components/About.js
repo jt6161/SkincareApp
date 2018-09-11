@@ -11,6 +11,8 @@ import {
   Body
 } from 'native-base';
 
+const fourtwentylogo = require('./420skincare_logo.png');
+
 export default class About extends Component {
   render() {
     return (
@@ -20,7 +22,7 @@ export default class About extends Component {
             <CardItem bordered>
               <Left>
                 <Thumbnail
-                  source={require('./420skincare_logo.png')}
+                  source={fourtwentylogo}
                 />
                 <Body>
                   <Text style={styles.textStyle}>Marvina Thomas,
@@ -52,7 +54,7 @@ export default class About extends Component {
                   to assist many more men and women to get healthier.
                 </Text>
                 <Image
-                  source={require('./420skincare_logo.png')}
+                  source={fourtwentylogo}
                   style={{ width: 200, height: 150, alignSelf: 'center' }}
                 />
               </Body>
