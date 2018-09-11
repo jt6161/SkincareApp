@@ -16,7 +16,7 @@ export default class Menu extends Component {
       <Container style={styles.container}>
         <Content padder style={{ backgroundColor: '#000', padding: 5 }}>
           <Image
-            source={fourtwentylogo} 
+            source={fourtwentylogo}
             style={{ width: 250, height: 150, alignSelf: 'center' }}
           />
 
@@ -36,13 +36,13 @@ export default class Menu extends Component {
             <Text>About 420 Skincare</Text>
           </Button>
 
-          <Button
+          {/* <Button
             block small danger
             style={styles.mb15}
             onPress={() => { Actions.Login(); }}
           >
             <Text>Admin Login</Text>
-          </Button>
+          </Button> */}
 
           <Button
             block small success

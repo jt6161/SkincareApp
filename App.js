@@ -8,8 +8,8 @@ import Home from './src/components/Home';
 import Menu from './src/components/Menu';
 import Testimonials from './src/components/Testimonials';
 import About from './src/components/About';
-import Login from './src/components/Login';
-import Addproduct from './src/components/Addproduct';
+// import Login from './src/components/Login';
+// import Addproduct from './src/components/Addproduct';
 import AddTestimonial from './src/components/AddTestimonial';
 import Dispensary from './src/components/Dispensary';
 import Cart from './src/components/Cart';
@@ -46,8 +46,8 @@ export default class App extends Component {
               <Scene key="Menu" component={Menu} title="Menu" />
               <Scene key="THCProducts" component={THCProducts} title="THC Products" />
               <Scene key="Testimonials" component={Testimonials} title="Customer Testimonials" />
-              <Scene key="Login" component={Login} title="Admin Login" />
-              <Scene key="Addproduct" component={Addproduct} title="Add New Product" />
+              {/* <Scene key="Login" component={Login} title="Admin Login" />
+              <Scene key="Addproduct" component={Addproduct} title="Add New Product" /> */}
               <Scene key="AddTestimonial" component={AddTestimonial} title="Add Your Testimonial" />
               <Scene key="Dispensary" component={Dispensary} title="Dispensary List" />
               <Scene
