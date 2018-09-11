@@ -1,117 +1,149 @@
 import React, { Component } from 'react';
-import { ScrollView, View, Image, Linking } from 'react-native';
-import { Text } from 'native-base';
-
-const fourtwentylogo = require('./420skincare_logo.png');
+import { Linking } from 'react-native';
+import { Container, Content, List, ListItem, Text } from 'native-base';
+import HeaderIcon from './HeaderIcon';
 
 export default class Dispensary extends Component {
   render() {
     return (
-      <ScrollView>
-        <View style={styles.viewStyle}>
-          <Image
-            source={fourtwentylogo}
-            style={{ width: 200, height: 80, alignSelf: 'center' }}
-          />
-          <Text style={styles.textStyle}>To purchase
-            420 Skincare products that are infused with
-            THC please visit these dispensaries.
-            You must have an AZ MMJ card to purchase.
-            (Click for website)
-          </Text>
+      <Container>
+        <HeaderIcon />
+        <Content>
+          <List>
+            <ListItem>
+              <Text style={styles.textStyle}>To purchase
+                420 Skincare products that are infused with
+                THC please visit these state licensed dispensaries.
+                You must have an AZ MMJ card to purchase from a dispensary.
+                (Click for website)
+              </Text>
+            </ListItem>
+            <ListItem itemDivider>
+              <Text
+                style={styles.textStyle}
+              >
+                Phoenix Dispensaries
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text
+                style={styles.textStyle2}
+                onPress={() => Linking.openURL('https://naturesmedicines.com/')}
+              >
+                NATURE'S MEDICINES
+              </Text>
+            </ListItem>
+            <ListItem>
+              <Text
+              style={styles.textStyle2}
+              onPress={() => Linking.openURL('https://midtownroots.com/')}
+              >
+              MIDTOWN ROOTS
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('https://naturesmedicines.com/')}
-          >
-            NATURE'S MEDICINES
-          </Text>
+            <ListItem>
+              <Text
+                style={styles.textStyle2}
+                onPress={() => Linking.openURL('http://urbangreenhouse.com')}
+              >
+                URBAN GREENHOUSE
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('https://midtownroots.com/')}
-          >
-            MIDTOWN ROOTS
-          </Text>
+            <ListItem>
+              <Text
+                style={styles.textStyle2}
+                onPress={() => Linking.openURL('http://metromeds.com')}
+              >
+                METRO MEDS
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('http://urbangreenhouse.com')}
-          >
-            URBAN GREENHOUSE
-          </Text>
+            <ListItem>
+              <Text
+                style={styles.textStyle2}
+                onPress={() => Linking.openURL('http://www.arizonanaturalremedies.com/')}
+              >
+                ARIZONA NATURAL REMEDIES
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('http://metromeds.com')}
-          >
-            METRO MEDS
-          </Text>
+            <ListItem>
+              <Text
+                style={styles.textStyle2}
+                onPress={() => Linking.openURL('https://nirvanacenter.com/')}
+              >
+                NIRVANA CENTER
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('http://www.arizonanaturalremedies.com/')}
-          >
-            ARIZONA NATURAL REMEDIES
-          </Text>
+            <ListItem>
+              <Text
+                style={styles.textStyle2}
+                onPress={() => Linking.openURL('https://www.harvestofaz.com/')}
+              >
+                HARVEST OF ARIZONA
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('https://nirvanacenter.com/')}
-          >
-            NIRVANA CENTER
-          </Text>
+            <ListItem>
+              <Text
+                style={styles.textStyle2}
+                onPress={() => Linking.openURL('https://azreleaf.com/')}
+              >
+                PONDEROSA RELEAF
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('https://www.harvestofaz.com/')}
-          >
-            HARVEST OF ARIZONA
-          </Text>
+            <ListItem>
+              <Text
+                style={styles.textStyle2}
+                onPress={() => Linking.openURL('http://www.greenpharms.com/')}
+              >
+                GREENPHARMS
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('https://azreleaf.com/')}
-          >
-            PONDEROSA RELEAF
-          </Text>
+            <ListItem>
+              <Text
+                style={styles.textStyle2}
+                onPress={() => Linking.openURL('http://www.greenpharms.com/')}
+              >
+                THE GOOD DISPENSARY
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('http://www.greenpharms.com/')}
-          >
-            GREENPHARMS
-          </Text>
+            <ListItem itemDivider>
+              <Text
+                style={styles.textStyle}
+              >
+                Tucson Dispensaries
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('http://www.greenpharms.com/')}
-          >
-            THE GOOD DISPENSARY
-          </Text>
+            <ListItem>
+              <Text
+                style={styles.textStyle2}
+                onPress={() => Linking.openURL('https://botanica.us/')}
+              >
+                BOTANICA
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle}
-          >
-            Tucson Dispensares
-          </Text>
+            <ListItem>
+              <Text
+                style={styles.textStyle2}
+                onPress={() => Linking.openURL('http://purple-med.com/')}
+              >
+                PURPLE MED
+              </Text>
+            </ListItem>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('https://botanica.us/')}
-          >
-            BOTANICA
-          </Text>
+        </List>
+      </Content>
+    </Container>
 
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('http://purple-med.com/')}
-          >
-            PURPLE MED
-          </Text>
-
-        </View>
-      </ScrollView>
     );
   }
 }
