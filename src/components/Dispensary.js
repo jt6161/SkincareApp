@@ -22,7 +22,7 @@ export default class Dispensary extends Component {
               <Text
                 style={styles.textStyle}
               >
-                Phoenix Dispensaries
+                Phoenix Area Dispensaries
               </Text>
             </ListItem>
             <ListItem>
@@ -118,7 +118,7 @@ export default class Dispensary extends Component {
               <Text
                 style={styles.textStyle}
               >
-                Tucson Dispensaries
+                Tucson Area Dispensaries
               </Text>
             </ListItem>
 
@@ -157,7 +157,7 @@ export default class Dispensary extends Component {
      position: 'relative'
    },
    textStyle: {
-     fontSize: 15,
+     fontSize: 14,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
