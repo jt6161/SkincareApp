@@ -36,14 +36,6 @@ export default class Menu extends Component {
             <Text>About 420 Skincare</Text>
           </Button>
 
-          {/* <Button
-            block small danger
-            style={styles.mb15}
-            onPress={() => { Actions.Login(); }}
-          >
-            <Text>Admin Login</Text>
-          </Button> */}
-
           <Button
             block small success
             style={styles.mb15}
