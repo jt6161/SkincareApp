@@ -13,7 +13,6 @@ import {
 
 const fourtwentylogo = require('./420skincare_logo.png');
 
-
 export default class About extends Component {
   render() {
     return (
@@ -58,17 +57,11 @@ export default class About extends Component {
                   source={fourtwentylogo}
                   style={{ width: 200, height: 150, alignSelf: 'center' }}
                 />
-
               </Body>
-
             </CardItem>
-
           </Card>
-
         </Content>
-
       </Container>
-
     );
   }
 }
