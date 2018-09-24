@@ -52,8 +52,8 @@ export default class Cart extends Component {
                 <Text
                     style={{
                     color: '#ab8321',
-                    fontSize: 14,
-                    padding: 10,
+                    fontSize: 13,
+                    padding: 5,
                     fontWeight: 'bold',
                     alignSelf: 'center' }}
                     onPress={() => { Actions.Products(); }}
