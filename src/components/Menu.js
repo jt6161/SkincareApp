@@ -14,10 +14,10 @@ export default class Menu extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Content padder style={{ backgroundColor: '#000', padding: 5 }}>
+        <Content padder style={{ backgroundColor: '#000', padding: 10 }}>
           <Image
             source={fourtwentylogo}
-            style={{ width: 250, height: 150, alignSelf: 'center' }}
+            style={{ width: 250, height: 120, alignSelf: 'center' }}
           />
 
           <Button

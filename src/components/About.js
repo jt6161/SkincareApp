@@ -10,16 +10,16 @@ import {
   Left,
   Body
 } from 'native-base';
+// import VideoPlayer from 'react-native-video-controls';
 
 const fourtwentylogo = require('./420skincare_logo.png');
-
 
 export default class About extends Component {
   render() {
     return (
       <Container>
         <Content>
-          <Card style={{ flex: 0 }}>
+          <Card style={{ flex: 1 }}>
             <CardItem bordered>
               <Left>
                 <Thumbnail
@@ -58,14 +58,11 @@ export default class About extends Component {
                   source={fourtwentylogo}
                   style={{ width: 200, height: 150, alignSelf: 'center' }}
                 />
-
               </Body>
-
             </CardItem>
-
           </Card>
-
         </Content>
+
 
       </Container>
 
