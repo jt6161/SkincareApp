@@ -15,21 +15,20 @@ export default class Press extends Component {
             source={fourtwentylogo}
             style={{ width: 200, height: 80, alignSelf: 'center' }}
           />
-
+          <Text style={styles.textStyle2}>
+            420 Skincare has been featured in many different articles, click to view.
+          </Text>
           <Image
-            source={{ uri: 'https://static.wixstatic.com/media/7026a3_0d13522b5a0b42559d6d183bc8b44eb3~mv2.jpg' }}
-            style={{ width: 315, height: 180, alignSelf: 'center' }}
+            source={{ uri: 'https://images1.phoenixnewtimes.com/imager/u/745xauto/10503675/marvina3-2.jpg' }}
+            style={{ width: 315, height: 315, alignSelf: 'center' }}
+            onPress={() => Linking.openURL('https://www.phoenixnewtimes.com/news/no-slack-in-success-black-ganjapreneur-marvina-thomas-sets-pace-in-cannabis-industry-10502514')}
           />
           <Text
               style={{ color: '#ab8321', fontSize: 13, padding: 3, fontWeight: 'bold' }}
-              onPress={() => Linking.openURL('http://www.420-Skincare.com')}
+              onPress={() => Linking.openURL('https://www.phoenixnewtimes.com/news/no-slack-in-success-black-ganjapreneur-marvina-thomas-sets-pace-in-cannabis-industry-10502514')}
           >
-            420-Skincare.com
+            No Slack in Success - Phoenix New Times
           </Text>
-          <Text style={styles.textStyle2}>
-            Marvina Thomas of 420 Skincare has been featured in many different articles.
-          </Text>
-
 
         </View>
       </ScrollView>
@@ -52,7 +51,7 @@ export default class Press extends Component {
      color: '#ab8321'
    },
    textStyle2: {
-     fontSize: 15,
+     fontSize: 14,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'

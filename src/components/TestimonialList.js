@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
+import { Spinner } from 'native-base';
 import axios from 'axios';
 import TestimonialDetail from './TestimonialDetail';
 
@@ -14,6 +15,9 @@ class TestimonialList extends Component {
   }
 
   renderTestimonials() {
+    if (this.state.testimonials.length === 0) {
+      return <Spinner />;
+    }
     return this.state.testimonials.map(testimonial =>
 <TestimonialDetail key={testimonial.review} testimonial={testimonial} />
     );
