@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { View } from 'react-native';
+import { Spinner } from 'native-base';
 import axios from 'axios';
 import THCProductDetail from './THCProductDetail';
 
@@ -14,6 +15,9 @@ class THCProductList extends Component {
   }
 
   renderTHCProducts() {
+    if (this.state.thcproducts.length === 0) {
+            return <Spinner color='#ab8321' />;
+    }
     return this.state.thcproducts.map(thcproduct =>
       <THCProductDetail key={thcproduct.name} thcproduct={thcproduct} />
     );
