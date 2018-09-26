@@ -5,7 +5,8 @@ import {
   Text,
   Content,
   Card,
-  CardItem
+  CardItem,
+  Spinner
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 import TestimonialScroll from './TestimonialScroll';
@@ -19,6 +20,7 @@ export default class Testimonials extends Component {
         <Card style={{ flex: 0.90 }}>
           <CardItem bordered>
             <Content padding>
+              <Spinner color='#5d823c' />
               <TestimonialScroll />
             </Content>
           </CardItem>
