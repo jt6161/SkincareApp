@@ -11,6 +11,7 @@ import About from './src/components/About';
 import AddTestimonial from './src/components/AddTestimonial';
 import Dispensary from './src/components/Dispensary';
 import Cart from './src/components/Cart';
+import Press from './src/components/Press';
 
 export default class App extends Component {
   state = {
@@ -52,6 +53,7 @@ export default class App extends Component {
                 title="Cart"
                 fetchCart={this.fetchCart.bind(this)}
               />
+              <Scene key="Press" component={Press} title="News Articles" />
             </Scene>
           </Router>
         <FooterIcon />

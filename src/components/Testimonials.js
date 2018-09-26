@@ -20,7 +20,7 @@ export default class Testimonials extends Component {
         <Card style={{ flex: 0.90 }}>
           <CardItem bordered>
             <Content padding>
-              <Spinner color='#5d823c' />
+              <Spinner color='#ab8321' />
               <TestimonialScroll />
             </Content>
           </CardItem>

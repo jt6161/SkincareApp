@@ -56,7 +56,7 @@ export default class Menu extends Component {
           <Button
             block small primary
             style={styles.mb15}
-            // onPress={() => { Actions.Testimonials(); }}
+            onPress={() => { Actions.Press(); }}
           >
             <Text>News Articles</Text>
           </Button>
