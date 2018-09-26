@@ -54,6 +54,14 @@ export default class Menu extends Component {
           </Button>
 
           <Button
+            block small primary
+            style={styles.mb15}
+            // onPress={() => { Actions.Testimonials(); }}
+          >
+            <Text>News Articles</Text>
+          </Button>
+
+          <Button
             block small info
             style={styles.mb15}
             onPress={() => { Actions.THCProducts(); }}
@@ -70,6 +78,10 @@ export default class Menu extends Component {
           </Button>
 
         </Content>
+        <Text
+          style={styles.copyright}
+        >
+            420 Skincare 2018 All rights reserved.</Text>
       </Container>
     );
   }
@@ -82,4 +94,11 @@ const styles = StyleSheet.create({
   mb15: {
     marginBottom: 20
   },
+  copyright: {
+    fontSize: 12,
+    padding: 5,
+    fontWeight: 'bold',
+    color: '#ab8321',
+    alignSelf: 'center'
+  }
 });
