@@ -10,7 +10,6 @@ import {
   Left,
   Body
 } from 'native-base';
-// import VideoPlayer from 'react-native-video-controls';
 
 const fourtwentylogo = require('./420skincare_logo.png');
 
@@ -62,8 +61,6 @@ export default class About extends Component {
             </CardItem>
           </Card>
         </Content>
-
-
       </Container>
 
     );
