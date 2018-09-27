@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Image, Linking } from 'react-native';
-import { Text, Button, Row } from 'native-base';
-import { Actions } from 'react-native-router-flux';
+import { Text } from 'native-base';
+// import { Actions } from 'react-native-router-flux';
 
 const fourtwentylogo = require('./420skincare_logo.png');
 
