@@ -16,7 +16,7 @@ export default class Press extends Component {
           />
           <Text style={styles.textStyle}>
             Marvina Thomas and 420 Skincare have been featured in
-            many different articles. Click title to view.
+            many different articles. Click article title to view.
           </Text>
           <Image
             source={{ uri: 'https://images1.phoenixnewtimes.com/imager/u/745xauto/10503675/marvina3-2.jpg' }}

@@ -81,7 +81,7 @@ export default class Menu extends Component {
         <Text
           style={styles.copyright}
         >
-            Copyright © 2018 420 Skincare All Rights Reserved.</Text>
+            Copyright © 2018 420 Skincare - All Rights Reserved.</Text>
       </Container>
     );
   }
