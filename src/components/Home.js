@@ -23,7 +23,8 @@ export default class Home extends Component {
             style={{ width: 315, height: 180, alignSelf: 'center' }}
           />
           <Text
-              style={{ color: '#ab8321', fontSize: 13, padding: 3, fontWeight: 'bold' }}
+              // style={{ color: '#ab8321', fontSize: 13, padding: 3, fontWeight: 'bold' }}
+              style={styles.copyright}
               onPress={() => Linking.openURL('http://www.420-Skincare.com')}
           >
             420-Skincare.com
@@ -50,7 +51,7 @@ export default class Home extends Component {
           <Text
             style={styles.copyright}
           >
-              Copyright © 2018 420 Skincare - All Rights Reserved.</Text>
+            Copyright © 2018 420 Skincare - All Rights Reserved.</Text>
         </View>
       </ScrollView>
     );
