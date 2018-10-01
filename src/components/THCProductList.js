@@ -16,7 +16,7 @@ class THCProductList extends Component {
 
   renderTHCProducts() {
     if (this.state.thcproducts.length === 0) {
-            return <Spinner color='#ab8321' />;
+            return <Spinner color='black' />;
     }
     return this.state.thcproducts.map(thcproduct =>
       <THCProductDetail key={thcproduct.name} thcproduct={thcproduct} />
