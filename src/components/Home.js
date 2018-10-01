@@ -20,7 +20,7 @@ export default class Home extends Component {
 
           <Image
             source={{ uri: 'https://static.wixstatic.com/media/7026a3_0d13522b5a0b42559d6d183bc8b44eb3~mv2.jpg' }}
-            style={{ width: 315, height: 180, alignSelf: 'center' }}
+            style={{ width: 310, height: 180, alignSelf: 'center' }}
           />
           <Text
               style={styles.copyright}
@@ -66,7 +66,7 @@ export default class Home extends Component {
      position: 'relative'
    },
    textStyle: {
-     fontSize: 17,
+     fontSize: 16,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
