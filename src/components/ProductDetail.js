@@ -45,16 +45,14 @@ const ProductDetail = ({ product, addToCart }) => {
         <View>
           <Text style={mainTextStyle}>{description}</Text>
           <Text style={headerTextStyle}>Price: ${price}</Text>
-        </View>
-      </CardItem>
-      <CardItem>
           <Button
             block small success
             style={{ margin: 15, padding: 100 }}
             onPress={() => addToCart(product)}
           >
-            <Text>Purchase</Text>
+          <Text>Purchase</Text>
           </Button>
+        </View>
       </CardItem>
     </Card>
   );
@@ -73,7 +71,7 @@ const styles = {
     alignItems: 'center'
   },
   mainTextStyle: {
-    fontSize: 13,
+    fontSize: 14,
     fontWeight: 'bold',
     color: '#ab8321'
   },

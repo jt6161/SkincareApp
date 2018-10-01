@@ -1,24 +1,31 @@
 import React, { Component } from 'react';
-import { Linking } from 'react-native';
-import { Container, Content, List, ListItem, Text } from 'native-base';
-import HeaderIcon from './HeaderIcon';
+import { Image, Linking, ScrollView, View } from 'react-native';
+import { Content, List, ListItem, Text } from 'native-base';
+
+const fourtwentylogo = require('./420skincare_logo.png');
 
 export default class Dispensary extends Component {
   render() {
     return (
-      <Container>
-        <HeaderIcon />
+      <ScrollView>
+        <View style={styles.viewStyle}>
+          <Image
+            source={fourtwentylogo}
+            style={{ width: 200, height: 80, alignSelf: 'center' }}
+          />
         <Content>
           <List>
-            <ListItem>
               <Text style={styles.textStyle2}>To purchase
                 420 Skincare products that are infused with
-                THC please visit these state licensed dispensaries.
+                THC please visit these state-licensed dispensaries.
                 You must have an AZ MMJ card to purchase from a dispensary.
                 (Click for website)
               </Text>
-            </ListItem>
-            <ListItem itemDivider>
+
+            <ListItem
+              itemDivider
+              style={{ backgroundColor: '#464646' }}
+            >
               <Text
                 style={styles.textStyle}
               >
@@ -108,13 +115,16 @@ export default class Dispensary extends Component {
             <ListItem>
               <Text
                 style={styles.textStyle2}
-                onPress={() => Linking.openURL('http://www.greenpharms.com/')}
+                onPress={() => Linking.openURL('http://thegooddispensary.com/')}
               >
                 THE GOOD DISPENSARY
               </Text>
             </ListItem>
 
-            <ListItem itemDivider>
+            <ListItem
+              itemDivider
+              style={{ backgroundColor: '#464646' }}
+            >
               <Text
                 style={styles.textStyle}
               >
@@ -139,32 +149,30 @@ export default class Dispensary extends Component {
                 PURPLE MED
               </Text>
             </ListItem>
-
         </List>
       </Content>
-    </Container>
-
+      </View>
+    </ScrollView>
     );
   }
 }
  const styles = {
    viewStyle: {
-     backgroundColor: 'white',
+    backgroundColor: 'black',
      alignItems: 'center',
-     height: 800,
      padding: 10,
      elevation: 2,
      position: 'relative'
    },
    textStyle: {
-     fontSize: 14,
-     padding: 10,
+     fontSize: 13,
+     padding: 5,
      fontWeight: 'bold',
      color: '#ab8321'
    },
    textStyle2: {
-     fontSize: 16,
-     padding: 10,
+     fontSize: 15,
+     padding: 5,
      fontWeight: 'bold',
      color: '#ab8321'
    },

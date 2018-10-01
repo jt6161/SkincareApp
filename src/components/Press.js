@@ -18,7 +18,7 @@ export default class Press extends Component {
             Marvina Thomas and 420 Skincare have been featured in
             many different articles. Click article title to view.
           </Text>
-          
+
           <Image
             source={{ uri: 'https://assets.entrepreneur.com/content/3x2/2000/20180802214533-phpB6e3Vj-crop.jpeg' }}
             style={{ width: 315, height: 315, alignSelf: 'center' }}
@@ -65,13 +65,13 @@ export default class Press extends Component {
      position: 'relative'
    },
    textStyle: {
-     fontSize: 16,
+     fontSize: 15,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
    },
    textStyle2: {
-     fontSize: 14,
+     fontSize: 13,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
