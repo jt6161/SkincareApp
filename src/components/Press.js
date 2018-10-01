@@ -18,6 +18,17 @@ export default class Press extends Component {
             Marvina Thomas and 420 Skincare have been featured in
             many different articles. Click article title to view.
           </Text>
+          
+          <Image
+            source={{ uri: 'https://assets.entrepreneur.com/content/3x2/2000/20180802214533-phpB6e3Vj-crop.jpeg' }}
+            style={{ width: 315, height: 315, alignSelf: 'center' }}
+          />
+          <Text
+            style={styles.textStyle2}
+            onPress={() => Linking.openURL('http://entm.ag/h2p')}
+          >
+            She Wants to Change the Face of the Industry - Green Entrepreneur
+          </Text>
           <Image
             source={{ uri: 'https://images1.phoenixnewtimes.com/imager/u/745xauto/10503675/marvina3-2.jpg' }}
             style={{ width: 315, height: 315, alignSelf: 'center' }}
@@ -29,16 +40,7 @@ export default class Press extends Component {
             No Slack in Success:
             Black Ganjapreneur Marvina Thomas Sets Example in Industry - Phoenix New Times
           </Text>
-          <Image
-            source={{ uri: 'https://assets.entrepreneur.com/content/3x2/2000/20180802214533-phpB6e3Vj-crop.jpeg' }}
-            style={{ width: 315, height: 315, alignSelf: 'center' }}
-          />
-          <Text
-            style={styles.textStyle2}
-            onPress={() => Linking.openURL('http://entm.ag/h2p')}
-          >
-            She Wants to Change the Face of the Industry - Green Entrepreneur
-          </Text>
+
           <Image
             source={{ uri: 'https://www.directcannabisnetwork.com/wp-content/uploads/2017/01/DCN-web-logo-272.png' }}
             style={{ width: 315, height: 180, alignSelf: 'center' }}

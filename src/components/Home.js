@@ -23,7 +23,6 @@ export default class Home extends Component {
             style={{ width: 315, height: 180, alignSelf: 'center' }}
           />
           <Text
-              // style={{ color: '#ab8321', fontSize: 13, padding: 3, fontWeight: 'bold' }}
               style={styles.copyright}
               onPress={() => Linking.openURL('http://www.420-Skincare.com')}
           >

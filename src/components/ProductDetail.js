@@ -1,33 +1,25 @@
 import React from 'react';
 import { View, Image } from 'react-native';
-import { Text, Body, Button, Card, CardItem, Left, Thumbnail } from 'native-base';
+import {
+  Text,
+  Body,
+  Card,
+  CardItem,
+  Left,
+  Thumbnail,
+  Button
+} from 'native-base';
 
 const fourtwentylogo = require('./420skincare_logo.png');
 
 const ProductDetail = ({ product, addToCart }) => {
-  const { name, img_url, description, price, url } = product;
+  const { name, img_url, description, price } = product;
   const {
     headerContentStyle,
     headerTextStyle,
     mainTextStyle,
     imageStyle
   } = styles;
-
-  const btn = (url ? (
-    <Button
-      block small success
-      style={{ margin: 15, padding: 100 }}
-      onPress={() => addToCart(product)}
-    >
-      <Text>Purchase</Text>
-    </Button>
-  ) : (
-    <Button
-      block disabled
-      style={{ margin: 5, padding: 100 }}
-    >
-      <Text>Coming Soon</Text>
-    </Button>));
 
   return (
      <Card>
@@ -42,24 +34,27 @@ const ProductDetail = ({ product, addToCart }) => {
         </Left>
       </CardItem>
 
-      <CardItem>
+      <CardItem bordered>
         <Image
           style={imageStyle}
           source={{ uri: img_url }}
         />
       </CardItem>
 
-      <CardItem bordered>
+      <CardItem>
         <View>
           <Text style={mainTextStyle}>{description}</Text>
           <Text style={headerTextStyle}>Price: ${price}</Text>
         </View>
       </CardItem>
-
       <CardItem>
-        <View>
-          {btn}
-        </View>
+          <Button
+            block small success
+            style={{ margin: 15, padding: 100 }}
+            onPress={() => addToCart(product)}
+          >
+            <Text>Purchase</Text>
+          </Button>
       </CardItem>
     </Card>
   );
@@ -78,14 +73,13 @@ const styles = {
     alignItems: 'center'
   },
   mainTextStyle: {
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: 'bold',
     color: '#ab8321'
   },
   imageStyle: {
     height: 400,
     flex: 1,
-    backgroundColor: 'black',
     width: null
   }
 };

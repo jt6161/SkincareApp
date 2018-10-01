@@ -23,7 +23,6 @@ const THCProductDetail = ({ thcproduct }) => {
   } = styles;
 
   return (
-
      <Card>
       <CardItem bordered>
         <Left>
@@ -35,16 +34,24 @@ const THCProductDetail = ({ thcproduct }) => {
           </Body>
         </Left>
       </CardItem>
-      <CardItem>
+
+      <CardItem bordered>
         <Image
           style={imageStyle}
           source={{ uri: img_url }}
         />
       </CardItem>
-      <CardItem bordered>
+      
+      <CardItem>
         <View>
           <Text style={mainTextStyle}>{description}</Text>
         </View>
+      </CardItem>
+      <CardItem>
+        <Text style={mainTextStyle}>
+          These products contain THC and are only available at
+          state-licensed dispensaries.
+          You must have an MMJ card in order to purchase these products.</Text>
       </CardItem>
       <CardItem>
         <Button
@@ -69,13 +76,20 @@ const styles = {
   headerTextStyle: {
     fontSize: 19,
     fontWeight: 'bold',
-    // color: '#ab8321',
+    color: 'black',
     alignItems: 'center'
   },
   mainTextStyle: {
-    fontSize: 14,
+    fontSize: 13,
     fontWeight: 'bold',
-    // color: '#ab8321'
+    color: 'black'
+  },
+  copyright: {
+    fontSize: 12,
+    padding: 5,
+    fontWeight: 'bold',
+    color: 'black',
+    alignSelf: 'center'
   },
   imageStyle: {
     height: 400,
