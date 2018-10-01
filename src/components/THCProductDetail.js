@@ -41,7 +41,7 @@ const THCProductDetail = ({ thcproduct }) => {
           source={{ uri: img_url }}
         />
       </CardItem>
-      
+
       <CardItem>
         <View>
           <Text style={mainTextStyle}>{description}</Text>
