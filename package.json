@@ -28,15 +28,12 @@
     "babel": "^6.23.0",
     "eslint-plugin-import": "^2.11.0",
     "expo": "^26.0.0",
-    "lodash": "^4.17.11",
     "native-base": "^2.7.2",
     "npm": "^5.8.0",
     "prop-types": "^15.6.1",
     "react": "^16.3.0-alpha.1",
     "react-native": "^0.54.0",
     "react-native-router-flux": "^4.0.1",
-    "react-native-vector-icons": "^4.6.0",
-    "react-native-video": "^3.2.1",
-    "react-native-video-controls": "^2.2.3"
+    "react-native-vector-icons": "^4.6.0"
   }
 }
