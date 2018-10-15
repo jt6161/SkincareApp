@@ -12,6 +12,7 @@ import {
   Thumbnail
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
+// import Icon from 'react-native-vector-icons/Ionicons';
 import HeaderIcon from './HeaderIcon';
 
 export default class Cart extends Component {
@@ -27,17 +28,15 @@ export default class Cart extends Component {
             />
           </Left>
           <Body>
-            <Text note numberOfLines={1}>{item.name}</Text>
-            <Text>${item.price}</Text>
+            <Text>{item.name}</Text>
           </Body>
           <Right>
-            <Button transparent>
-              <Text>Remove</Text>
-            </Button>
+              <Text>${item.price}</Text>
           </Right>
         </ListItem>
       ));
   }
+// Need to add shipping fee and total component
 
   render() {
     return (
@@ -49,22 +48,22 @@ export default class Cart extends Component {
                 </List>
               </Content>
 
-                <Text
-                    style={{
-                    color: '#ab8321',
-                    fontSize: 13,
-                    padding: 5,
-                    fontWeight: 'bold',
-                    alignSelf: 'center' }}
-                    onPress={() => { Actions.Products(); }}
-                >
-                  Continue Shopping
+              <Text
+                style={{
+                color: '#ab8321',
+                fontSize: 12,
+                padding: 5,
+                fontWeight: 'bold',
+                alignSelf: 'center' }}
+                onPress={() => { Actions.Products(); }}
+              >
+                Continue Shopping
                 </Text>
               <Button
                 block small success
                 style={{ margin: 10, padding: 10 }}
               >
-              <Text>Checkout</Text>
+                <Text>Checkout</Text>
               </Button>
       </Container>
     );

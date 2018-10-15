@@ -36,6 +36,7 @@ export default class Cart extends Component {
         </ListItem>
       ));
   }
+// Need to add shipping fee and total component
 
   render() {
     return (
