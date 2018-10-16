@@ -47,10 +47,10 @@ export default class Home extends Component {
               <Text>420 Skincare Products</Text>
             </Button>
           </Row>
-          <Text
-            style={styles.copyright}
-          >
-            Copyright © 2018 420 Skincare - All Rights Reserved.</Text>
+              <Text
+                style={styles.copyright}
+              >
+            Copyright © 2018 420 Skincare All Rights Reserved.</Text>
         </View>
       </ScrollView>
     );
@@ -78,7 +78,7 @@ export default class Home extends Component {
      color: '#ab8321'
    },
    copyright: {
-     fontSize: 12,
+     fontSize: 13,
      padding: 5,
      fontWeight: 'bold',
      color: '#ab8321',

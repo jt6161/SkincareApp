@@ -24,7 +24,7 @@ export default class Dispensary extends Component {
 
             <ListItem
               itemDivider
-              style={{ backgroundColor: '#464646' }}
+              style={{ backgroundColor: '#202020' }}
             >
               <Text
                 style={styles.textStyle}
@@ -123,7 +123,7 @@ export default class Dispensary extends Component {
 
             <ListItem
               itemDivider
-              style={{ backgroundColor: '#464646' }}
+              style={{ backgroundColor: '#202020' }}
             >
               <Text
                 style={styles.textStyle}
@@ -175,8 +175,5 @@ export default class Dispensary extends Component {
      padding: 5,
      fontWeight: 'bold',
      color: '#ab8321'
-   },
-   mb15: {
-     marginBottom: 20
    }
  };
