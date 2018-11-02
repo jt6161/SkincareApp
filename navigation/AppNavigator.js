@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Platform, StyleSheet, Text, View, Alert } from 'react-native';
+import { Alert } from 'react-native';
 // import { StackViewStyleInterpolator } from 'react-navigation-stack';
 import { Router, Scene } from 'react-native-router-flux';
 import Products from '../src/components/Products';

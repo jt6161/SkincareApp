@@ -16,7 +16,7 @@ class TestimonialList extends Component {
 
   renderTestimonials() {
     if (this.state.testimonials.length === 0) {
-      return <Spinner color='#5d823c' />;
+      return <Spinner size='large' color='#5d823c' />;
     }
     return this.state.testimonials.map(testimonial =>
 <TestimonialDetail key={testimonial.review} testimonial={testimonial} />
