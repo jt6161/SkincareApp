@@ -26,7 +26,7 @@ export default class About extends Component {
                 />
                 <Body>
                   <Text style={styles.textStyle}>Marvina Thomas,
-                  CEO and founder of 420 Skincare,
+                  CEO / Founder of 420 Skincare & 420 Medibles,
                   Leader of Women Grow Phoenix Chapter</Text>
                 </Body>
               </Left>

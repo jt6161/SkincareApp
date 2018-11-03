@@ -17,7 +17,7 @@ export default class Menu extends Component {
         <Content padder style={{ backgroundColor: '#000', padding: 10 }}>
           <Image
             source={fourtwentylogo}
-            style={{ width: 250, height: 120, alignSelf: 'center' }}
+            style={{ width: 200, height: 80, alignSelf: 'center' }}
           />
 
           <Button
@@ -76,9 +76,11 @@ export default class Menu extends Component {
           >
             <Text>Dispensary List</Text>
           </Button>
-
+          <Image
+            source={fourtwentylogo}
+            style={{ width: 200, height: 80, alignSelf: 'center' }}
+          />
         </Content>
-        
       </Container>
     );
   }

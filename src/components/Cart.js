@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   Container,
   Body,
@@ -11,61 +11,74 @@ import {
   List,
   Thumbnail
 } from 'native-base';
-import { Actions } from 'react-native-router-flux';
+import {Actions} from 'react-native-router-flux';
 // import Icon from 'react-native-vector-icons/Ionicons';
 import HeaderIcon from './HeaderIcon';
+
+const shippingRate = 6.90;
 
 export default class Cart extends Component {
   renderProducts() {
     console.log('IN CART');
-    return this.props.fetchCart().map(item => (
-        <ListItem thumbnail>
-          <Left>
-            <Thumbnail
-              small
-              square
-              source={{ uri: item.img_url }}
-            />
-          </Left>
-          <Body>
-            <Text>{item.name}</Text>
-          </Body>
-          <Right>
-              <Text>${item.price}</Text>
-          </Right>
-        </ListItem>
-      ));
+    return this.props.fetchCart().map(item => (<ListItem thumbnail="thumbnail">
+      <Left>
+        <Thumbnail small="small" square="square" source={{
+            uri: item.img_url
+          }}/>
+      </Left>
+      <Body>
+        <Text>{item.name}</Text>
+      </Body>
+      <Right>
+        <Text>${item.price}</Text>
+      </Right>
+    </ListItem>));
   }
-// Need to add shipping fee and total component
+  // Need to add shipping fee and total component
 
   render() {
-    return (
-      <Container>
-        <HeaderIcon />
-              <Content>
-                <List>
-                {this.renderProducts()}
-                </List>
-              </Content>
+    return (<Container>
 
-              <Text
-                style={{
-                color: '#ab8321',
-                fontSize: 12,
-                padding: 5,
-                fontWeight: 'bold',
-                alignSelf: 'center' }}
-                onPress={() => { Actions.Products(); }}
-              >
-                Continue Shopping
-                </Text>
-              <Button
-                block small success
-                style={{ margin: 10, padding: 10 }}
-              >
-                <Text>Checkout</Text>
-              </Button>
-      </Container>
-    );
+      <Content>
+        <List>
+          {this.renderProducts()}
+        </List>
+      </Content>
+
+      <Text
+          style={{
+          color: '#ab8321',
+          fontSize: 12,
+          padding: 5,
+          fontWeight: 'normal',
+          alignSelf: 'center'
+          }}
+          onPress={() => {
+          Actions.Products();
+          }}
+      >
+        Continue Shopping
+      </Text>
+
+      <Text
+          style={{
+          color: '#000',
+          fontSize: 14,
+          padding: 5,
+          fontWeight: 'bold',
+          alignSelf: 'center'
+          }}
+      >
+        Shipping and handling $6.90
+      </Text>
+
+      <Button
+        block small success
+        style={{ margin: 10, padding: 10 }}
+      >
+        <Text>Checkout</Text>
+      </Button>
+    </Container>
+  );
   }
 }
