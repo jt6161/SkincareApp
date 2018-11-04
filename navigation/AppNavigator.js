@@ -36,9 +36,7 @@ render() {
         <Scene key="root">
         <Scene key="Home" component={Home} title="420 Skincare" initial />
         <Scene
-          key="Products"
-          component={Products}
-          title="CBD Products"
+          key="Products" component={Products} title="CBD Products"
           addToCart={this.addToCart.bind(this)}
         />
         <Scene key="About" component={About} title="About" />
