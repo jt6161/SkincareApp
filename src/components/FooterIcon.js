@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react';
 import { View } from 'react-native';
 import { Footer, Icon, Button, FooterTab, Text } from 'native-base';
