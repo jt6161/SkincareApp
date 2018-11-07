@@ -46,11 +46,13 @@ export default class Home extends Component {
             >
               <Text>420 Skincare Products</Text>
             </Button>
+
           </Row>
               <Text
                 style={styles.copyright}
               >
-            Copyright © 2018 420 Skincare All Rights Reserved.</Text>
+            Copyright © 2018 420 Skincare and 420 Medibles.
+            All Rights Reserved.</Text>
         </View>
       </ScrollView>
     );
@@ -85,6 +87,6 @@ export default class Home extends Component {
      alignSelf: 'center'
    },
    mb15: {
-     marginBottom: 20
+     marginBottom: 10,
    }
  };
