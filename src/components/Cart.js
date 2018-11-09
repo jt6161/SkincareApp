@@ -15,7 +15,7 @@ import { Actions } from 'react-native-router-flux';
 // import Icon from 'react-native-vector-icons/Ionicons';
 // import HeaderIcon from './HeaderIcon';
 
-const shippingRate = 6.90;
+// const shippingRate = 6.90;
 
 export default class Cart extends Component {
   renderProducts() {
