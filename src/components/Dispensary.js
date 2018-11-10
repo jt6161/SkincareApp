@@ -1,22 +1,30 @@
 import React, { Component } from 'react';
 import { Image, Linking, ScrollView, View } from 'react-native';
-import { Content, List, ListItem, Text } from 'native-base';
+import { List, ListItem, Row, Text } from 'native-base';
 
 const fourtwentylogo = require('./420skincare_logo.png');
+
+const medibleslogo = require('./420medibles_logo.png');
 
 export default class Dispensary extends Component {
   render() {
     return (
       <ScrollView>
         <View style={styles.viewStyle}>
-          <Image
-            source={fourtwentylogo}
-            style={{ width: 200, height: 80, alignSelf: 'center' }}
-          />
-        <Content>
+          <Row>
+            <Image
+              source={fourtwentylogo}
+              style={{ width: 150, height: 80, alignSelf: 'center' }}
+            />
+            <Image
+                source={medibleslogo}
+                style={{ width: 150, height: 80, alignSelf: 'center' }}
+            />
+            </Row>
+
           <List>
               <Text style={styles.textStyle2}>To purchase
-                420 Skincare products that are infused with
+                420 Skincare of 420 Medibles products that are infused with
                 THC please visit these state-licensed dispensaries.
                 You must have an AZ MMJ card to purchase from a dispensary.
                 (Click for website)
@@ -150,7 +158,7 @@ export default class Dispensary extends Component {
               </Text>
             </ListItem>
         </List>
-      </Content>
+
       </View>
     </ScrollView>
     );
@@ -161,8 +169,7 @@ export default class Dispensary extends Component {
     backgroundColor: 'black',
      alignItems: 'center',
      padding: 10,
-     elevation: 2,
-     position: 'relative'
+     elevation: 2
    },
    textStyle: {
      fontSize: 13,
