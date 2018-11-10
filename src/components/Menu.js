@@ -4,7 +4,6 @@ import {
   Container,
   Content,
   Button,
-  Row,
   Text
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
@@ -18,17 +17,15 @@ export default class Menu extends Component {
     return (
       <Container style={styles.container}>
         <Content
-          padder style={{ backgroundColor: '#000',
-          padding: 10 }}
+          padder style={{ backgroundColor: '#000', padding: 10 }}
         >
-            <Image
-              source={fourtwentylogo}
-              style={{ width: 150,
-              height: 80,
-              alignSelf: 'center'
-              }}
-            />
-
+          <Image
+            source={fourtwentylogo}
+            style={{ width: 150,
+            height: 80,
+            alignSelf: 'center'
+            }}
+          />
 
           <Button
             block small danger
@@ -111,13 +108,10 @@ export default class Menu extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#000',
-    justifyContent: 'space-around'
+    backgroundColor: '#000'
   },
   mb15: {
-    marginBottom: 10,
-    paddingTop: 3,
-    paddingBottom: 3
+    marginBottom: 12
   },
   copyright: {
     fontSize: 12,

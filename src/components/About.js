@@ -5,7 +5,6 @@ import {
   Content,
   Card,
   CardItem,
-  Thumbnail,
   Text,
   Row,
   Body
