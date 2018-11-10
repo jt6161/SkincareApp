@@ -14,11 +14,17 @@ export default class Dispensary extends Component {
           <Row>
             <Image
               source={fourtwentylogo}
-              style={{ width: 150, height: 80, alignSelf: 'center' }}
+              style={{ width: 150,
+              height: 80,
+              alignSelf: 'center',
+              justifyContent: 'space-between' }}
             />
             <Image
-                source={medibleslogo}
-                style={{ width: 150, height: 80, alignSelf: 'center' }}
+              source={medibleslogo}
+              style={{ width: 150,
+              height: 80,
+              alignSelf: 'center',
+              justifyContent: 'space-between' }}
             />
             </Row>
 
@@ -172,7 +178,7 @@ export default class Dispensary extends Component {
      elevation: 2
    },
    textStyle: {
-     fontSize: 13,
+     fontSize: 12,
      padding: 5,
      fontWeight: 'bold',
      color: '#ab8321'

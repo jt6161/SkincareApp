@@ -17,17 +17,18 @@ export default class Menu extends Component {
   render() {
     return (
       <Container style={styles.container}>
-        <Content padder style={{ backgroundColor: '#000', padding: 10 }}>
-          <Row>
+        <Content
+          padder style={{ backgroundColor: '#000',
+          padding: 10 }}
+        >
             <Image
               source={fourtwentylogo}
-              style={{ width: 150, height: 80, alignSelf: 'center' }}
+              style={{ width: 150,
+              height: 80,
+              alignSelf: 'center'
+              }}
             />
-            <Image
-                source={medibleslogo}
-                style={{ width: 150, height: 80, alignSelf: 'center' }}
-            />
-            </Row>
+
 
           <Button
             block small danger
@@ -94,6 +95,14 @@ export default class Menu extends Component {
             <Text>Dispensary List</Text>
           </Button>
 
+          <Image
+            source={medibleslogo}
+            style={{ width: 150,
+            height: 80,
+            alignSelf: 'center'
+            }}
+          />
+
         </Content>
       </Container>
     );
@@ -102,10 +111,11 @@ export default class Menu extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#000'
+    backgroundColor: '#000',
+    justifyContent: 'space-around'
   },
   mb15: {
-    marginBottom: 20,
+    marginBottom: 10,
     paddingTop: 3,
     paddingBottom: 3
   },

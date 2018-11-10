@@ -7,7 +7,7 @@ import {
   CardItem,
   Thumbnail,
   Text,
-  Left,
+  Row,
   Body
 } from 'native-base';
 
@@ -52,14 +52,22 @@ export default class About extends Component {
                   The program will allow 420 Skincare to help purchase MMJ cards
                   to assist many more men and women to get healthier.
                 </Text>
-                <Image
-                  source={fourtwentylogo}
-                  style={{ width: 200, height: 150, alignSelf: 'center' }}
-                />
-                <Image
-                  source={medibleslogo}
-                  style={{ width: 200, height: 150, alignSelf: 'center' }}
-                />
+                <Row>
+                  <Image
+                    source={fourtwentylogo}
+                    style={{ width: 150,
+                    height: 80,
+                    alignSelf: 'center',
+                    justifyContent: 'space-between' }}
+                  />
+                  <Image
+                    source={medibleslogo}
+                    style={{ width: 150,
+                    height: 80,
+                    alignSelf: 'center',
+                    justifyContent: 'space-between' }}
+                  />
+                  </Row>
               </Body>
             </CardItem>
           </Card>
