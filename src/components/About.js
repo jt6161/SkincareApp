@@ -49,7 +49,10 @@ export default class About extends Component {
                   from the terrible disease. As 420 Skincare grows, she would
                   like to accelerate the Buy & Give Program to new heights.
                   The program will allow 420 Skincare to help purchase MMJ cards
-                  to assist many more men and women to get healthier.
+                  to assist many more men and women to get healthier. 50% of
+                  our proceeds from this app go directly to the nonprofit
+                  Start Living Recovery Home. 420 Skincare products will
+                  make you feel good inside and out!
                 </Text>
               </Body>
             </CardItem>

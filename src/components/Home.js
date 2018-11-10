@@ -12,17 +12,10 @@ export default class Home extends Component {
     return (
       <ScrollView>
         <View style={styles.viewStyle}>
-          <Row>
             <Image
               source={fourtwentylogo}
-              style={{ width: 150, height: 80, alignSelf: 'center' }}
+              style={{ width: 170, height: 80, alignSelf: 'center' }}
             />
-            <Image
-                source={medibleslogo}
-                style={{ width: 150, height: 80, alignSelf: 'center' }}
-            />
-            </Row>
-
           <Image
             source={{ uri: 'https://static.wixstatic.com/media/7026a3_0d13522b5a0b42559d6d183bc8b44eb3~mv2.jpg' }}
             style={{ width: 310, height: 180, alignSelf: 'center' }}
@@ -33,19 +26,14 @@ export default class Home extends Component {
           >
             420-Skincare.com
           </Text>
-          <Text style={styles.textStyle}>Cannabis Infused Luxury Skincare
-          </Text>
+
           <Text style={styles.textStyle2}>
-            From Infused Body Butter to CBD Soaps,
-            we specialize in Natural, Organic, Hand-Crafted
-            Skincare for all Skin Types. Our soothing all natural
-            ingredients can improve several skin conditions. 50% of
-            our proceeds from this app go directly to the nonprofit
-            Start Living Recovery Home. 420 Skincare products will
-            make you feel good inside and out!
+            Cannabis Infused Luxury Skincare - From Infused Body Butter to CBD
+            Soaps, we specialize in Natural, Organic, Hand-Crafted
+            Skincare for all Skin Types.
           </Text>
 
-          <Row>
+          {/* <Row>
             <Button
               block small success
               style={styles.mb15}
@@ -53,13 +41,27 @@ export default class Home extends Component {
             >
               <Text>420 Skincare Products</Text>
             </Button>
+            </Row> */}
 
-          </Row>
+            <Image
+                source={medibleslogo}
+                style={{ width: 170, height: 80, alignSelf: 'center' }}
+            />
+              <Text style={styles.textStyle2}>
+                420 Medibles - From Brownies to Gummys we have the biggest
+                and best tasty treats for you. Our delicious ingredients
+                and generous sizes will make you fall in love with
+                420 Medibles. Only available in the dispensary!
+              </Text>
               <Text
                 style={styles.copyright}
               >
-            Copyright © 2018 420 Skincare and 420 Medibles.
-            All Rights Reserved.</Text>
+            Copyright © 2018 </Text>
+            <Text
+              style={styles.copyright}
+            >
+          420 Skincare and 420 Medibles.
+          All Rights Reserved.</Text>
         </View>
       </ScrollView>
     );
@@ -69,8 +71,8 @@ export default class Home extends Component {
    viewStyle: {
      backgroundColor: 'black',
      alignItems: 'center',
-     height: 600,
-     padding: 10,
+     height: 650,
+     padding: 5,
      elevation: 2,
      position: 'relative'
    },
@@ -94,6 +96,7 @@ export default class Home extends Component {
      alignSelf: 'center'
    },
    mb15: {
-     marginBottom: 10,
+     marginBottom: 20,
+     padding: 10
    }
  };
