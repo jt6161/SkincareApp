@@ -87,7 +87,7 @@ export default class Menu extends Component {
             <Text>Dispensary List</Text>
           </Button>
           <Image
-            source={fourtwentylogo}
+            source={medibleslogo}
             style={{ width: 200, height: 80, alignSelf: 'center' }}
           />
         </Content>
@@ -101,7 +101,9 @@ const styles = StyleSheet.create({
     backgroundColor: '#000'
   },
   mb15: {
-    marginBottom: 20
+    marginBottom: 20,
+    paddingTop: 3,
+    paddingBottom: 3
   },
   copyright: {
     fontSize: 12,
