@@ -6,7 +6,8 @@ import {
   Card,
   CardItem,
   Text,
-  Row,
+  Left,
+  Right,
   Body
 } from 'native-base';
 
@@ -21,7 +22,6 @@ export default class About extends Component {
         <Content>
           <Card style={{ flex: 1 }}>
             <CardItem bordered>
-
                 <Body>
                   <Text style={styles.textStyle}>Marvina Thomas,
                   CEO / Founder of 420 Skincare & 420 Medibles,
@@ -51,24 +51,24 @@ export default class About extends Component {
                   The program will allow 420 Skincare to help purchase MMJ cards
                   to assist many more men and women to get healthier.
                 </Text>
-                <Row>
-                  <Image
-                    source={fourtwentylogo}
-                    style={{ width: 150,
-                    height: 80,
-                    alignSelf: 'center',
-                    justifyContent: 'space-between' }}
-                  />
-                  <Image
-                    source={medibleslogo}
-                    style={{ width: 150,
-                    height: 80,
-                    alignSelf: 'center',
-                    justifyContent: 'space-between' }}
-                  />
-                  </Row>
               </Body>
             </CardItem>
+            <CardItem>
+              <Left>
+                <Image
+                  source={fourtwentylogo}
+                  style={{ width: 150, height: 80, paddingLeft: 30 }}
+                />
+              </Left>
+
+              <Right>
+                <Image
+                  source={medibleslogo}
+                  style={{ width: 150, height: 80, paddingRight: 30 }}
+                />
+              </Right>
+            </CardItem>
+
           </Card>
         </Content>
       </Container>

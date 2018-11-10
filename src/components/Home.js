@@ -75,7 +75,7 @@ export default class Home extends Component {
      position: 'relative'
    },
    textStyle: {
-     fontSize: 16,
+     fontSize: 15,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
