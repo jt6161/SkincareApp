@@ -13,6 +13,8 @@ import {
 
 const fourtwentylogo = require('./420skincare_logo.png');
 
+const medibleslogo = require('./420medibles_logo.png');
+
 export default class About extends Component {
   render() {
     return (
@@ -20,16 +22,13 @@ export default class About extends Component {
         <Content>
           <Card style={{ flex: 1 }}>
             <CardItem bordered>
-              <Left>
-                <Thumbnail
-                  source={fourtwentylogo}
-                />
+
                 <Body>
                   <Text style={styles.textStyle}>Marvina Thomas,
                   CEO / Founder of 420 Skincare & 420 Medibles,
-                  Leader of Women Grow Phoenix Chapter</Text>
+                  Women Grow Phoenix Chapter Leader</Text>
                 </Body>
-              </Left>
+
             </CardItem>
             <CardItem bordered>
               <Body>
@@ -55,6 +54,10 @@ export default class About extends Component {
                 </Text>
                 <Image
                   source={fourtwentylogo}
+                  style={{ width: 200, height: 150, alignSelf: 'center' }}
+                />
+                <Image
+                  source={medibleslogo}
                   style={{ width: 200, height: 150, alignSelf: 'center' }}
                 />
               </Body>

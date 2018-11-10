@@ -4,6 +4,7 @@ import {
   Container,
   Content,
   Button,
+  Row,
   Text
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
@@ -17,18 +18,24 @@ export default class Menu extends Component {
     return (
       <Container style={styles.container}>
         <Content padder style={{ backgroundColor: '#000', padding: 10 }}>
-          <Image
-            source={fourtwentylogo}
-            style={{ width: 200, height: 80, alignSelf: 'center' }}
-          />
+          <Row>
+            <Image
+              source={fourtwentylogo}
+              style={{ width: 150, height: 80, alignSelf: 'center' }}
+            />
+            <Image
+                source={medibleslogo}
+                style={{ width: 150, height: 80, alignSelf: 'center' }}
+            />
+            </Row>
 
-          {/* <Button
-            block small success
+          <Button
+            block small danger
             style={styles.mb15}
             onPress={() => { Actions.Home(); }}
           >
             <Text>Home</Text>
-          </Button> */}
+          </Button>
 
           <Button
             block small primary
@@ -86,10 +93,7 @@ export default class Menu extends Component {
           >
             <Text>Dispensary List</Text>
           </Button>
-          <Image
-            source={medibleslogo}
-            style={{ width: 200, height: 80, alignSelf: 'center' }}
-          />
+
         </Content>
       </Container>
     );

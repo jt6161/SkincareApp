@@ -5,18 +5,23 @@ import { Actions } from 'react-native-router-flux';
 
 const fourtwentylogo = require('./420skincare_logo.png');
 
+const medibleslogo = require('./420medibles_logo.png');
+
 export default class Home extends Component {
   render() {
     return (
       <ScrollView>
         <View style={styles.viewStyle}>
-
-          <Image
-            source={fourtwentylogo}
-            style={{ width: 200, height: 80, alignSelf: 'center' }}
-          />
-          <Text style={styles.textStyle}>Cannabis Infused Luxury Skincare
-          </Text>
+          <Row>
+            <Image
+              source={fourtwentylogo}
+              style={{ width: 150, height: 80, alignSelf: 'center' }}
+            />
+            <Image
+                source={medibleslogo}
+                style={{ width: 150, height: 80, alignSelf: 'center' }}
+            />
+            </Row>
 
           <Image
             source={{ uri: 'https://static.wixstatic.com/media/7026a3_0d13522b5a0b42559d6d183bc8b44eb3~mv2.jpg' }}
@@ -27,6 +32,8 @@ export default class Home extends Component {
               onPress={() => Linking.openURL('http://www.420-Skincare.com')}
           >
             420-Skincare.com
+          </Text>
+          <Text style={styles.textStyle}>Cannabis Infused Luxury Skincare
           </Text>
           <Text style={styles.textStyle2}>
             From Infused Body Butter to CBD Soaps,
@@ -74,7 +81,7 @@ export default class Home extends Component {
      color: '#ab8321'
    },
    textStyle2: {
-     fontSize: 15,
+     fontSize: 14,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
