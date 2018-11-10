@@ -11,7 +11,7 @@ import {
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
-const fourtwentylogo = require('./420medibles_logo.png');
+const medibleslogo = require('./420medibles_logo.png');
 
 const MedibleDetail = ({ Medible }) => {
   const { name, img_url, description } = Medible;
@@ -26,7 +26,7 @@ const MedibleDetail = ({ Medible }) => {
      <Card>
       <CardItem bordered>
         <Left>
-          <Thumbnail source={fourtwentylogo} />
+          <Thumbnail source={medibleslogo} />
           <Body>
             <View style={headerContentStyle}>
               <Text style={headerTextStyle}>{name}</Text>

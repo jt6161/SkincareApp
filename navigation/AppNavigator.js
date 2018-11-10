@@ -4,7 +4,7 @@ import { Alert } from 'react-native';
 import { Router, Scene } from 'react-native-router-flux';
 import Products from '../src/components/Products';
 import THCProducts from '../src/components/THCProducts';
-// import Medibles from '../src/components/Medibles';
+import Medibles from '../src/components/Medibles';
 import Home from '../src/components/Home';
 import Menu from '../src/components/Menu';
 import Testimonials from '../src/components/Testimonials';
@@ -43,7 +43,7 @@ render() {
         <Scene key="About" component={About} title="About" />
         <Scene key="Menu" component={Menu} title="Menu" />
         <Scene key="THCProducts" component={THCProducts} title="THC Products" />
-        {/* <Scene key="Medibles" component={Medibles} title="420 Medibles" /> */}
+        <Scene key="Medibles" component={Medibles} title="420 Medibles" />
         <Scene key="Testimonials" component={Testimonials} title="Customer Testimonials" />
         <Scene key="AddTestimonial" component={AddTestimonial} title="Add Your Testimonial" />
         <Scene key="Dispensary" component={Dispensary} title="Dispensary List" />

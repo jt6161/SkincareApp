@@ -14,18 +14,25 @@ export default class FooterIcon extends Component {
             <Button>
              <Icon
                name='menu'
-               style={{ fontSize: 21, color: '#ab8321', fontWeight: 'bold' }}
+               style={{ fontSize: 25, color: '#ab8321', fontWeight: 'bold' }}
                onPress={() => { Actions.Menu(); }}
              />
              <Text>Menu</Text>
             </Button>
 
-            {/* <Body /> */}
+            <Button>
+             <Icon
+               name='home'
+               style={{ fontSize: 25, color: '#ab8321', fontWeight: 'bold' }}
+               onPress={() => { Actions.Home(); }}
+             />
+             <Text>Home</Text>
+            </Button>
 
             <Button>
              <Icon
                name='cart'
-               style={{ fontSize: 21, color: '#ab8321', fontWeight: 'bold' }}
+               style={{ fontSize: 25, color: '#ab8321', fontWeight: 'bold' }}
                onPress={() => { Actions.Cart(); }}
              />
              <Text>Cart</Text>

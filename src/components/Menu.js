@@ -10,6 +10,8 @@ import { Actions } from 'react-native-router-flux';
 
 const fourtwentylogo = require('./420skincare_logo.png');
 
+const medibleslogo = require('./420medibles_logo.png');
+
 export default class Menu extends Component {
   render() {
     return (
@@ -20,13 +22,13 @@ export default class Menu extends Component {
             style={{ width: 200, height: 80, alignSelf: 'center' }}
           />
 
-          <Button
+          {/* <Button
             block small success
             style={styles.mb15}
             onPress={() => { Actions.Home(); }}
           >
             <Text>Home</Text>
-          </Button>
+          </Button> */}
 
           <Button
             block small primary
@@ -59,6 +61,14 @@ export default class Menu extends Component {
             onPress={() => { Actions.Press(); }}
           >
             <Text>News Articles</Text>
+          </Button>
+
+          <Button
+            block small success
+            style={styles.mb15}
+            onPress={() => { Actions.Medibles(); }}
+          >
+            <Text>420 Medibles</Text>
           </Button>
 
           <Button
