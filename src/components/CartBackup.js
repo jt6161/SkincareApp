@@ -13,7 +13,6 @@ import {
 } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 // import Icon from 'react-native-vector-icons/Ionicons';
-// import HeaderIcon from './HeaderIcon';
 
 // const shippingRate = 6.90;
 
