@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image } from 'react-native';
+import { Image, WebView } from 'react-native';
 import {
   Container,
   Content,
@@ -71,6 +71,10 @@ export default class About extends Component {
                 />
               </Right>
             </CardItem>
+            <WebView
+               source={{ html: '<iframe width="100%" height="50%" src="https://www.youtube.com/embed/cqyziA30whE" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>' }}
+               style={{ marginTop: 20 }}
+            />
 
           </Card>
         </Content>
