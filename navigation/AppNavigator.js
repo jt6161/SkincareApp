@@ -13,6 +13,7 @@ import AddTestimonial from '../src/components/AddTestimonial';
 import Dispensary from '../src/components/Dispensary';
 import Cart from '../src/components/Cart';
 import Press from '../src/components/Press';
+import ProductPage1 from '../src/components/ProductPage1';
 
 export default class AppNavigator extends Component {
 
@@ -54,6 +55,7 @@ render() {
           // fetchCart={this.fetchCart.bind(this)}
         />
         <Scene key="Press" component={Press} title="News Articles" />
+        <Scene key="ProductPage1" component={ProductPage1} title="Product Page" />
         </Scene>
     </Router>
     );

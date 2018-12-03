@@ -9,10 +9,11 @@ import {
   Thumbnail,
   Button
 } from 'native-base';
+import { Actions } from 'react-native-router-flux';
 
 const fourtwentylogo = require('./420skincare_logo.png');
 
-const ProductDetail = ({ product, addToCart }) => {
+const ProductDetail = ({ product }) => {
   const { name, img_url, description, price } = product;
   const {
     headerContentStyle,
@@ -48,7 +49,8 @@ const ProductDetail = ({ product, addToCart }) => {
           <Button
             block small success
             style={{ margin: 15, padding: 100 }}
-            onPress={() => addToCart(product)}
+            onPress={() => { Actions.ProductPage1(); }}
+            // onPress={() => { Actions.{} }}
           >
           <Text>Purchase</Text>
           </Button>

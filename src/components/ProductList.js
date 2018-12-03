@@ -19,7 +19,7 @@ class ProductList extends Component {
       return <Spinner size='large' color='#ab8321' />;
     }
     return this.state.products.map(product =>
-      <ProductDetail key={product.name} product={product} addToCart={this.props.addToCart} />
+      <ProductDetail key={product.name} product={product} />
     );
   }
 
