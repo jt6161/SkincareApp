@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { Alert } from 'react-native';
 // import { StackViewStyleInterpolator } from 'react-navigation-stack';
 import { Router, Scene } from 'react-native-router-flux';
 import Products from '../src/components/Products';
@@ -17,20 +16,6 @@ import ProductPage1 from '../src/components/ProductPage1';
 
 export default class AppNavigator extends Component {
 
-// state = {
-//   cart: []
-// }
-//
-// addToCart(item) {
-//   this.setState({ cart: [...this.state.cart, item] });
-//   setTimeout(() => {
-//     Alert.alert('Added to Cart');
-//   }, 100);
-// }
-//
-// fetchCart() {
-//   return this.state.cart;
-// }
 
 render() {
   return (
@@ -39,7 +24,6 @@ render() {
         <Scene key="Home" component={Home} title="420 Skincare" initial />
         <Scene
           key="Products" component={Products} title="CBD Products"
-          // addToCart={this.addToCart.bind(this)}
         />
         <Scene key="About" component={About} title="About" />
         <Scene key="Menu" component={Menu} title="Menu" />
@@ -52,7 +36,6 @@ render() {
           key="Cart"
           component={Cart}
           title="Cart"
-          // fetchCart={this.fetchCart.bind(this)}
         />
         <Scene key="Press" component={Press} title="News Articles" />
         <Scene key="ProductPage1" component={ProductPage1} title="Product Page" />
