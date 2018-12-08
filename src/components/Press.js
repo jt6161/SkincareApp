@@ -51,6 +51,18 @@ export default class Press extends Component {
           >
             Entrepreneur of the Week: Marvina Thomas of 420 Skincare - Direct Cannabis Network
           </Text>
+
+          <Image
+            source={{ uri: 'https://d2rtvgqumswrn4.cloudfront.net/wp-content/uploads/2018/11/29153830/marvina-thomas.jpg' }}
+            style={{ width: 200, height: 300, alignSelf: 'center' }}
+          />
+          <Text
+              style={styles.textStyle2}
+              onPress={() => Linking.openURL('https://dopemagazine.com/marvina-thomas-420-skincare/?fbclid=IwAR3pL_CfrPjCT7qf25M7D4CBinZa1NuwRjXwodrtq_6STCMwcewx8gbKDus')}
+          >
+            Marvina Thomas: Nurse By Trade Still Healing Others - Dope Magazine
+          </Text>
+          
         </View>
       </ScrollView>
     );
