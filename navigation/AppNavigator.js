@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-// import { StackViewStyleInterpolator } from 'react-navigation-stack';
 import { Router, Scene } from 'react-native-router-flux';
 import Products from '../src/components/Products';
 import THCProducts from '../src/components/THCProducts';

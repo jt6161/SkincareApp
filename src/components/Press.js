@@ -31,7 +31,7 @@ export default class Press extends Component {
           </Text>
           <Image
             source={{ uri: 'https://images1.phoenixnewtimes.com/imager/u/745xauto/10503675/marvina3-2.jpg' }}
-            style={{ width: 315, height: 315, alignSelf: 'center' }}
+            style={{ width: 315, height: 300, alignSelf: 'center' }}
           />
           <Text
             style={styles.textStyle2}
@@ -54,7 +54,7 @@ export default class Press extends Component {
 
           <Image
             source={{ uri: 'https://d2rtvgqumswrn4.cloudfront.net/wp-content/uploads/2018/11/29153830/marvina-thomas.jpg' }}
-            style={{ width: 200, height: 300, alignSelf: 'center' }}
+            style={{ width: 300, height: 300, alignSelf: 'center' }}
           />
           <Text
               style={styles.textStyle2}
@@ -62,7 +62,7 @@ export default class Press extends Component {
           >
             Marvina Thomas: Nurse By Trade Still Healing Others - Dope Magazine
           </Text>
-          
+
         </View>
       </ScrollView>
     );

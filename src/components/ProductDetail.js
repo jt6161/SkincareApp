@@ -50,7 +50,7 @@ const ProductDetail = ({ product }) => {
             block small success
             style={{ margin: 15, padding: 100 }}
             onPress={() => { Actions.ProductPage1(); }}
-            // onPress={() => { Actions.page(); }}
+            
           >
           <Text>Purchase</Text>
           </Button>

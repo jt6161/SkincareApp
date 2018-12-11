@@ -7,7 +7,7 @@ export default class Products extends React.Component {
     return (
       <View>
         <ScrollView>
-          <ProductList addToCart={this.props.addToCart} />
+          <ProductList />
         </ScrollView>
       </View>
      );

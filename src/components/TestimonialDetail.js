@@ -4,9 +4,7 @@ import { Text, Card } from 'native-base';
 
 const TestimonialDetail = ({ testimonial }) => {
   const { review } = testimonial;
-  const {
-    headerTextStyle
-  } = styles;
+  const { headerTextStyle } = styles;
 
   return (
       <Card>
