@@ -14,13 +14,14 @@ import { Actions } from 'react-native-router-flux';
 const fourtwentylogo = require('./420skincare_logo.png');
 
 const ProductDetail = ({ product }) => {
-  const { name, img_url, description, price, page } = product;
+  const { name, img_url, description, price, url } = product;
   const {
     headerContentStyle,
     headerTextStyle,
     mainTextStyle,
     imageStyle
   } = styles;
+
 
   return (
      <Card>
@@ -49,12 +50,11 @@ const ProductDetail = ({ product }) => {
           <Button
             block small success
             style={{ margin: 15, padding: 100 }}
-            onPress={() => { Actions.ProductPage1(); }}
-            
+            onPress={() => { Actions.ProductPage(this.url); }}
           >
           <Text>Purchase</Text>
           </Button>
-          <Text style={mainTextStyle}>Page: {page}</Text>
+          <Text style={mainTextStyle}>url: {url}</Text>
         </View>
       </CardItem>
     </Card>
