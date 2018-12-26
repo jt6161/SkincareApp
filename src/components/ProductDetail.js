@@ -50,7 +50,7 @@ const ProductDetail = ({ product }) => {
           <Button
             block small success
             style={{ margin: 15, padding: 100 }}
-            onPress={() => { Actions.ProductPage(); }}
+            onPress={() => { Actions.ProductPage7(); }}
             // onPress={() => Linking.openURL('http://www.420-Skincare.com')}
           >
           <Text>Purchase</Text>
