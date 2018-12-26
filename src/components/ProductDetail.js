@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image } from 'react-native';
+import { View, Image, Linking } from 'react-native';
 import {
   Text,
   Body,
@@ -50,7 +50,8 @@ const ProductDetail = ({ product }) => {
           <Button
             block small success
             style={{ margin: 15, padding: 100 }}
-            onPress={() => { Actions.ProductPage(this.url); }}
+            onPress={() => { Actions.ProductPage(); }}
+            // onPress={() => Linking.openURL('http://www.420-Skincare.com')}
           >
           <Text>Purchase</Text>
           </Button>

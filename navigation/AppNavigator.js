@@ -11,7 +11,9 @@ import AddTestimonial from '../src/components/AddTestimonial';
 import Dispensary from '../src/components/Dispensary';
 import Cart from '../src/components/Cart';
 import Press from '../src/components/Press';
-import ProductPage from '../src/components/ProductPage';
+import ProductPage1 from '../src/components/ProductPage1';
+import ProductPage2 from '../src/components/ProductPage2';
+import ProductPage3 from '../src/components/ProductPage3';
 
 export default class AppNavigator extends Component {
 
@@ -31,13 +33,11 @@ render() {
         <Scene key="Testimonials" component={Testimonials} title="Customer Testimonials" />
         <Scene key="AddTestimonial" component={AddTestimonial} title="Add Your Testimonial" />
         <Scene key="Dispensary" component={Dispensary} title="Dispensary List" />
-        <Scene
-          key="Cart"
-          component={Cart}
-          title="Cart"
-        />
+        <Scene key="Cart" component={Cart} title="Cart" />
         <Scene key="Press" component={Press} title="News Articles" />
-        <Scene key="ProductPage" component={ProductPage} title="Product Page" />
+        <Scene key="ProductPage1" component={ProductPage1} title="Product Page" />
+        <Scene key="ProductPage2" component={ProductPage2} title="Product Page" />
+        <Scene key="ProductPage3" component={ProductPage3} title="Product Page" />
         </Scene>
     </Router>
     );
