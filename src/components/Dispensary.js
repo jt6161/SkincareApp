@@ -30,7 +30,7 @@ export default class Dispensary extends Component {
 
           <List>
               <Text style={styles.textStyle2}>To purchase
-                420 Skincare of 420 Medibles products that are infused with
+                420 Skincare or 420 Medibles products that are infused with
                 THC please visit these state-licensed dispensaries.
                 You must have an AZ MMJ card to purchase from a dispensary.
                 (Click for website)

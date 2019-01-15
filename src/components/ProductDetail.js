@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Image, Linking } from 'react-native';
+import { View, Image } from 'react-native';
 import {
   Text,
   Body,
@@ -14,7 +14,7 @@ import { Actions } from 'react-native-router-flux';
 const fourtwentylogo = require('./420skincare_logo.png');
 
 const ProductDetail = ({ product }) => {
-  const { name, img_url, description, price, url, page } = product;
+  const { name, img_url, description, price } = product;
   const {
     headerContentStyle,
     headerTextStyle,
@@ -50,11 +50,10 @@ const ProductDetail = ({ product }) => {
           <Button
             block small success
             style={{ margin: 15, padding: 100 }}
-            onPress={() => { Actions.ProductPage1(); }}
+            onPress={() => { Actions.ProductPage(); }}
           >
-          <Text>Purchase</Text>
+          <Text>Options</Text>
           </Button>
-          <Text style={mainTextStyle}>page: {page}</Text>
         </View>
       </CardItem>
     </Card>
