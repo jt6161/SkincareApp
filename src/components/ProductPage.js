@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import { Image, Linking, ScrollView, View } from 'react-native';
-import { List, ListItem, Row, Text } from 'native-base';
+import { Image, ScrollView, View } from 'react-native';
+import { Thumbnail, Container, Text, Card, CardItem, Icon, Right } from 'native-base';
+import { Actions } from 'react-native-router-flux';
 
 const fourtwentylogo = require('./420skincare_logo.png');
 
@@ -10,7 +11,6 @@ export default class ProductPage extends Component {
     return (
       <ScrollView>
         <View style={styles.viewStyle}>
-          <Row>
             <Image
               source={fourtwentylogo}
               style={{ width: 150,
@@ -18,121 +18,86 @@ export default class ProductPage extends Component {
               alignSelf: 'center',
               justifyContent: 'space-between' }}
             />
-            </Row>
+        <Container>
 
-          <List>
               <Text style={styles.textStyle2}>To purchase
-                420 Skincare products choose your options and quantities.
+                420 Skincare CBD products please choose your options and quantities.
                 Use Promo code 420APP for 10% off your first order.
               </Text>
 
-            <ListItem>
-              <Text
-                style={styles.textStyle2}
-                onPress={() => Linking.openURL('https://naturesmedicines.com/')}
-              >
-                NATURE'S MEDICINES
-              </Text>
-            </ListItem>
-            <ListItem>
-              <Text
-              style={styles.textStyle2}
-              onPress={() => Linking.openURL('https://midtownroots.com/')}
-              >
-              MIDTOWN ROOTS
-              </Text>
-            </ListItem>
+              <Card>
+                 <CardItem>
+                   <Thumbnail source={fourtwentylogo} />
+                   <Text
+                   style={styles.textStyle2}
+                   onPress={() => { Actions.ProductPage1(); }}
+                   >CBD Bath Salts</Text>
+                   <Right>
+                     <Icon
+                     name="arrow-forward"
 
-            <ListItem>
-              <Text
-                style={styles.textStyle2}
-                onPress={() => Linking.openURL('http://urbangreenhouse.com')}
-              >
-                URBAN GREENHOUSE
-              </Text>
-            </ListItem>
+                     />
+                   </Right>
+                  </CardItem>
 
-            <ListItem>
-              <Text
-                style={styles.textStyle2}
-                onPress={() => Linking.openURL('http://metromeds.com')}
-              >
-                METRO MEDS
-              </Text>
-            </ListItem>
+                  <CardItem>
+                    <Thumbnail source={fourtwentylogo} />
+                    <Text
+                    style={styles.textStyle2}
+                    onPress={() => { Actions.ProductPage2(); }}
+                    >CBD Bath Bomb Dust</Text>
+                    <Right>
+                      <Icon name="arrow-forward" />
+                    </Right>
+                   </CardItem>
 
-            <ListItem>
-              <Text
-                style={styles.textStyle2}
-                onPress={() => Linking.openURL('http://www.arizonanaturalremedies.com/')}
-              >
-                ARIZONA NATURAL REMEDIES
-              </Text>
-            </ListItem>
+                   <CardItem>
+                     <Thumbnail source={fourtwentylogo} />
+                     <Text
+                     style={styles.textStyle2}
+                     onPress={() => { Actions.ProductPage3(); }}
+                     >CBD Body Cream</Text>
+                     <Right>
+                       <Icon name="arrow-forward" />
+                     </Right>
+                    </CardItem>
 
-            <ListItem>
-              <Text
-                style={styles.textStyle2}
-                onPress={() => Linking.openURL('https://nirvanacenter.com/')}
-              >
-                NIRVANA CENTER
-              </Text>
-            </ListItem>
+                    <CardItem>
+                      <Thumbnail source={fourtwentylogo} />
+                      <Text
+                      style={styles.textStyle2}
+                      onPress={() => { Actions.ProductPage4(); }}
+                      >CBD Body Butter</Text>
+                      <Right>
+                        <Icon name="arrow-forward" />
+                      </Right>
+                     </CardItem>
 
-            <ListItem>
-              <Text
-                style={styles.textStyle2}
-                onPress={() => Linking.openURL('https://www.harvestofaz.com/')}
-              >
-                HARVEST OF ARIZONA
-              </Text>
-            </ListItem>
+                     <CardItem>
+                       <Thumbnail source={fourtwentylogo} />
+                       <Text
+                       style={styles.textStyle2}
+                       onPress={() => { Actions.ProductPage5(); }}
+                       >CBD Soap</Text>
+                       <Right>
+                         <Icon name="arrow-forward" />
+                       </Right>
+                      </CardItem>
 
-            <ListItem>
-              <Text
-                style={styles.textStyle2}
-                onPress={() => Linking.openURL('https://azreleaf.com/')}
-              >
-                PONDEROSA RELEAF
-              </Text>
-            </ListItem>
-
-            <ListItem>
-              <Text
-                style={styles.textStyle2}
-                onPress={() => Linking.openURL('http://www.greenpharms.com/')}
-              >
-                GREENPHARMS
-              </Text>
-            </ListItem>
-
-            <ListItem>
-              <Text
-                style={styles.textStyle2}
-                onPress={() => Linking.openURL('http://thegooddispensary.com/')}
-              >
-                THE GOOD DISPENSARY
-              </Text>
-            </ListItem>
-
-            <ListItem>
-              <Text
-                style={styles.textStyle2}
-                onPress={() => Linking.openURL('https://botanica.us/')}
-              >
-                BOTANICA
-              </Text>
-            </ListItem>
-
-            <ListItem>
-              <Text
-                style={styles.textStyle2}
-                onPress={() => Linking.openURL('http://purple-med.com/')}
-              >
-                PURPLE MED
-              </Text>
-            </ListItem>
-        </List>
+                      <CardItem>
+                        <Thumbnail source={fourtwentylogo} />
+                        <Text
+                        style={styles.textStyle2}
+                        onPress={() => { Actions.ProductPage6(); }}
+                        >CBD Bath Bomb Twin Pack</Text>
+                        <Right>
+                          <Icon name="arrow-forward" />
+                        </Right>
+                       </CardItem>
+                       </Card>
+                        <Text style={styles.textStyle}>Purchase on merchant site.
+                        </Text>
+        </Container>
       </View>
     </ScrollView>
     );
@@ -141,7 +106,6 @@ export default class ProductPage extends Component {
 const styles = {
   viewStyle: {
    backgroundColor: 'white',
-    alignItems: 'center',
     padding: 10,
     elevation: 2
   },
@@ -152,7 +116,7 @@ const styles = {
     color: '#ab8321'
   },
   textStyle2: {
-    fontSize: 15,
+    fontSize: 16,
     padding: 5,
     fontWeight: 'bold',
     color: '#ab8321'
