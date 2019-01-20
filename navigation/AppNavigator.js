@@ -18,7 +18,6 @@ import ProductPage3 from '../src/components/ProductPage3';
 import ProductPage4 from '../src/components/ProductPage4';
 import ProductPage5 from '../src/components/ProductPage5';
 import ProductPage6 from '../src/components/ProductPage6';
-import ProductPage7 from '../src/components/ProductPage7';
 
 export default class AppNavigator extends Component {
 
@@ -38,14 +37,13 @@ render() {
         <Scene key="Dispensary" component={Dispensary} title="Dispensary List" />
         <Scene key="Cart" component={Cart} title="Cart" />
         <Scene key="Press" component={Press} title="News Articles" />
-          <Scene key="ProductPage" component={ProductPage} title="Product Page" />
-        <Scene key="ProductPage1" component={ProductPage1} title="Product Page" />
-        <Scene key="ProductPage2" component={ProductPage2} title="Product Page" />
-        <Scene key="ProductPage3" component={ProductPage3} title="Product Page" />
-        <Scene key="ProductPage4" component={ProductPage4} title="Product Page" />
-        <Scene key="ProductPage5" component={ProductPage5} title="Product Page" />
-        <Scene key="ProductPage6" component={ProductPage6} title="Product Page" />
-        <Scene key="ProductPage7" component={ProductPage7} title="Product Page" />
+        <Scene key="ProductPage" component={ProductPage} title="Product Page" />
+        <Scene key="ProductPage1" component={ProductPage1} title="Bath Salts" />
+        <Scene key="ProductPage2" component={ProductPage2} title="Bath Bomb Dust" />
+        <Scene key="ProductPage3" component={ProductPage3} title="Body Cream" />
+        <Scene key="ProductPage4" component={ProductPage4} title="Body Butter" />
+        <Scene key="ProductPage5" component={ProductPage5} title="Soap" />
+        <Scene key="ProductPage6" component={ProductPage6} title="Bath Bombs" />
         </Scene>
     </Router>
     );

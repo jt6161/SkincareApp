@@ -22,7 +22,7 @@ export default class ProductPage extends Component {
 
               <Text style={styles.textStyle2}>To purchase
                 420 Skincare CBD products please choose your options and quantities.
-                Use Promo code 420APP for 10% off your first order.
+                For 10% off your first order use Promo-code 420APP
               </Text>
 
               <Card>

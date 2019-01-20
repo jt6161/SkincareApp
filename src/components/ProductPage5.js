@@ -6,7 +6,7 @@ export default class ProductPage5 extends Component {
   render() {
     return (
       <WebView
-         source={{ uri: 'https://www.420-skincare.com/product-page/cbd-bath-bomb-orange' }}
+         source={{ uri: 'https://www.420-skincare.com/product-page/cbd-soap-blueberry-orange' }}
       />
     );
   }
