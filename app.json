@@ -1,5 +1,8 @@
 {
   "expo": {
-    "sdkVersion": "26.0.0"
+    "name": "420 Skincare",
+    "slug": "420Skincare",
+    "sdkVersion": "26.0.0",
+    "privacy": "public"
   }
 }
