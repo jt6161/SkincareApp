@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Image, ScrollView, View } from 'react-native';
-import { Thumbnail, Container, Text, Card, CardItem, Icon, Right } from 'native-base';
+import { Container, Content, List, ListItem, Thumbnail, Text, Left,
+  Body, Right, Button } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
 const fourtwentylogo = require('./420skincare_logo.png');
@@ -18,95 +19,151 @@ export default class ProductPage extends Component {
               alignSelf: 'center',
               justifyContent: 'space-between' }}
             />
-        <Container>
+            <Container>
+              <Content>
+                  <Text
+                  style={styles.textStyle2}
+                  >
+                  To purchase 420 Skincare CBD products please choose
+                  your options and quantities. For 10% off your first order use promo-code 420APP
+                  </Text>
 
-              <Text style={styles.textStyle2}>To purchase
-                420 Skincare CBD products please choose your options and quantities.
-                For 10% off your first order use promo-code 420APP
-              </Text>
-
-              <Card>
-                 <CardItem>
-                   <Thumbnail source={fourtwentylogo} />
+              <List>
+                <ListItem thumbnail>
+                  <Left>
+                    <Thumbnail square source={fourtwentylogo} />
+                  </Left>
+                  <Body>
                    <Text
                    style={styles.textStyle2}
+                   >
+                   CBD Bath Salts</Text>
+                  </Body>
+                  <Right>
+                   <Button
+                   transparent
                    onPress={() => { Actions.ProductPage1(); }}
-                   >CBD Bath Salts</Text>
-                   <Right>
-                     <Icon
-                     name="arrow-forward"
+                   >
+                   <Text>Purchase</Text>
+                   </Button>
+                  </Right>
+                </ListItem>
 
-                     />
-                   </Right>
-                  </CardItem>
+                <ListItem thumbnail>
+                  <Left>
+                    <Thumbnail square source={fourtwentylogo} />
+                  </Left>
+                  <Body>
+                   <Text
+                   style={styles.textStyle2}
+                   >
+                    CBD Bath Bomb Dust</Text>
+                  </Body>
+                  <Right>
+                   <Button
+                   transparent
+                   onPress={() => { Actions.ProductPage2(); }}
+                   >
+                   <Text>Purchase</Text>
+                   </Button>
+                  </Right>
+                </ListItem>
 
-                  <CardItem>
-                    <Thumbnail source={fourtwentylogo} />
+                <ListItem thumbnail>
+                  <Left>
+                    <Thumbnail square source={fourtwentylogo} />
+                  </Left>
+                  <Body>
                     <Text
                     style={styles.textStyle2}
-                    onPress={() => { Actions.ProductPage2(); }}
-                    >CBD Bath Bomb Dust</Text>
-                    <Right>
-                      <Icon name="arrow-forward" />
-                    </Right>
-                   </CardItem>
+                    >
+                    CBD Body Cream</Text>
+                  </Body>
+                  <Right>
+                   <Button
+                   transparent
+                   onPress={() => { Actions.ProductPage3(); }}
+                   >
+                   <Text>Purchase</Text>
+                   </Button>
+                   </Right>
+                </ListItem>
 
-                   <CardItem>
-                     <Thumbnail source={fourtwentylogo} />
-                     <Text
-                     style={styles.textStyle2}
-                     onPress={() => { Actions.ProductPage3(); }}
-                     >CBD Body Cream</Text>
-                     <Right>
-                       <Icon name="arrow-forward" />
-                     </Right>
-                    </CardItem>
+                <ListItem thumbnail>
+                  <Left>
+                    <Thumbnail square source={fourtwentylogo} />
+                  </Left>
+                  <Body>
+                    <Text
+                    style={styles.textStyle2}
+                    >
+                    CBD Body Butter</Text>
+                  </Body>
+                  <Right>
+                    <Button
+                    transparent
+                    onPress={() => { Actions.ProductPage4(); }}
+                    >
+                    <Text>Purchase</Text>
+                    </Button>
+                  </Right>
+                </ListItem>
 
-                    <CardItem>
-                      <Thumbnail source={fourtwentylogo} />
+                <ListItem thumbnail>
+                    <Left>
+                      <Thumbnail square source={fourtwentylogo} />
+                    </Left>
+                    <Body>
                       <Text
                       style={styles.textStyle2}
-                      onPress={() => { Actions.ProductPage4(); }}
-                      >CBD Body Butter</Text>
+                      >
+                      CBD Soap</Text>
+                    </Body>
+                    <Right>
+                      <Button
+                      transparent
+                      onPress={() => { Actions.ProductPage5(); }}
+                      >
+                      <Text>Purchase</Text>
+                      </Button>
+                    </Right>
+                </ListItem>
+
+                <ListItem thumbnail>
+                    <Left>
+                      <Thumbnail square source={fourtwentylogo} />
+                    </Left>
+                    <Body>
+                      <Text
+                      style={styles.textStyle2}
+                      >
+                      CBD Bath Bomb Twin Pack</Text>
+                      </Body>
                       <Right>
-                        <Icon name="arrow-forward" />
-                      </Right>
-                     </CardItem>
-
-                     <CardItem>
-                       <Thumbnail source={fourtwentylogo} />
-                       <Text
-                       style={styles.textStyle2}
-                       onPress={() => { Actions.ProductPage5(); }}
-                       >CBD Soap</Text>
-                       <Right>
-                         <Icon name="arrow-forward" />
-                       </Right>
-                      </CardItem>
-
-                      <CardItem>
-                        <Thumbnail source={fourtwentylogo} />
-                        <Text
-                        style={styles.textStyle2}
+                        <Button
+                        transparent
                         onPress={() => { Actions.ProductPage6(); }}
-                        >CBD Bath Bomb Twin Pack</Text>
-                        <Right>
-                          <Icon name="arrow-forward" />
-                        </Right>
-                       </CardItem>
-                       </Card>
-                        <Text style={styles.textStyle}>Purchase on merchant site.
-                        </Text>
-        </Container>
-      </View>
-    </ScrollView>
+                        >
+                        <Text>Purchase</Text>
+                        </Button>
+                      </Right>
+                </ListItem>
+              </List>
+                  <Text
+                  style={styles.textStyle}
+                  >
+                  Purchase on merchant site.</Text>
+              </Content>
+          </Container>
+        </View>
+      </ScrollView>
     );
   }
 }
+
 const styles = {
   viewStyle: {
-   backgroundColor: 'white',
-    padding: 10,
+    backgroundColor: 'white',
     elevation: 2
   },
   textStyle: {
@@ -116,7 +173,7 @@ const styles = {
     color: '#ab8321'
   },
   textStyle2: {
-    fontSize: 16,
+    fontSize: 15,
     padding: 5,
     fontWeight: 'bold',
     color: '#ab8321'
