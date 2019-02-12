@@ -47,13 +47,19 @@ export default class Home extends Component {
           transparent
           onPress={() => Linking.openURL('https://www.instagram.com/420skincare')}
           >
-           <Icon name="logo-instagram" style={{ color: '#FFF', padding: 10 }} />
+           <Icon name="logo-instagram" style={{ color: '#ab8321' }} />
           </Button>
           <Button
           transparent
           onPress={() => Linking.openURL('http://www.facebook.com/420Skincare')}
           >
-           <Icon name="logo-facebook" style={{ color: '#FFF', padding: 10 }} />
+           <Icon name="logo-facebook" style={{ color: '#ab8321' }} />
+          </Button>
+          <Button
+          transparent
+          onPress={() => Linking.openURL('https://www.youtube.com/watch?v=ldQGRS8s1Zg')}
+          >
+           <Icon name="logo-youtube" style={{ color: '#ab8321' }} />
           </Button>
           </Row>
 
