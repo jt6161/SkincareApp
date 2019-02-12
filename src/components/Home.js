@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { ScrollView, View, Image, Linking } from 'react-native';
-import { Text, Button, Row } from 'native-base';
+import { Text, Button, Row, Icon } from 'native-base';
 import { Actions } from 'react-native-router-flux';
 
 const fourtwentylogo = require('./420skincare_logo.png');
@@ -22,22 +22,16 @@ export default class Home extends Component {
             source={{ uri: 'https://static.wixstatic.com/media/7026a3_0d13522b5a0b42559d6d183bc8b44eb3~mv2.jpg' }}
             style={{ width: 310, height: 180, alignSelf: 'center' }}
           />
-          <Text
-              style={styles.copyright}
-              onPress={() => Linking.openURL('http://www.420-Skincare.com')}
-          >
-            420-Skincare.com
-          </Text>
+
           <Text style={styles.textStyle2}>
             From Infused Body Butter to CBD Soaps,
             we specialize in Natural, Organic, Hand-Crafted
             Skincare for all Skin Types. Our soothing all natural
             ingredients can improve several skin conditions. 50% of
             our proceeds from this app go directly to the nonprofit
-            Start Living Recovery Home. 420 Skincare products will
+            Start Living Inc Recovery Home. 420 Skincare products will
             make you feel good inside and out!
           </Text>
-
           <Row>
             <Button
               block small success
@@ -46,12 +40,27 @@ export default class Home extends Component {
             >
               <Text>420 Skincare Products</Text>
             </Button>
-
           </Row>
+
+          <Row>
+          <Button
+          transparent
+          onPress={() => Linking.openURL('https://www.instagram.com/420skincare')}
+          >
+           <Icon name="logo-instagram" style={{ color: '#FFF', padding: 10 }} />
+          </Button>
+          <Button
+          transparent
+          onPress={() => Linking.openURL('http://www.facebook.com/420Skincare')}
+          >
+           <Icon name="logo-facebook" style={{ color: '#FFF', padding: 10 }} />
+          </Button>
+          </Row>
+
               <Text
                 style={styles.copyright}
               >
-            Copyright © 2018 420 Skincare and 420 Medibles.
+            Copyright © 2019 420 Skincare and 420 Medibles.
             All Rights Reserved.</Text>
         </View>
       </ScrollView>
@@ -74,7 +83,7 @@ export default class Home extends Component {
      color: '#ab8321'
    },
    textStyle2: {
-     fontSize: 15,
+     fontSize: 14,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
@@ -87,6 +96,6 @@ export default class Home extends Component {
      alignSelf: 'center'
    },
    mb15: {
-     marginBottom: 10,
+     marginBottom: 10
    }
  };
