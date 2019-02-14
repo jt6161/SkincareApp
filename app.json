@@ -1,8 +1,15 @@
 {
   "expo": {
-    "name": "420 Skincare",
-    "slug": "420Skincare",
+    "name": "420 Skincare Mobile",
+    "icon": "src/components/app-icon.png",
+    "version": "1.0.0",
+    "slug" : "420Skincare",
     "sdkVersion": "26.0.0",
-    "privacy": "public"
+    "ios": {
+      "bundleIdentifier": "420Skincare.420Mobile"
+    },
+    "android" : {
+      "package": "420Skincare.420SkincareMobile"
+    }
   }
 }
