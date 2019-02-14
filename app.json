@@ -6,7 +6,7 @@
     "slug" : "420Skincare",
     "sdkVersion": "26.0.0",
     "ios": {
-      "bundleIdentifier": "420Skincare.420Mobile"
+      "bundleIdentifier": "420Skincare.420SkincareMobile"
     },
     "android" : {
       "package": "420Skincare.420SkincareMobile"
