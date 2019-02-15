@@ -11,10 +11,10 @@
       "resizeMode": "cover"
     },
     "ios": {
-      "bundleIdentifier": "com.420Skincare.420SkincareMobile"
+      "bundleIdentifier": "com.fourtwentyskincare.app"
     },
     "android": {
-      "package": "com.420Skincare.420SkincareMobile"
+      "package": "com.fourtwentyskincare.app"
     }
   }
 }
