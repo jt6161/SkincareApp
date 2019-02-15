@@ -59,7 +59,7 @@ export default class Dispensary extends Component {
               style={styles.textStyle2}
               onPress={() => Linking.openURL('https://midtownroots.com/')}
               >
-              MIDTOWN ROOTS
+              CURALEAF MIDTOWN
               </Text>
             </ListItem>
 
