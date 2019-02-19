@@ -20,7 +20,7 @@ export default class Press extends Component {
           </Text>
 
           <Image
-            source={{ uri: 'https://assets.entrepreneur.com/content/3x2/2000/20180802214533-phpB6e3Vj-crop.jpeg' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_33d9d4f3523b4f00a489d8da9cbc56f4~mv2.jpeg' }}
             style={{ width: 315, height: 315, alignSelf: 'center' }}
           />
           <Text
@@ -30,7 +30,7 @@ export default class Press extends Component {
             She Wants to Change the Face of the Industry - Green Entrepreneur
           </Text>
           <Image
-            source={{ uri: 'https://images1.phoenixnewtimes.com/imager/u/745xauto/10503675/marvina3-2.jpg' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_f25fb44e8aef4264a4f5cf7859dceae6~mv2.jpg' }}
             style={{ width: 315, height: 300, alignSelf: 'center' }}
           />
           <Text
@@ -42,7 +42,7 @@ export default class Press extends Component {
           </Text>
 
           <Image
-            source={{ uri: 'https://www.directcannabisnetwork.com/wp-content/uploads/2017/01/DCN-web-logo-272.png' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_8fd8472039e24fa389ade7d667a4faa9~mv2.jpg' }}
             style={{ width: 315, height: 180, alignSelf: 'center' }}
           />
           <Text
@@ -53,12 +53,12 @@ export default class Press extends Component {
           </Text>
 
           <Image
-            source={{ uri: 'https://d2rtvgqumswrn4.cloudfront.net/wp-content/uploads/2018/11/29153830/marvina-thomas.jpg' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_a926e94722e8415489d65bc03177baae~mv2.jpg' }}
             style={{ width: 300, height: 300, alignSelf: 'center' }}
           />
           <Text
               style={styles.textStyle2}
-              onPress={() => Linking.openURL('https://dopemagazine.com/marvina-thomas-420-skincare/?fbclid=IwAR3pL_CfrPjCT7qf25M7D4CBinZa1NuwRjXwodrtq_6STCMwcewx8gbKDus')}
+              onPress={() => Linking.openURL('https://static.wixstatic.com/media/7026a3_a926e94722e8415489d65bc03177baae~mv2.jpg')}
           >
             Marvina Thomas: Nurse By Trade Still Healing Others - Dope Magazine
           </Text>
