@@ -43,7 +43,7 @@ export default class Press extends Component {
 
           <Image
             source={{ uri: 'https://static.wixstatic.com/media/7026a3_8fd8472039e24fa389ade7d667a4faa9~mv2.jpg' }}
-            style={{ width: 315, height: 180, alignSelf: 'center' }}
+            style={{ width: 315, height: 315, alignSelf: 'center' }}
           />
           <Text
               style={styles.textStyle2}
