@@ -2,7 +2,7 @@
   "expo": {
     "name": "420 Skincare Mobile",
     "icon": "src/components/app-icon.png",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "slug": "420Skincare",
     "sdkVersion": "26.0.0",
     "splash": {
