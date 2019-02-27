@@ -32,7 +32,7 @@ export default class About extends Component {
               <Body>
                 <Image
                   source={{ uri: 'https://static.wixstatic.com/media/7026a3_b4dd181ea98f4bfcb3bb4d0c4d857942~mv2.jpg' }}
-                  style={{ height: 490, width: 350, flex: 1, alignSelf: 'center' }}
+                  style={{ height: 500, width: 350, flex: 1, alignSelf: 'center' }}
                 />
               </Body>
             </CardItem>
@@ -51,7 +51,7 @@ export default class About extends Component {
                   to assist many more men and women to get healthier. 50% of
                   our proceeds from this app go directly to the nonprofit
                   Start Living Recovery Home. 420 Skincare products will
-                  make you feel good inside and out!
+                  make you feel good inside and out! Coming Soon 420 Medibles!
                 </Text>
               </Body>
             </CardItem>

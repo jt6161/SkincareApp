@@ -18,6 +18,7 @@ import ProductPage3 from '../src/components/ProductPage3';
 import ProductPage4 from '../src/components/ProductPage4';
 import ProductPage5 from '../src/components/ProductPage5';
 import ProductPage6 from '../src/components/ProductPage6';
+import DistributorPage from '../src/components/DistributorPage';
 
 export default class AppNavigator extends Component {
 
@@ -44,6 +45,7 @@ render() {
         <Scene key="ProductPage4" component={ProductPage4} title="Body Butter" />
         <Scene key="ProductPage5" component={ProductPage5} title="Soap" />
         <Scene key="ProductPage6" component={ProductPage6} title="Bath Bombs" />
+        <Scene key="DistributorPage" component={DistributorPage} title="Distributor Page" />
         </Scene>
     </Router>
     );

@@ -19,7 +19,7 @@ export default class Home extends Component {
           </Text>
 
           <Image
-            source={{ uri: 'https://static.wixstatic.com/media/7026a3_0d13522b5a0b42559d6d183bc8b44eb3~mv2.jpg' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_7d9b823a99b047549592062a85112431~mv2_d_3024_4032_s_4_2.jpeg' }}
             style={{ width: 310, height: 180, alignSelf: 'center' }}
           />
 
@@ -27,10 +27,9 @@ export default class Home extends Component {
             From Infused Body Butter to CBD Soaps,
             we specialize in Natural, Organic, Hand-Crafted
             Skincare for all Skin Types. Our soothing all natural
-            ingredients can improve several skin conditions. 50% of
-            our proceeds from this app go directly to the nonprofit
-            Start Living Inc Recovery Home. 420 Skincare products will
-            make you feel good inside and out!
+            ingredients can improve several skin conditions 50% of sales
+            go to the nonprofit Start Living Inc Recovery Home.
+            420 Skincare products will make you feel good inside and out!
           </Text>
           <Row>
             <Button
@@ -62,12 +61,6 @@ export default class Home extends Component {
            <Icon name="logo-youtube" style={{ color: '#ab8321' }} />
           </Button>
           </Row>
-
-              <Text
-                style={styles.copyright}
-              >
-            Copyright © 2019 420 Skincare and 420 Medibles.
-            All Rights Reserved.</Text>
         </View>
       </ScrollView>
     );
@@ -75,31 +68,25 @@ export default class Home extends Component {
 }
  const styles = {
    viewStyle: {
-     backgroundColor: 'black',
+     backgroundColor: 'white',
      alignItems: 'center',
-     height: 600,
+     height: 570,
      padding: 10,
      elevation: 2,
      position: 'relative'
    },
    textStyle: {
      fontSize: 16,
-     padding: 10,
+     padding: 5,
      fontWeight: 'bold',
+     fontStyle: 'italic',
      color: '#ab8321'
    },
    textStyle2: {
      fontSize: 14,
      padding: 10,
-     fontWeight: 'bold',
+     fontStyle: 'italic',
      color: '#ab8321'
-   },
-   copyright: {
-     fontSize: 13,
-     padding: 5,
-     fontWeight: 'bold',
-     color: '#ab8321',
-     alignSelf: 'center'
    },
    mb15: {
      marginBottom: 10

@@ -4,8 +4,6 @@ import { List, ListItem, Row, Text } from 'native-base';
 
 const fourtwentylogo = require('./420skincare_logo.png');
 
-const medibleslogo = require('./420medibles_logo.png');
-
 export default class Dispensary extends Component {
   render() {
     return (
@@ -19,13 +17,7 @@ export default class Dispensary extends Component {
               alignSelf: 'center',
               justifyContent: 'space-between' }}
             />
-            <Image
-              source={medibleslogo}
-              style={{ width: 150,
-              height: 80,
-              alignSelf: 'center',
-              justifyContent: 'space-between' }}
-            />
+
             </Row>
 
           <List>

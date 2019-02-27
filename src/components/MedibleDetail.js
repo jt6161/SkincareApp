@@ -29,7 +29,9 @@ const MedibleDetail = ({ Medible }) => {
           <Thumbnail source={medibleslogo} />
           <Body>
             <View style={headerContentStyle}>
+            <Text style={headerTextStyle}>COMING SOON!</Text>
               <Text style={headerTextStyle}>{name}</Text>
+
             </View>
           </Body>
         </Left>

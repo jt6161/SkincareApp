@@ -17,7 +17,7 @@ export default class Menu extends Component {
     return (
       <Container style={styles.container}>
         <Content
-          padder style={{ backgroundColor: '#000', padding: 10 }}
+          padder style={{ backgroundColor: '#000', padding: 5 }}
         >
           <Image
             source={fourtwentylogo}
@@ -26,14 +26,6 @@ export default class Menu extends Component {
             alignSelf: 'center'
             }}
           />
-
-          <Button
-            block small danger
-            style={styles.mb15}
-            onPress={() => { Actions.Home(); }}
-          >
-            <Text>Home</Text>
-          </Button>
 
           <Button
             block small primary
@@ -50,7 +42,6 @@ export default class Menu extends Component {
           >
             <Text>CBD Products</Text>
           </Button>
-
 
           <Button
             block small warning
@@ -91,6 +82,13 @@ export default class Menu extends Component {
           >
             <Text>Dispensary List</Text>
           </Button>
+          <Button
+            block small warning
+            style={styles.mb15}
+            onPress={() => { Actions.DistributorPage(); }}
+          >
+            <Text>Distributor Information</Text>
+          </Button>
 
           <Image
             source={medibleslogo}
@@ -100,6 +98,11 @@ export default class Menu extends Component {
             }}
           />
 
+          <Text
+            style={styles.copyright}
+          >
+        Copyright © 2019 420 Skincare and 420 Medibles.
+        All Rights Reserved.</Text>
         </Content>
       </Container>
     );
