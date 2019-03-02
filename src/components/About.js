@@ -25,7 +25,7 @@ export default class About extends Component {
                 <Body>
                   <Text style={styles.textStyle}>Marvina Thomas,
                   CEO / Founder of 420 Skincare & 420 Medibles,
-                  Women Grow Phoenix Chapter Leader</Text>
+                  Women Grow Director of Community Outreach</Text>
                 </Body>
             </CardItem>
             <CardItem bordered>
@@ -42,7 +42,7 @@ export default class About extends Component {
                   When Marvina Thomas started 420 Skincare she knew that she
                   wanted to build an operation that gave back
                   to a cause. Marvina started the “Buy & Give” program for
-                  Start Living Recovery Home for men and women who are
+                  Start Living Inc Recovery Home for men and women who are
                   recovering from Opioid and Alcohol abuse. Through her
                   Buy & Give program, you can help save many individuals
                   from the terrible disease. As 420 Skincare grows, she would
@@ -50,8 +50,9 @@ export default class About extends Component {
                   The program will allow 420 Skincare to help purchase MMJ cards
                   to assist many more men and women to get healthier. 50% of
                   our proceeds from this app go directly to the nonprofit
-                  Start Living Recovery Home. 420 Skincare products will
-                  make you feel good inside and out! Coming Soon 420 Medibles!
+                  Start Living Inc Recovery Home. 420 Skincare products will
+                  make you feel good inside and out!
+                  Coming Soon 420 Medibles!
                 </Text>
               </Body>
             </CardItem>

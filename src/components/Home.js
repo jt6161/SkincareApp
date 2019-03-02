@@ -15,12 +15,12 @@ export default class Home extends Component {
             source={fourtwentylogo}
             style={{ width: 200, height: 80, alignSelf: 'center' }}
           />
-          <Text style={styles.textStyle}>Cannabis Infused Luxury Skincare
+          <Text style={styles.textStyle}>CBD Infused Luxury Skincare
           </Text>
 
           <Image
-            source={{ uri: 'https://static.wixstatic.com/media/7026a3_7d9b823a99b047549592062a85112431~mv2_d_3024_4032_s_4_2.jpeg' }}
-            style={{ width: 310, height: 180, alignSelf: 'center' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_72773d63a4704cd9b7e134fa5075d35b~mv2_d_2998_3245_s_4_2.jpeg' }}
+            style={{ width: 310, height: 210, alignSelf: 'center' }}
           />
 
           <Text style={styles.textStyle2}>
@@ -46,20 +46,23 @@ export default class Home extends Component {
           transparent
           onPress={() => Linking.openURL('https://www.instagram.com/420skincare')}
           >
-           <Icon name="logo-instagram" style={{ color: '#ab8321' }} />
+           <Icon name="logo-instagram" style={{ color: '#ab8321', paddingBottom: 50 }} />
           </Button>
-          <Button
-          transparent
-          onPress={() => Linking.openURL('http://www.facebook.com/420Skincare')}
-          >
-           <Icon name="logo-facebook" style={{ color: '#ab8321' }} />
-          </Button>
+
           <Button
           transparent
           onPress={() => Linking.openURL('https://www.youtube.com/watch?v=ldQGRS8s1Zg')}
           >
-           <Icon name="logo-youtube" style={{ color: '#ab8321' }} />
+           <Icon name="logo-youtube" style={{ color: '#ab8321', paddingBottom: 50 }} />
           </Button>
+
+          <Button
+          transparent
+          onPress={() => Linking.openURL('http://www.facebook.com/420Skincare')}
+          >
+           <Icon name="logo-facebook" style={{ color: '#ab8321', paddingBottom: 50 }} />
+          </Button>
+
           </Row>
         </View>
       </ScrollView>
@@ -85,6 +88,7 @@ export default class Home extends Component {
    textStyle2: {
      fontSize: 14,
      padding: 10,
+          fontWeight: 'bold',
      fontStyle: 'italic',
      color: '#ab8321'
    },
