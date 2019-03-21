@@ -148,7 +148,47 @@ export default class ProductPage extends Component {
                         </Button>
                       </Right>
                 </ListItem>
-                
+
+                <ListItem thumbnail>
+                    <Left>
+                      <Thumbnail square source={fourtwentylogo} />
+                    </Left>
+                    <Body>
+                      <Text
+                      style={styles.textStyle2}
+                      >
+                      CBD Tincture</Text>
+                      </Body>
+                      <Right>
+                        <Button
+                        transparent
+                        onPress={() => { Actions.ProductPage7(); }}
+                        >
+                        <Text>Purchase</Text>
+                        </Button>
+                      </Right>
+                </ListItem>
+
+                <ListItem thumbnail>
+                    <Left>
+                      <Thumbnail square source={fourtwentylogo} />
+                    </Left>
+                    <Body>
+                      <Text
+                      style={styles.textStyle2}
+                      >
+                      CBD Bath Bomb & Body Butter combo</Text>
+                      </Body>
+                      <Right>
+                        <Button
+                        transparent
+                        onPress={() => { Actions.ProductPage8(); }}
+                        >
+                        <Text>Purchase</Text>
+                        </Button>
+                      </Right>
+                </ListItem>
+
               </List>
                   <Text
                   style={styles.textStyle}
