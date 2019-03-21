@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Image, ScrollView, View } from 'react-native';
+import { ScrollView, View } from 'react-native';
 import { Container, Content, List, ListItem, Thumbnail, Text, Left,
   Body, Right, Button } from 'native-base';
 import { Actions } from 'react-native-router-flux';
@@ -12,13 +12,6 @@ export default class ProductPage extends Component {
     return (
       <ScrollView>
         <View style={styles.viewStyle}>
-            <Image
-              source={fourtwentylogo}
-              style={{ width: 150,
-              height: 80,
-              alignSelf: 'center',
-              justifyContent: 'space-between' }}
-            />
             <Container>
               <Content>
                   <Text
