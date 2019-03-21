@@ -148,6 +148,7 @@ export default class ProductPage extends Component {
                         </Button>
                       </Right>
                 </ListItem>
+                
               </List>
                   <Text
                   style={styles.textStyle}

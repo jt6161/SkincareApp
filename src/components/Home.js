@@ -20,7 +20,7 @@ export default class Home extends Component {
 
           <Image
             source={{ uri: 'https://static.wixstatic.com/media/7026a3_72773d63a4704cd9b7e134fa5075d35b~mv2_d_2998_3245_s_4_2.jpeg' }}
-            style={{ width: 310, height: 210, alignSelf: 'center' }}
+            style={{ width: 310, height: 200, alignSelf: 'center' }}
           />
 
           <Text style={styles.textStyle2}>
@@ -80,7 +80,7 @@ export default class Home extends Component {
    },
    textStyle: {
      fontSize: 16,
-     padding: 5,
+     padding: 10,
      fontWeight: 'bold',
      fontStyle: 'italic',
      color: '#ab8321'
