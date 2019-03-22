@@ -2,7 +2,7 @@
   "expo": {
     "name": "420 Skincare",
     "icon": "src/components/app-icon.png",
-    "version": "2.0.0",
+    "version": "1.0.5",
     "slug": "420Skincare",
     "sdkVersion": "26.0.0",
     "splash": {
@@ -14,7 +14,8 @@
       "bundleIdentifier": "com.fourtwentyskincare.app"
     },
     "android": {
-      "package": "com.fourtwentyskincaremobile.app",
+      "package": "com.skincaremobile.app",
+      "versionCode": 2,
       "permissions": []
     }
   }
