@@ -14,8 +14,8 @@
       "bundleIdentifier": "com.fourtwentyskincare.app"
     },
     "android": {
-      "package": "com.skincaremobile.app",
-      "versionCode": 2,
+      "package": "com.mobilefourtwenty.app",
+      "versionCode": 1,
       "permissions": []
     }
   }
