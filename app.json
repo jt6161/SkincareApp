@@ -4,7 +4,7 @@
     "icon": "src/components/app-icon.png",
     "version": "1.0.5",
     "slug": "420Skincare",
-    "sdkVersion": "26.0.0",
+    "sdkVersion": "31.0.0",
     "splash": {
       "image": "src/components/splash.png",
       "backgroundColor": "#595859",
