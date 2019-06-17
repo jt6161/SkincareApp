@@ -19,7 +19,7 @@ export default class Home extends Component {
           </Text>
 
           <Image
-            source={{ uri: 'https://static.wixstatic.com/media/7026a3_72773d63a4704cd9b7e134fa5075d35b~mv2_d_2998_3245_s_4_2.jpeg' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_f24287afe1924a359a34156337074841~mv2_d_3456_2304_s_2.jpg' }}
             style={{ width: 310, height: 200, alignSelf: 'center' }}
           />
 
@@ -51,7 +51,7 @@ export default class Home extends Component {
 
           <Button
           transparent
-          onPress={() => Linking.openURL('https://www.youtube.com/watch?v=ldQGRS8s1Zg')}
+          onPress={() => Linking.openURL('https://www.youtube.com/watch?v=GNBWDGCMzHE&list=PL4JyxYvwjY3W6fxN6o91Y6yWKSI2GV44O')}
           >
            <Icon name="logo-youtube" style={{ color: '#ab8321', paddingBottom: 50 }} />
           </Button>
