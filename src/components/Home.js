@@ -79,14 +79,14 @@ export default class Home extends Component {
      position: 'relative'
    },
    textStyle: {
-     fontSize: 16,
+     fontSize: 15,
      padding: 10,
      fontWeight: 'bold',
      fontStyle: 'italic',
      color: '#ab8321'
    },
    textStyle2: {
-     fontSize: 14,
+     fontSize: 13,
      padding: 10,
           fontWeight: 'bold',
      fontStyle: 'italic',

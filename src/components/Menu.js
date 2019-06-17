@@ -117,7 +117,7 @@ const styles = StyleSheet.create({
     marginBottom: 12
   },
   copyright: {
-    fontSize: 12,
+    fontSize: 11,
     padding: 5,
     fontWeight: 'bold',
     color: '#ab8321',
