@@ -18,6 +18,34 @@ export default class Press extends Component {
             Marvina Thomas and 420 Skincare have been featured in
             many different articles. Click article title to view.
           </Text>
+          <Text
+              style={styles.textStyle2}
+              onPress={() => Linking.openURL('https://www.directcannabisnetwork.com/entrepreneur-week-marvina-thomas/')}
+          >
+            Entrepreneur of the Week: Marvina Thomas of 420 Skincare - Direct Cannabis Network
+          </Text>
+
+          <Image
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_8fd8472039e24fa389ade7d667a4faa9~mv2.jpg' }}
+            style={{ width: 300, height: 300, alignSelf: 'center' }}
+          />
+          <Text
+              style={styles.textStyle2}
+              onPress={() => Linking.openURL('https://static.wixstatic.com/media/7026a3_a926e94722e8415489d65bc03177baae~mv2.jpg')}
+          >
+            Marvina Thomas: Nurse By Trade Still Healing Others - Dope Magazine
+          </Text>
+
+          <Image
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_a926e94722e8415489d65bc03177baae~mv2.jpg' }}
+            style={{ width: 300, height: 300, alignSelf: 'center' }}
+          />
+          <Text
+              style={styles.textStyle2}
+              onPress={() => Linking.openURL('https://www.forbes.com/sites/julieweed/2019/05/10/cannabis-and-cbd-gifts-from-these-moms-to-yours-for-mothers-day/#2177ee5e2654')}
+          >
+            Cannabis And CBD Gifts From These Moms To Yours, For Mothers Day - Forbes
+          </Text>
 
           <Image
             source={{ uri: 'https://static.wixstatic.com/media/7026a3_33d9d4f3523b4f00a489d8da9cbc56f4~mv2.jpeg' }}
@@ -29,6 +57,7 @@ export default class Press extends Component {
           >
             She Wants to Change the Face of the Industry - Green Entrepreneur
           </Text>
+
           <Image
             source={{ uri: 'https://static.wixstatic.com/media/7026a3_f25fb44e8aef4264a4f5cf7859dceae6~mv2.jpg' }}
             style={{ width: 315, height: 300, alignSelf: 'center' }}
@@ -45,23 +74,6 @@ export default class Press extends Component {
             source={{ uri: 'https://static.wixstatic.com/media/7026a3_8fd8472039e24fa389ade7d667a4faa9~mv2.jpg' }}
             style={{ width: 315, height: 315, alignSelf: 'center' }}
           />
-          <Text
-              style={styles.textStyle2}
-              onPress={() => Linking.openURL('https://l.facebook.com/l.php?u=https%3A%2F%2Fwww.directcannabisnetwork.com%2Fentrepreneur-week-marvina-thomas%2F&h=AT09DIf3IfKg9YJwAgI_8vGtTLoDWxCO4Oe19IE6hiEj5k9bW41JKL4xjufmnpmHAOgyfg93RM8yQ1oWzsE7XB7U2TlnqidhtfGx0yX8Kj72_SE9ah8nWNwMQb1UHgllihpddz8F7QUHwOQUpna9S0LL9xJf5UxxIlLlPWPhQV6PP9Ktaz8I8IG3Mc3FMYa3G6NyJ6qbfwd9y84ZHq6KKcoXTFLwrn6YBE6085UnD6RTYGq3riKgo2RnAMzAZrS0obiykkSVVpBcKXUuWp9aWS2Pttl_w826d-nfSx8-50iBjaoD5ns8TehXE_-OJyStgGOa1KptC7mZVbwY4FVe4VOAOUSQeMwiM9bBZjwMLCGJK7EFrd5E-sjOEMJDlP9HagKjslgLAb3hLBF-aakn1Rg36Seltr16')}
-          >
-            Entrepreneur of the Week: Marvina Thomas of 420 Skincare - Direct Cannabis Network
-          </Text>
-
-          <Image
-            source={{ uri: 'https://static.wixstatic.com/media/7026a3_a926e94722e8415489d65bc03177baae~mv2.jpg' }}
-            style={{ width: 300, height: 300, alignSelf: 'center' }}
-          />
-          <Text
-              style={styles.textStyle2}
-              onPress={() => Linking.openURL('https://static.wixstatic.com/media/7026a3_a926e94722e8415489d65bc03177baae~mv2.jpg')}
-          >
-            Marvina Thomas: Nurse By Trade Still Healing Others - Dope Magazine
-          </Text>
 
         </View>
       </ScrollView>
@@ -77,7 +89,7 @@ export default class Press extends Component {
      position: 'relative'
    },
    textStyle: {
-     fontSize: 15,
+     fontSize: 14,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
