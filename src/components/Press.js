@@ -18,6 +18,11 @@ export default class Press extends Component {
             Marvina Thomas and 420 Skincare have been featured in
             many different articles. Click article title to view.
           </Text>
+
+          <Image
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_8fd8472039e24fa389ade7d667a4faa9~mv2.jpg' }}
+            style={{ width: 300, height: 300, alignSelf: 'center' }}
+          />
           <Text
               style={styles.textStyle2}
               onPress={() => Linking.openURL('https://www.directcannabisnetwork.com/entrepreneur-week-marvina-thomas/')}
@@ -26,19 +31,20 @@ export default class Press extends Component {
           </Text>
 
           <Image
-            source={{ uri: 'https://static.wixstatic.com/media/7026a3_8fd8472039e24fa389ade7d667a4faa9~mv2.jpg' }}
-            style={{ width: 300, height: 300, alignSelf: 'center' }}
+            source={{ uri: 'https://dopemagazine.com/wp-content/uploads/2018/11/marvina-thomas.jpg' }}
+            style={{ width: 300, height: 194, alignSelf: 'center' }}
           />
           <Text
               style={styles.textStyle2}
-              onPress={() => Linking.openURL('https://static.wixstatic.com/media/7026a3_a926e94722e8415489d65bc03177baae~mv2.jpg')}
+              onPress={() => Linking.openURL('https://dopemagazine.com/marvina-thomas-420-skincare/?fbclid=IwAR3pL_CfrPjCT7qf25M7D4CBinZa1NuwRjXwodrtq_6STCMwcewx8gbKDus')}
           >
-            Marvina Thomas: Nurse By Trade Still Healing Others - Dope Magazine
+            Marvina Thomas: Nurse By Trade Still Healing Others
+            - Dope Magazine
           </Text>
 
           <Image
-            source={{ uri: 'https://static.wixstatic.com/media/7026a3_a926e94722e8415489d65bc03177baae~mv2.jpg' }}
-            style={{ width: 300, height: 300, alignSelf: 'center' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_8019b0c29a4841c3a5d27f869c2c9441~mv2.jpg' }}
+            style={{ width: 315, height: 204, alignSelf: 'center' }}
           />
           <Text
               style={styles.textStyle2}
@@ -48,8 +54,8 @@ export default class Press extends Component {
           </Text>
 
           <Image
-            source={{ uri: 'https://static.wixstatic.com/media/7026a3_33d9d4f3523b4f00a489d8da9cbc56f4~mv2.jpeg' }}
-            style={{ width: 315, height: 315, alignSelf: 'center' }}
+            source={{ uri: 'https://assets.entrepreneur.com/content/3x2/2000/20180802214533-phpB6e3Vj-crop.jpeg' }}
+            style={{ width: 315, height: 230, alignSelf: 'center' }}
           />
           <Text
             style={styles.textStyle2}
@@ -59,8 +65,8 @@ export default class Press extends Component {
           </Text>
 
           <Image
-            source={{ uri: 'https://static.wixstatic.com/media/7026a3_f25fb44e8aef4264a4f5cf7859dceae6~mv2.jpg' }}
-            style={{ width: 315, height: 300, alignSelf: 'center' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_de264c58240141cf96ea104881f44377~mv2.png' }}
+            style={{ width: 315, height: 230, alignSelf: 'center' }}
           />
           <Text
             style={styles.textStyle2}
@@ -71,9 +77,16 @@ export default class Press extends Component {
           </Text>
 
           <Image
-            source={{ uri: 'https://static.wixstatic.com/media/7026a3_8fd8472039e24fa389ade7d667a4faa9~mv2.jpg' }}
-            style={{ width: 315, height: 315, alignSelf: 'center' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_de264c58240141cf96ea104881f44377~mv2.png' }}
+            style={{ width: 315, height: 230, alignSelf: 'center' }}
           />
+          <Text
+            style={styles.textStyle2}
+              onPress={() => Linking.openURL('https://www.phoenixnewtimes.com/news/no-slack-in-success-black-ganjapreneur-marvina-thomas-sets-pace-in-cannabis-industry-10502514')}
+          >
+            No Slack in Success:
+            Black Ganjapreneur Marvina Thomas Sets Example in Industry - Phoenix New Times
+          </Text>
 
         </View>
       </ScrollView>
@@ -95,7 +108,7 @@ export default class Press extends Component {
      color: '#ab8321'
    },
    textStyle2: {
-     fontSize: 13,
+     fontSize: 12,
      padding: 10,
      fontWeight: 'bold',
      color: '#ab8321'
