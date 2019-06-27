@@ -65,15 +65,14 @@ export default class Press extends Component {
           </Text>
 
           <Image
-            source={{ uri: 'https://static.wixstatic.com/media/7026a3_de264c58240141cf96ea104881f44377~mv2.png' }}
-            style={{ width: 315, height: 230, alignSelf: 'center' }}
+            source={{ uri: 'https://static.wixstatic.com/media/7026a3_3e7a2262f69b4b839bcfc656699e5cb4~mv2.png' }}
+            style={{ width: 315, height: 101, alignSelf: 'center' }}
           />
           <Text
             style={styles.textStyle2}
-              onPress={() => Linking.openURL('https://www.phoenixnewtimes.com/news/no-slack-in-success-black-ganjapreneur-marvina-thomas-sets-pace-in-cannabis-industry-10502514')}
+              onPress={() => Linking.openURL('https://www.marijuanaventure.com/for-women-by-women/')}
           >
-            No Slack in Success:
-            Black Ganjapreneur Marvina Thomas Sets Example in Industry - Phoenix New Times
+            For Women, By Women - Marijuana Venture
           </Text>
 
           <Image
